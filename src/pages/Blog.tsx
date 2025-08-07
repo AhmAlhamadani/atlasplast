@@ -1,4 +1,3 @@
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import Breadcrumb from "../components/common/Breadcrumb";
 import Container from "../components/common/Container";
 import { blogData } from "../data/blogData";
@@ -8,6 +7,7 @@ import PopularPost from "../components/ui/blog/PopularPost";
 import BlogCatagory from "../components/ui/blog/BlogCatagory";
 import PopularTag from "../components/ui/blog/PopularTag";
 import FollowUs from "../components/ui/blog/FollowUs";
+import BlogPagination from "../components/ui/blog/BlogPagination";
 
 const Blog = () => {
   return (
@@ -30,20 +30,7 @@ const Blog = () => {
               ))}
             </div>
             {/* pagination part start here */}
-            <div className="flex items-center justify-center gap-3 mt-15">
-              <button className=" w-10 h-10 rounded-full text-[16px] font-medium flex justify-center items-center bg-primaryBlue text-white duration-300 ease-in-out cursor-pointer">
-                01
-              </button>
-              <button className="bg-[#F2F4F8] w-10 h-10 rounded-full text-[16px] font-medium text-primary flex justify-center items-center hover:bg-primaryBlue hover:text-white duration-300 ease-in-out cursor-pointer">
-                02
-              </button>
-              <button className="bg-[#F2F4F8] w-10 h-10 rounded-full text-[16px] font-medium text-primary flex justify-center items-center hover:bg-primaryBlue hover:text-white duration-300 ease-in-out cursor-pointer">
-                03
-              </button>
-              <button className="bg-[#F2F4F8] w-10 h-10 rounded-full text-[16px] font-medium text-primary flex justify-center items-center hover:bg-primaryBlue hover:text-white duration-300 ease-in-out cursor-pointer">
-                <MdKeyboardDoubleArrowRight />
-              </button>
-            </div>
+            <BlogPagination />
           </div>
 
           {/* part 2 */}

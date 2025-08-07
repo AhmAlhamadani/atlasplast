@@ -7,15 +7,11 @@ const PrivacyPolicy = () => {
       {/* ************* Breadcrumb section start here ************* */}
       <Breadcrumb
         title="Privacy Policy"
-        breadcrumb={[
-          { name: "Home", href: "/" },
-          { name: "Privacy Policy" },
-        ]}
+        breadcrumb={[{ name: "Home", href: "/" }, { name: "Privacy Policy" }]}
       />
 
-     {/* ************* Privacy Policy Info section start here ************* */}
-     <PrivacyPolicyInfo/>
-     
+      {/* ************* Privacy Policy Info section start here ************* */}
+      <PrivacyPolicyInfo />
     </section>
   );
 };

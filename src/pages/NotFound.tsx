@@ -1,12 +1,12 @@
-import NotFoundInfo from "../components/sections/404/NotFoundInfo"
+import NotFoundInfo from "../components/sections/404/NotFoundInfo";
 
 const NotFound = () => {
   return (
-    <section className='section-gap'>
+    <section className="section-gap">
       {/* NotFoundInfo here*/}
-     <NotFoundInfo/>
-  </section>
-  )
-}
+      <NotFoundInfo />
+    </section>
+  );
+};
 
-export default NotFound
+export default NotFound;

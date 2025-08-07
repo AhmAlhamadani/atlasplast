@@ -3,9 +3,8 @@ import TermsAndConditionsInfo from "../components/sections/termsAndConditionsInf
 
 const TermsAndConditions = () => {
   return (
-      <section>
-
-          {/************* Breadcrumb section start here **************/}
+    <section>
+      {/************* Breadcrumb section start here **************/}
       <Breadcrumb
         title="Trems & Condition"
         breadcrumb={[
@@ -15,11 +14,8 @@ const TermsAndConditions = () => {
       />
 
       {/************* Terms And Conditions Info section start here **************/}
-        <TermsAndConditionsInfo/>
-     
-
-       
-      </section>
+      <TermsAndConditionsInfo />
+    </section>
   );
 };
 
