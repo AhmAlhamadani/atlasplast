@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { servicesData } from "../../data/servicesData";
-import Container from "../common/Container";
-import SectionTitle from "../common/SectionTitle";
-const LatestService = () => {
+import { servicesData } from "../../../data/servicesData";
+import Container from "../../common/Container";
+import SectionTitle from "../../common/SectionTitle";
+
+const Service = () => {
   return (
     <div className="section-gap">
       <Container>
@@ -40,4 +41,4 @@ const LatestService = () => {
   );
 };
 
-export default LatestService;
+export default Service;

@@ -1,8 +1,8 @@
-import Container from "../common/Container";
-import SectionTitle from "../common/SectionTitle";
+import Container from "../../common/Container";
+import SectionTitle from "../../common/SectionTitle";
 import { Link } from "react-router-dom";
-import { projects } from "../../data/projectsData";
-const LetestProject = () => {
+import { projects } from "../../../data/projectsData";
+const ProjectStyle2 = () => {
   return (
     <div>
       {/************* project section start here **************/}
@@ -90,4 +90,4 @@ const LetestProject = () => {
   );
 };
 
-export default LetestProject;
+export default ProjectStyle2;

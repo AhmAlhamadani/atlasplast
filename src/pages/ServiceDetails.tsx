@@ -5,8 +5,9 @@ import { GoArrowLeft, GoArrowRight } from "react-icons/go"
 import { useNavigate, useParams } from "react-router-dom"
 import { services } from "../data/servicesData"
 import { useEffect } from "react"
-import ConnectingService from "../components/service/ConnectingService"
-import ServiceSidebar from "../components/service/ServiceSidebar"
+import ConnectingService from "../components/ui/service/ConnectingService"
+import ServiceSidebar from "../components/ui/service/ServiceSidebar"
+
 const ServiceDetails = () => {
   const { slug } = useParams();
   const navigate = useNavigate();

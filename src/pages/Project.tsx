@@ -93,7 +93,7 @@ const Project = () => {
       <section className="section-gap">
       <Container>
       <FaqStyle2/>  
-        </Container>
+      </Container>
       </section>
 
     

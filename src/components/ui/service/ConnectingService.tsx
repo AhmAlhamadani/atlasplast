@@ -1,6 +1,6 @@
+import { servicesData } from "../../../data/servicesData";
 import service2 from "../../assets/service/service-2.png";
 import service3 from "../../assets/service/service-3.png";
-import { servicesData } from "../../data/servicesData";
 const ConnectingService = () => {
   return (
     <div>

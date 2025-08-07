@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Button from "../common/Button";
-import Container from "../common/Container";
-import SectionTitle from "../common/SectionTitle";
+import Button from "../../common/Button";
+import Container from "../../common/Container";
+import SectionTitle from "../../common/SectionTitle";
 
 const services = [
   {

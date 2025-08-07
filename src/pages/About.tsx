@@ -4,10 +4,10 @@ import SectionTitle from "../components/common/SectionTitle"
 import Business from "../components/sections/business/Business"
 import Pricing from "../components/sections/pricing/Pricing"
 import about from "../assets/about/about-4.png"
-import Contact from "../components/HomePageTwo/Contact"
 import ClientTestimonial from "../components/sections/testimonial/ClientTestimonial"
 import Faq from "../components/sections/faq/Faq"
 import FunFacts from "../components/sections/funfacts/FunFacts"
+import ContactStyle2 from "../components/sections/contact/ContactStyle2"
 
 const About = () => {
   return (
@@ -112,7 +112,7 @@ const About = () => {
        <Faq/>
         
         {/************* contact section start here **************/}
-       <Contact/>
+       <ContactStyle2/>
 
        {/************* business section start here **************/}
        <Business/>
