@@ -1,8 +1,8 @@
 import { IoLocationSharp } from "react-icons/io5";
-import Container from "../common/Container";
-import SectionTitle from "../common/SectionTitle";
+import Container from "../../common/Container";
+import SectionTitle from "../../common/SectionTitle";
 import { MdEmail } from "react-icons/md";
-import ContactForm from "../ui/form/ContactForm";
+import ContactForm from "../../ui/form/ContactForm";
 
 const Contact = () => {
   return (

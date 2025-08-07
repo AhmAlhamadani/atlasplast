@@ -1,12 +1,13 @@
-import banner from "../../assets/hero/banner-1.jpg"
-import dot from "../../assets/hero/effect-home-2.svg"
-import Button from "../common/Button"
-import Container from "../common/Container"
-import author1 from "../../assets/hero/author-1.png"
-import author2 from "../../assets/hero/author-2.png"
-import author3 from "../../assets/hero/author-3.png"
 
-const Banner = () => {
+import banner from "../../../assets/hero/banner-1.jpg"
+import dot from "../../../assets/hero/effect-home-2.svg"
+import author1 from "../../../assets/hero/author-1.png"
+import author2 from "../../../assets/hero/author-2.png"
+import author3 from "../../../assets/hero/author-3.png"
+import Container from "../../common/Container"
+import Button from "../../common/Button"
+
+const HeroStyle2 = () => {
   return (
     <div className="bg-no-repeat bg-cover bg-center relative"
     style={{ backgroundImage: `url(${banner})` }}
@@ -70,4 +71,4 @@ const Banner = () => {
   )
 }
 
-export default Banner
+export default HeroStyle2

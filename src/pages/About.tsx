@@ -1,13 +1,13 @@
-import ClientTestimonial from "../components/about/ClientTestimonial"
 import Breadcrumb from "../components/common/Breadcrumb"
 import Container from "../components/common/Container"
 import SectionTitle from "../components/common/SectionTitle"
-import AskQuestion from "../components/homepage/AskQuestion"
-import Business from "../components/homepage/Business"
-import Pricing from "../components/homepage/Pricing"
+import Business from "../components/sections/business/Business"
+import Pricing from "../components/sections/pricing/Pricing"
 import about from "../assets/about/about-4.png"
-import Stats from "../components/HomePageTwo/Stats"
 import Contact from "../components/HomePageTwo/Contact"
+import ClientTestimonial from "../components/sections/testimonial/ClientTestimonial"
+import Faq from "../components/sections/faq/Faq"
+import FunFacts from "../components/sections/funfacts/FunFacts"
 
 const About = () => {
   return (
@@ -106,10 +106,10 @@ const About = () => {
       </section>
 
       {/************* Stats section start here **************/}
-      <Stats/>
+      <FunFacts/>
 
        {/************* faq section start here **************/}
-       <AskQuestion/>
+       <Faq/>
         
         {/************* contact section start here **************/}
        <Contact/>

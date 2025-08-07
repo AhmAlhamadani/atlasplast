@@ -1,5 +1,5 @@
 
-import blog2 from "../../assets/blog/blog-11.png";
+import blog2 from "../../../assets/blog/blog-11.png";
 import { IoStar } from "react-icons/io5";
 
 

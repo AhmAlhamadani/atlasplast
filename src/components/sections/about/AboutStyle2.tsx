@@ -1,8 +1,9 @@
-import Container from "../common/Container"
-import SectionTitle from "../common/SectionTitle"
-import about from "../../assets/about/about-4.png"
 
-const AboutUs = () => {
+import about from "../../../assets/about/about-4.png"
+import Container from "../../common/Container"
+import SectionTitle from "../../common/SectionTitle"
+
+const AboutStyle2 = () => {
   return (
     <div className="section-gap">
          {/************* about us section start here **************/}
@@ -94,4 +95,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default AboutStyle2

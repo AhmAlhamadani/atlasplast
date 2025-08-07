@@ -1,12 +1,14 @@
+
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import Container from "../common/Container";
-import SectionTitle from "../common/SectionTitle";
-import ContactFormTwo from "../ui/form/ContactFormTwo";
+import Container from "../../common/Container";
+import SectionTitle from "../../common/SectionTitle";
+import ContactFormTwo from "../../ui/form/ContactFormTwo";
 
 
-const Contact: React.FC = () => {
+
+const ContactStyle2: React.FC = () => {
 
   return (
     <section className="section-gap">
@@ -72,4 +74,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default ContactStyle2;

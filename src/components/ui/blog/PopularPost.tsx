@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-import { blogData } from "../../data/blogData"
 import { CiCalendarDate } from "react-icons/ci"
+import { blogData } from "../../../data/blogData"
 
 const PopularPost = () => {
   return (

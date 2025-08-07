@@ -1,5 +1,5 @@
-import avatar from "../../assets/blog/avatar.png";
-import CommentForm from "../ui/form/CommentForm";
+import avatar from "../../../assets/blog/avatar.png";
+import CommentForm from "../form/CommentForm";
 
 const BlogComment = () => {
   return (

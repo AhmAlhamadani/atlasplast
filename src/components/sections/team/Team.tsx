@@ -1,10 +1,11 @@
-import Container from "../common/Container"
-import team1 from "../../assets/team/team-1.png"
-import team2 from "../../assets/team/team-2.png"
+import team1 from "../../../assets/team/team-1.png"
+import team2 from "../../../assets/team/team-2.png"
 import { LuShare2 } from "react-icons/lu"
-import SectionTitle from "../common/SectionTitle"
-import Button from "../common/Button"
-const Ourteam = () => {
+import Container from "../../common/Container"
+import SectionTitle from "../../common/SectionTitle"
+import Button from "../../common/Button"
+
+const Team = () => {
   return (
     <div className="section-gap">
         <Container className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center gap-[30px]">
@@ -53,4 +54,4 @@ const Ourteam = () => {
   )
 }
 
-export default Ourteam
+export default Team

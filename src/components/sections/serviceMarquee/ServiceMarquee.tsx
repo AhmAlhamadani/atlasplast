@@ -1,5 +1,6 @@
+
 import Marquee from "react-fast-marquee"
-import star from "../../assets/hero/star.svg"
+import star from "../../../assets/hero/star.svg"
 const items = [
     { label: "Software development", icon: star },
     { label: "Content writing", icon: star  },
@@ -12,7 +13,7 @@ const items = [
   
   ];
 
-const MarqueBanner = () => {
+const ServiceMarquee = () => {
   return (
     <div className="bg-primaryBlue overflow-hidden h-[80px]">
       <Marquee speed={100} gradient={false}>
@@ -31,4 +32,4 @@ const MarqueBanner = () => {
   )
 }
 
-export default MarqueBanner
+export default ServiceMarquee

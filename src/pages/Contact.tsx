@@ -1,5 +1,5 @@
 import Breadcrumb from "../components/common/Breadcrumb"
-import Contact from "../components/homepage/Contact"
+import Contact from "../components/sections/contact/Contact"
 import ContactMap from "../components/ui/contact/ContactMap"
 
 const ContactUs = () => {
@@ -18,9 +18,7 @@ const ContactUs = () => {
       />
 
       {/************* contact from start here **************/}
-      <section>
       <Contact/>
-      </section>
 
       {/************* Map start here **************/}
        <ContactMap/>

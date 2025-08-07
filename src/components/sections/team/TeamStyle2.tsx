@@ -1,10 +1,11 @@
-import Container from "../common/Container";
-import SectionTitle from "../common/SectionTitle";
-import team1 from "../../assets/team/team-1.png";
-import team2 from "../../assets/team/team-2.png";
-import team3 from "../../assets/team/team-3.png";
+
+import team1 from "../../../assets/team/team-1.png";
+import team2 from "../../../assets/team/team-2.png";
+import team3 from "../../../assets/team/team-3.png";
 import { FaLinkedinIn, FaXTwitter, FaYoutube } from "react-icons/fa6";
-import TeamCard from "../ui/cards/TeamCard";
+import Container from "../../common/Container";
+import SectionTitle from "../../common/SectionTitle";
+import TeamCard from "../../ui/cards/TeamCard";
 
 const teamMembers = [
   {
@@ -42,7 +43,7 @@ const teamMembers = [
   },
 ];
 
-const Team = () => {
+const TeamStyle2 = () => {
   return (
     <div className="section-gap">
       <Container>
@@ -66,4 +67,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default TeamStyle2;

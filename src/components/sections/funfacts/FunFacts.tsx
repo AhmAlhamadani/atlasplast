@@ -1,6 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
-import Container from "../common/Container";
+import Container from "../../common/Container";
 
 type StatItem = {
   id: number;
@@ -16,7 +16,7 @@ const stats: StatItem[] = [
   { id: 4, end: 3, suffix: "K", label: "Client Review" },
 ];
 
-const Stats: React.FC = () => {
+const FunFacts: React.FC = () => {
   return (
    <Container className="section-gap">
      <section className="bg-primaryBlue rounded-[30px] lg:py-10 py-8 lg:px-15 px-8">
@@ -39,4 +39,4 @@ const Stats: React.FC = () => {
   );
 };
 
-export default Stats;
+export default FunFacts;

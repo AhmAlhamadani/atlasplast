@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import bg from "../../assets/testimonial/bg.png"
-import author from "../../assets/testimonial/author-1.png"
-import Container from "../common/Container"
+import bg from "../../../assets/testimonial/bg.png"
+import author from "../../../assets/testimonial/author-1.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { FaStar } from "react-icons/fa";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useRef, useState } from "react";
-import Video from "../common/Video";
+import Container from "../../common/Container";
+import Video from "../video/Video";
 
 const testimonials = [
     {

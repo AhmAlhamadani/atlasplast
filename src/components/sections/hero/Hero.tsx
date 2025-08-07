@@ -1,15 +1,15 @@
-import hero1 from "../../assets/hero/hero-1.png"
-import hero2 from "../../assets/hero/hero-2.png"
-import hero3 from "../../assets/hero/hero-3.png"
-import left from "../../assets/hero/left.png"
-import right from "../../assets/hero/right.png"
-import icon from "../../assets/hero/icon-1.png"
-import shape from "../../assets/hero/border-shape.svg"
+import hero1 from "../../../assets/hero/hero-1.png"
+import hero2 from "../../../assets/hero/hero-2.png"
+import hero3 from "../../../assets/hero/hero-3.png"
+import left from "../../../assets/hero/left.png"
+import right from "../../../assets/hero/right.png"
+import icon from "../../../assets/hero/icon-1.png"
+import shape from "../../../assets/hero/border-shape.svg"
+import Container from "../../common/Container"
+import Button from "../../common/Button"
+import ServiceMarquee from "../serviceMarquee/ServiceMarquee"
 
-import Container from "../common/Container"
-import Button from "../common/Button"
-import MarqueBanner from "./MarqueBanner"
-const Banner = () => {
+const Hero = () => {
   return (
    <div className="lg:mb-[180px] md:mb-[140px] mb-[60px]">
      <div
@@ -52,7 +52,7 @@ const Banner = () => {
 
    
     <div className="relative">
-  <MarqueBanner />
+  <ServiceMarquee />
   {/* Positioned image group */}
   <div className="absolute inset-x-0 z-10 md:block hidden">
     <Container className="relative">
@@ -80,4 +80,4 @@ const Banner = () => {
   )
 }
 
-export default Banner
+export default Hero

@@ -1,11 +1,8 @@
 import Breadcrumb from "../components/common/Breadcrumb";
-import faq from "../assets/faq/faq-thumb2.png"
 import Container from "../components/common/Container";
-import Accordion from "../components/common/AccordionItem";
-import SectionTitle from "../components/common/SectionTitle";
-import { accordionData } from "../data/accordionData";
 import { Link } from "react-router-dom";
 import { projects } from "../data/projectsData";
+import FaqStyle2 from "../components/sections/faq/FaqStyle2";
 
 const Project = () => {
   return (
@@ -95,35 +92,7 @@ const Project = () => {
       {/************* faq section start here **************/}
       <section className="section-gap">
       <Container>
-            {/* section ttile start here */}
-        <SectionTitle
-        label="ASk QUESTION"
-        title="Your Tomorrow, Enhanced Today Tech Forward"
-        align="center"/>
-
-         
-        {/* Accordion part start    */}
-        <div className="lg:flex items-center justify-between md:mt-[60px] mt-10">
-         <div className="lg:w-[50%] w-full">
-         <Accordion items={accordionData} />
-         </div>
-
-         {/* image part */}
-         <div className="lg:w-[43%] w-full mt-10 lg:mt-0 relative">
-           <img className="w-full h-auto rounded-[20px]" src={faq} alt="faq-thumb1" />
-           <div className="bg-[#E1F0FD] rounded-[20px] shadow-faq p-5 flex items-center gap-5 absolute bottom-5 right-5">
-            <div>
-              <img src='/icons/business/Search results for Winner.svg' alt="serach icon" />
-            </div>
-
-             <div>
-                <h3>2k+</h3>
-                 <p>Project Completed</p>
-             </div>
-             
-           </div>
-         </div>
-        </div>
+      <FaqStyle2/>  
         </Container>
       </section>
 

@@ -1,9 +1,9 @@
 
 import { useState } from "react";
-import { pricingPlans } from "../../data/pricingData";
-import Container from "../common/Container";
-import SectionTitle from "../common/SectionTitle";
-import PricingCard from "../ui/cards/PricingCard";
+import { pricingPlans } from "../../../data/pricingData";
+import Container from "../../common/Container";
+import SectionTitle from "../../common/SectionTitle";
+import PricingCard from "../../ui/cards/PricingCard";
 
 const Pricing = () => {
   const [activeTab, setActiveTab] = useState<"monthly" | "yearly">("monthly");

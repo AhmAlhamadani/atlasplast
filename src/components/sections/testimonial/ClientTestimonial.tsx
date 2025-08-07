@@ -1,16 +1,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import Container from "../common/Container"
-import SectionTitle from "../common/SectionTitle"
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from "react-slick";
 import { useState } from "react";
-import author1 from "../../assets/testimonial/author-1.png"
-import author2 from "../../assets/testimonial/author-2.png"
-import author3 from "../../assets/testimonial/author-3.png"
+import author1 from "../../../assets/testimonial/author-1.png"
+import author2 from "../../../assets/testimonial/author-2.png"
+import author3 from "../../../assets/testimonial/author-3.png"
 import { useLocation } from "react-router-dom";
-import { cn } from "../../lib/utils";
-import TestimonialCard from "../ui/cards/TestimonialCard";
+import { cn } from '../../../lib/utils';
+import SectionTitle from '../../common/SectionTitle';
+import Container from '../../common/Container';
+import TestimonialCard from '../../ui/cards/TestimonialCard';
+
 
 const testimonials = [
     {

@@ -1,9 +1,9 @@
-import Container from "../common/Container"
-import about1 from "../../assets/about/about-1.png"
-import about2 from "../../assets/about/about-2.png"
-import about3 from "../../assets/about/about-3.png"
-import icon from "../../assets/about/icon.svg"
-import SectionTitle from "../common/SectionTitle"
+import Container from "../../common/Container"
+import SectionTitle from "../../common/SectionTitle"
+import about1 from "../../../assets/about/about-1.png"
+import about2 from "../../../assets/about/about-2.png"
+import about3 from "../../../assets/about/about-3.png"
+import icon from "../../../assets/about/icon.svg"
 import { FiChevronsRight } from "react-icons/fi"
 
 const texts = [

@@ -1,10 +1,11 @@
-import { accordionData } from "../../data/accordionData"
-import Accordion from "../common/AccordionItem"
-import Container from "../common/Container"
-import SectionTitle from "../common/SectionTitle"
-import faq1 from "../../assets/faq/faq-thumb1.png"
 
-const AskQuestion = () => {
+import faq1 from "../../../assets/faq/faq-thumb1.png"
+import { accordionData } from "../../../data/accordionData"
+import Accordion from "../../common/AccordionItem"
+import Container from "../../common/Container"
+import SectionTitle from "../../common/SectionTitle"
+
+const Faq = () => {
   return (
     <div className="section-gap">
         <Container>
@@ -42,4 +43,4 @@ const AskQuestion = () => {
   )
 }
 
-export default AskQuestion
+export default Faq
