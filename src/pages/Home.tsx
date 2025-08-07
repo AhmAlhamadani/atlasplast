@@ -1,4 +1,3 @@
-import Blogs from "../components/homepage/Blogs"
 import Business from "../components/sections/business/Business"
 import Contact from "../components/sections/contact/Contact"
 import Pricing from "../components/sections/pricing/Pricing"
@@ -10,6 +9,7 @@ import Team from "../components/sections/team/Team"
 import Brand from "../components/sections/brand/Brand"
 import Project from "../components/sections/project/Project"
 import Service from "../components/sections/service/Service"
+import Blog from "../components/sections/blog/Blog"
 
 
 const Home = () => {
@@ -27,7 +27,7 @@ const Home = () => {
       <Faq/>
       <Contact/>
       <Testimonial/>
-      <Blogs/>
+      <Blog/>
     </div>
   )
 }

@@ -1,11 +1,11 @@
-import Button from "../common/Button";
-import Container from "../common/Container";
-import SectionTitle from "../common/SectionTitle";
 import { Link } from "react-router-dom";
-import blog1 from "../../assets/blog/blog-4.png";
-import blog2 from "../../assets/blog/blog-5.png";
-import blog3 from "../../assets/blog/blog-6.png";
-import BlogCardStyle3 from "../ui/cards/BlogCardStyle3";
+import blog1 from "../../../assets/blog/blog-4.png";
+import blog2 from "../../../assets/blog/blog-5.png";
+import blog3 from "../../../assets/blog/blog-6.png";
+import Container from "../../common/Container";
+import SectionTitle from "../../common/SectionTitle";
+import Button from "../../common/Button";
+import BlogCardStyle3 from "../../ui/cards/BlogCardStyle3";
 
 type BlogItem = {
   id: number;
@@ -48,7 +48,7 @@ const blogData: BlogItem[] = [
   },
 ];
 
-const Blog = () => {
+const BlogStyle2 = () => {
   return (
     <div className="section-gap">
       <Container>
@@ -81,4 +81,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogStyle2;

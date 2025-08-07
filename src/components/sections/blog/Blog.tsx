@@ -1,11 +1,11 @@
-import Button from "../common/Button";
-import Container from "../common/Container";
-import SectionTitle from "../common/SectionTitle";
-import blog1 from "../../assets/blog/blog-1.png";
-import blog2 from "../../assets/blog/blog-2.png";
-import blog3 from "../../assets/blog/blog-3.png";
+import Button from "../../common/Button";
+import Container from "../../common/Container";
+import SectionTitle from "../../common/SectionTitle";
+import blog1 from "../../../assets/blog/blog-1.png";
+import blog2 from "../../../assets/blog/blog-2.png";
+import blog3 from "../../../assets/blog/blog-3.png";
 import { Link } from "react-router-dom";
-import BlogCardStyle2 from "../ui/cards/BlogCardStyle2";
+import BlogCardStyle2 from "../../ui/cards/BlogCardStyle2";
 
 const blogData = [
   {
@@ -37,7 +37,7 @@ const blogData = [
   },
 ];
 
-const Blogs = () => {
+const Blog = () => {
   return (
     <div className="section-gap">
       <Container>
@@ -75,4 +75,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default Blog;
