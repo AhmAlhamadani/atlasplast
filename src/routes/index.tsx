@@ -17,38 +17,75 @@ import HomeOneLayout from "../components/layout/HomeOneLayout";
 import HomeTwoLayout from "../components/layout/HomeTwoLayout";
 import InnerPageLayout from "../components/layout/InnerPageLayout";
 
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <HomeOneLayout />,
+//     children: [
+//       { path: "/", element: <Home /> },
+//     ],
+//   },
+//   {
+//     path: "/home-two",
+//     element: <HomeTwoLayout />,
+//     children: [
+//       { path: "/home-two", element: <HomeTwo /> },
+//     ],
+//   },
+//   {
+//     path: "/",
+//     element: <InnerPageLayout />,
+//     children: [
+//       { path: "/about", element: <About /> },
+//       { path: "/contact", element: <Contact /> },
+//       { path: "/project", element: <Project /> },
+//       { path: "/project/:slug", element: <ProjectDetails /> },
+//       { path: "/service", element: <Service /> },
+//       { path: "/service/:slug", element: <ServiceDetails /> },
+//       { path: "/blog", element: <Blog /> },
+//       { path: "/blog/:slug", element: <BlogDetails /> },
+//       { path: "/terms-condition", element: <TermsAndConditions /> },
+//       { path: "/privacy-policy", element: <PrivacyPolicy /> },
+//       { path: "*", element: <NotFound /> },
+//     ],
+//   },
+// ]);
+
 const router = createBrowserRouter([
+  // HomeOne Layout
   {
     path: "/",
     element: <HomeOneLayout />,
     children: [
-      { path: "/", element: <Home /> },
+      { index: true, element: <Home /> },
     ],
   },
+  // HomeTwo Layout
   {
     path: "/home-two",
     element: <HomeTwoLayout />,
     children: [
-      { path: "/home-two", element: <HomeTwo /> },
+      { index: true, element: <HomeTwo /> },
     ],
   },
+  // Inner Pages Layout
   {
-    path: "/",
     element: <InnerPageLayout />,
     children: [
-      { path: "/about", element: <About /> },
-      { path: "/contact", element: <Contact /> },
-      { path: "/project", element: <Project /> },
-      { path: "/project/:slug", element: <ProjectDetails /> },
-      { path: "/service", element: <Service /> },
-      { path: "/service/:slug", element: <ServiceDetails /> },
-      { path: "/blog", element: <Blog /> },
-      { path: "/blog/:slug", element: <BlogDetails /> },
-      { path: "/terms-condition", element: <TermsAndConditions /> },
-      { path: "/privacy-policy", element: <PrivacyPolicy /> },
+      { path: "about", element: <About /> },
+      { path: "contact", element: <Contact /> },
+      { path: "project", element: <Project /> },
+      { path: "project/:slug", element: <ProjectDetails /> },
+      { path: "service", element: <Service /> },
+      { path: "service/:slug", element: <ServiceDetails /> },
+      { path: "blog", element: <Blog /> },
+      { path: "blog/:slug", element: <BlogDetails /> },
+      { path: "terms-condition", element: <TermsAndConditions /> },
+      { path: "privacy-policy", element: <PrivacyPolicy /> },
       { path: "*", element: <NotFound /> },
     ],
   },
 ]);
+
 
 export default router;
