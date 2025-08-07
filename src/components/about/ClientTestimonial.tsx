@@ -10,6 +10,7 @@ import author2 from "../../assets/testimonial/author-2.png"
 import author3 from "../../assets/testimonial/author-3.png"
 import { useLocation } from "react-router-dom";
 import { cn } from "../../lib/utils";
+import TestimonialCard from "../ui/cards/TestimonialCard";
 
 const testimonials = [
     {
@@ -136,23 +137,14 @@ const ClientTestimonial = () => {
 
         <Slider {...settings}>
         {testimonials.map((item) => (
-          <div key={item.id} className="px-3 pb-10">
-            <div className="w-full bg-sectionBg border border-secondaryColor rounded-[20px] md:px-10 px-5 md:py-[30px] py-5">
-              <p className="text-[22px] font-normal leading-[34px]">{item.message}</p>
-              <div className="flex items-center gap-4 mt-[30px]">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-20 h-20 rounded-full object-cover"
-                />
-                <div>
-                  <h4 className="text-[22px]">{item.name}</h4>
-                  <p>{item.role}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
+    <TestimonialCard
+      key={item.id}
+      name={item.name}
+      role={item.role}
+      image={item.image}
+      message={item.message}
+    />
+  ))}
       </Slider>
 
         </div>

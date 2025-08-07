@@ -1,11 +1,11 @@
 import { Outlet, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Loader from "../components/common/Loader";
-import NavbarTwo from "../components/layout/NavbarTwo";
-import FooterTwo from "../components/layout/FooterTwo";
+import Loader from "../common/Loader";
+import Navbar from "../shared/Navbar";
+import Footer from "../shared/Footer";
 
 
-const HomeTwoLayout = () => {
+const HomeOneLayout = () => {
     const location = useLocation();
     const [isLoading, setIsLoading] = useState(false);
   
@@ -26,18 +26,20 @@ const HomeTwoLayout = () => {
       setIsLoading(false);
     }, [location.pathname]);
 
+
+
   return (
     <>
       {isLoading && <Loader />}
       {!isLoading && (
         <>
-          <NavbarTwo />
+          <Navbar />
           <Outlet />
-          <FooterTwo />
+          <Footer />
         </>
       )}
     </>
   );
 };
 
-export default HomeTwoLayout;
+export default HomeOneLayout;

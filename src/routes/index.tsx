@@ -9,13 +9,13 @@ import ProjectDetails from "../pages/ProjectDetails";
 import Service from "../pages/Service";
 import ServiceDetails from "../pages/ServiceDetails";
 import NotFound from "../pages/NotFound";
-import HomeOneLayout from "../layout/HomeOneLayout";
-import HomeTwoLayout from "../layout/HomeTwoLayout";
-import InnerPageLayout from "../layout/InnerPageLayout";
 import Blog from "../pages/Blog";
 import BlogDetails from "../pages/BlogDetails";
 import TermsAndConditions from "../pages/TermsAndConditions";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
+import HomeOneLayout from "../components/layout/HomeOneLayout";
+import HomeTwoLayout from "../components/layout/HomeTwoLayout";
+import InnerPageLayout from "../components/layout/InnerPageLayout";
 
 const router = createBrowserRouter([
   {

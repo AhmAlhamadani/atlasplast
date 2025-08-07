@@ -1,5 +1,4 @@
 import { MdKeyboardDoubleArrowRight } from "react-icons/md"
-import BlogCard from "../components/blog/BlogCard"
 import Breadcrumb from "../components/common/Breadcrumb"
 import Container from "../components/common/Container"
 import { blogData } from "../data/blogData"
@@ -8,6 +7,7 @@ import PopularPost from "../components/blog/PopularPost"
 import BlogCatagory from "../components/blog/BlogCatagory"
 import PopularTag from "../components/blog/PopularTag"
 import FollowUs from "../components/blog/FollowUs"
+import BlogCard from "../components/ui/cards/BlogCard"
 
 const Blog = () => {
   return (

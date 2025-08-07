@@ -2,7 +2,7 @@ import Container from "../common/Container"
 import { companyLogos } from "../../data/companyData"
 import Marquee from "react-fast-marquee"
 
-const Company = () => {
+const CompanyInfo = () => {
   return (
    
         <Container className="section-gap">
@@ -28,4 +28,4 @@ const Company = () => {
   )
 }
 
-export default Company
+export default CompanyInfo

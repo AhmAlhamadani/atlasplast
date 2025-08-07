@@ -1,10 +1,11 @@
 import { Outlet, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Loader from "../components/common/Loader";
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
+import Loader from "../common/Loader";
+import Navbar from "../shared/Navbar";
+import FooterTwo from "../shared/FooterTwo";
 
-const HomeOneLayout = () => {
+
+const InnerPageLayout = () => {
     const location = useLocation();
     const [isLoading, setIsLoading] = useState(false);
   
@@ -26,7 +27,6 @@ const HomeOneLayout = () => {
     }, [location.pathname]);
 
 
-
   return (
     <>
       {isLoading && <Loader />}
@@ -34,11 +34,11 @@ const HomeOneLayout = () => {
         <>
           <Navbar />
           <Outlet />
-          <Footer />
+          <FooterTwo />
         </>
       )}
     </>
   );
 };
 
-export default HomeOneLayout;
+export default InnerPageLayout;

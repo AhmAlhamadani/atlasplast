@@ -84,10 +84,6 @@ const LetestProject = () => {
       </div>
     </div>
 
-
-
-
-
         </Container>
       </section>
     </div>
