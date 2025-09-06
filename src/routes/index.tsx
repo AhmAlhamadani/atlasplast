@@ -1,6 +1,5 @@
 
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../pages/Home";
 import HomeTwo from "../pages/HomeTwo";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
@@ -13,7 +12,7 @@ import Blog from "../pages/Blog";
 import BlogDetails from "../pages/BlogDetails";
 import TermsAndConditions from "../pages/TermsAndConditions";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
-import HomeOneLayout from "../components/layout/HomeOneLayout";
+import Brands from "../pages/Brands";
 import HomeTwoLayout from "../components/layout/HomeTwoLayout";
 import InnerPageLayout from "../components/layout/InnerPageLayout";
 
@@ -52,17 +51,9 @@ import InnerPageLayout from "../components/layout/InnerPageLayout";
 // ]);
 
 const router = createBrowserRouter([
-  // HomeOne Layout
+  // HomeTwo Layout (Main Home Page)
   {
     path: "/",
-    element: <HomeOneLayout />,
-    children: [
-      { index: true, element: <Home /> },
-    ],
-  },
-  // HomeTwo Layout
-  {
-    path: "/home-two",
     element: <HomeTwoLayout />,
     children: [
       { index: true, element: <HomeTwo /> },
@@ -80,6 +71,7 @@ const router = createBrowserRouter([
       { path: "service/:slug", element: <ServiceDetails /> },
       { path: "blog", element: <Blog /> },
       { path: "blog/:slug", element: <BlogDetails /> },
+      { path: "brands", element: <Brands /> },
       { path: "terms-condition", element: <TermsAndConditions /> },
       { path: "privacy-policy", element: <PrivacyPolicy /> },
       { path: "*", element: <NotFound /> },

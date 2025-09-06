@@ -1,6 +1,6 @@
 
 import Container from "../common/Container"
-import logo from "../../assets/footer/footer-logo.png"
+import logo from "../../assets/logo/logo-white.svg";
 import { FaEnvelope, FaFacebookF, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaPinterestP } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
 import { Link, useLocation } from "react-router-dom"
@@ -19,9 +19,9 @@ const FooterTwo = () => {
          {/* map here  */}
          <div className="bg-[#E5E8F2] rounded-lg xl:px-20 lg:px-10 px-6 md:px-10 py-10 flex flex-col lg:flex-row items-center justify-between gap-6 ">
       {/* Left Title */}
-      <div className="text-center lg:text-left xl:max-w-[440px] max-w-[300px]">
-        <h2>
-          Lets Request A Schedule
+      <div className="text-center md:text-left xl:max-w-[440px] max-w-[300px]">
+        <h2 className="text-2xl">
+          Lets Schedule A Call
         </h2>
       </div>
 
@@ -35,7 +35,7 @@ const FooterTwo = () => {
         </div>
         <div>
           <p>Phone Number</p>
-          <h5>(480) 555-0103</h5>
+          <h5>(964) 7877-661-127</h5>
         </div>
       </div>
 

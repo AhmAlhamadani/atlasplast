@@ -28,11 +28,11 @@ export interface ServiceItem {
 export const services: Service[] = [
   {
     id: 1,
-    slug: 'tech-pro-services',
+    slug: 'piping-systems',
     image:service1,
-    icon: '/icons/services/icon-7.svg',
-    title: 'Tech Pro Services',
-    description: 'IT Technology is a dynamic field encompassing implementation and support.',
+    icon: '/icons/services/icon-3.svg',
+    title: 'Piping Systems',
+    description: 'Atlas offers complete piping solutions with pipes, valves, and fittings designed for every need. From agriculture and construction to sanitary applications, our systems cover PVC, PPR, and more',
     paragraphs: [
       "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way we live, work, and the communicate. From smartphones to artificial intelligence, our world is becoming ",
       "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way "
@@ -46,11 +46,11 @@ export const services: Service[] = [
   },
   {
     id: 2,
-    slug: 'your-digital-future',
+    slug: 'sanitary-ware',
     image:service2,
-    icon: '/icons/services/icon-8.svg',
-    title: 'Your Digital Future',
-    description: 'Digital strategy focused on innovation, growth, stability, and support systems.',
+    icon: '/icons/services/icon-1.svg',
+    title: 'Sanitary Ware',
+    description: 'Atlas supplies a full range of sanitary equipment including toilets, showers, sinks, and accessories. Designed for comfort, durability, and modern style, our sanitary solutions bring quality and reliability into every home and project.',
     paragraphs: [
       "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way we live, work, and the communicate. From smartphones to artificial intelligence, our world is becoming ",
       "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way "
@@ -64,11 +64,11 @@ export const services: Service[] = [
   },
   {
     id: 3,
-    slug: 'your-digital-journey',
+    slug: 'ceramics',
     image:service3,
-    icon: '/icons/services/icon-9.svg',
-    title: 'Your Digital Journey',
-    description: 'Navigate complex digital systems with professional guidance and scalable support.',
+    icon: '/icons/services/icon-2.svg',
+    title: 'Ceramics',
+    description: 'Atlas is expanding into ceramics with a wide selection of tiles and finishes. Combining durability with modern design, our ceramic solutions are made to enhance both residential and commercial spaces across Iraq.',
     paragraphs: [
       "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way we live, work, and the communicate. From smartphones to artificial intelligence, our world is becoming ",
       "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way "

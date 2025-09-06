@@ -67,7 +67,9 @@ const AboutStyle3 = () => {
 
               {/* right part image */}
               <div className="lg:w-[60%] w-full relative">
-                <img className="w-full md:h-[400px] h-[300px] rounded-[10px]" src={about} alt="about image" />
+                <div className="flex justify-center lg:justify-start">
+                  <img className="w-full max-w-[500px] md:h-[400px] h-[300px] rounded-[10px]" src={about} alt="about image" />
+                </div>
 
                 <div className="bg-white rounded-[10px] border border-primaryBorder p-6 flex items-center gap-5 absolute xl:-bottom-14 bottom-8 right-5">
             <div>

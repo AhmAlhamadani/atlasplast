@@ -14,9 +14,6 @@ const Project = () => {
       {/************* project section start here **************/}
        <ProjectStyle3/>
 
-      {/************* faq section start here **************/}
-
-      <FaqStyle2 />
     </div>
   );
 };

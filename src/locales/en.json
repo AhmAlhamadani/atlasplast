@@ -1,0 +1,114 @@
+{
+    "hero": {
+      "brand": "ATLAS PLAST",
+      "heading": "Over 35 Years Supplying Piping Systems",
+      "description": "Atlas Plast is Iraq’s leading supplier in piping solutions, supplying iraq with quality PPR PIPES, PPs PIPES, HDPE PIPES, and U PVC PIPES. Now further expanding into ceramics, sanitary ware and heating",
+      "button": "Contact Us",
+      "trusted_number": "2000+",
+      "trusted_text": "Trusted Partners Distributing \n Atlas Quality Nationwide"
+    },
+    "services": {
+      "label": "What We Offer",
+      "title": "Our Solutions",
+      "read_more": "",
+      "items": {
+        "piping_systems": {
+          "title": "Piping Systems",
+          "description": "Atlas distributes complete water solutions including clean and sewage water systems, pumps, and heaters. We supply PPR, PPs, HDPE, and U-PVC pipes to meet sanitary, construction, and agricultural needs."
+        },
+        "sanitary_ware": {
+          "title": "Sanitary Ware",
+          "description": "Atlas supplies sanitary products such as toilets, showers, sinks, and accessories. Our solutions are built for everyday use, combining durability, reliability, and modern design for homes and projects."
+        },
+        "ceramics": {
+          "title": "Ceramics",
+          "description": "Atlas offers a wide range of ceramic tiles and finishes, from glazed ceramic and durable porcelain to outdoor and pool-grade options. Designed for strength, water resistance, and modern style, our tiles enhance residential and commercial spaces across Iraq."
+        }
+      }
+    },
+    "funfacts": {
+      "team_member": "Team member",
+      "mega_warehouses": "Mega Warehouses",
+      "distribution_partners": "Distribution Partners",
+      "governorates": "Governorates"
+    },
+    "about": {
+      "label": "Our Story",
+      "title": "Pipes, Sanitary & Ceramics for Iraq",
+      "description_1": "For over half a century, Atlas has grown from a local supplier into one of Iraq's most respected providers of piping systems, sanitary ware, and ceramics. As the first company to introduce plastic pipes to the Iraqi market, Atlas pioneered a new era of modern, durable, and reliable piping solutions, setting the standard for quality and innovation in the industry.",
+      "description_2": "Atlas imports products from leading manufacturers in Germany, Serbia, the UAE, and Turkey. Renowned for genuine, high-quality products, we supply agents with all the fittings and accessories needed for seamless pipe assembly and installation. With a network spanning all governorates and over 100 trusted active sellers across Iraq, Atlas stands on loyalty, trust, professionalism, and international expertise—building long-term partnerships and delivering consistent value nationwide.",
+      "honourable_awards": "Honourable Awards",
+      "more_about_us": "More About Us"
+    },
+    "aboutStyle4": {
+      "label": "From The Beginning",
+      "description_1": "Atlas Plast traces its origins to 1975, when Engineer Abdul Amir Al-Moussawi began supplying foreign companies in Iraq’s booming construction sector. Despite the challenges of the 1990s, he founded Atlas Showroom in Baghdad’s Al-Shaab market, specializing in iron pipes and accessories. The showroom became a trusted distributor for the General Company for Trading Construction Materials and an important supplier for Baghdad Municipality projects.",
+      "description_2": "The turning point came after 2003, when Atlas expanded under the name Atlas Plast, introducing international brands to Iraq and supplying major reconstruction projects. In 2004, a key partnership with Mr. Mahmoud Al-Jaf led to Masari Company securing the exclusive German Banninger agency, strengthening Atlas Plast’s reputation in the market.",
+      "description_3": "During the difficult years of 2006–2007, the company relocated to Sulaymaniyah, managed by Engineer Jaafar Al-Moussawi, who partnered with Mr. Abdul Razzaq Al-Hayali to establish the Erbak Factory for PVC pipes. Despite its success, the factory closed in 2015 due to a lack of government support for local products."
+    },
+    "aboutStyle5": {
+      "description_1": "From 2008 onwards, Atlas Plast returned to Baghdad with a stronger strategy. In 2009, it launched Ufuq Alatlas Company, followed by a branch in Erbil in 2010 and in Basra in 2012, ensuring full coverage of the Iraqi market. Strategic partnerships also flourished, including with Mr. Mohammed Jasib to establish Al-Ameer Sanitaryware Showroom, distributing Saudi brand Fabco.",
+      "description_2": "In 2012, the company founded Qimam Atlas Company to expand its international collaborations. Later, in 2018, Atlas Plast partnered with Spark Company to open a Vitra agency branch in Baghdad’s Camp Sarah market. That same year, it developed advanced storage facilities in Baghdad covering 20,000 m², featuring modern machinery, solar lighting, and fire protection systems.",
+      "description_3": "In 2019, Atlas Plast entered a landmark partnership with Turan Makina of Turkey, expanding into polyethylene products and infrastructure solutions.",
+      "description_4": "Today, Atlas Plast stands as one of Iraq’s most trusted names in pipes, sanitaryware, and construction materials. With over four decades of experience, strategic partnerships, and modern infrastructure, the company continues to deliver global-quality solutions to Iraq’s growing markets.",
+      "more_about_us": "More About Us"
+    },
+    "team": {
+      "label": "Our team",
+      "title": "Our Leading Team Members",
+      "members": {
+        "ameer": {
+          "name": "Ameer Almusawi",
+          "title": "Founder - Chairman of the Board"
+        },
+        "jaafar": {
+          "name": "Jaafar AlMusawi",
+          "title": "C.E.O"
+        },
+        "mohammed": {
+          "name": "Mohammed Bajalan",
+          "title": "Technology Officer"
+        },
+        "hussein": {
+          "name": "Hussein Raad",
+          "title": "Logistics Manager"
+        },
+        "omar": {
+          "name": "Omar Ibrahim",
+          "title": "Chief Financial Officer"
+        },
+        "deniz": {
+          "name": "Deniz Yilmaz",
+          "title": "Imports Manager"
+        },
+        "yasmine": {
+          "name": "Yasmine",
+          "title": "Project Manager"
+        }
+      }
+    },
+    "projects": {
+      "label": "Latest Project",
+      "title": "Your Tomorrow Enhanced Today Tech Forward",
+      "more": "More",
+      "explore_button": "Explore Our Other Projects"
+    },
+    "contact": {
+      "label": "Contact",
+      "title": "Contact Us Today",
+      "address": "Address",
+      "address_value": "Atlasplast kampsarah, 8F24+GFH, Baghdad Governorate",
+      "phone": "Phone Number",
+      "phone_value": "(+964) 7877-661-127",
+      "email": "Email",
+      "email_value": "atlasplast@info.com",
+      "get_in_touch": "Get In Touch",
+      "contact_text": "Contact"
+    },
+    "faq": {
+      "label": "Ask Question",
+      "title": "Our Frequently Asked Questions",
+      "project_completed": "Project Completed"
+    }
+  }
+  

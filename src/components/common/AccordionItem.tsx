@@ -1,10 +1,17 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 export interface AccordionItem {
-  title: string;
-  content: string;
+  title: {
+    en: string;
+    ar: string;
+  };
+  content: {
+    en: string;
+    ar: string;
+  };
 }
 
 interface AccordionProps {
@@ -13,6 +20,8 @@ interface AccordionProps {
 
 const Accordion: React.FC<AccordionProps> = ({ items }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language;
 
   const toggleItem = (index: number) => {
     setOpenIndex((prev) => (prev === index ? null : index));
@@ -23,8 +32,8 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
       {items.map((item, index) => (
         <AccordionSingleItem
           key={index}
-          title={item.title}
-          content={item.content}
+          title={item.title[currentLang as keyof typeof item.title] || item.title.en}
+          content={item.content[currentLang as keyof typeof item.content] || item.content.en}
           isOpen={openIndex === index}
           onToggle={() => toggleItem(index)}
         />
@@ -40,8 +49,6 @@ interface AccordionSingleItemProps {
   onToggle: () => void;
 }
 
-
-
 const AccordionSingleItem: React.FC<AccordionSingleItemProps> = ({
   title,
   content,
@@ -50,6 +57,9 @@ const AccordionSingleItem: React.FC<AccordionSingleItemProps> = ({
 }) => {
   const contentRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState<number | string>(isOpen ? "auto" : 0);
+  const { i18n } = useTranslation();
+  const isRTL = i18n.language === "ar" || i18n.language === "ku";
+  const isArabic = i18n.language === "ar" || i18n.language === "ku";
 
   useEffect(() => {
     if (isOpen && contentRef.current) {
@@ -65,7 +75,7 @@ const AccordionSingleItem: React.FC<AccordionSingleItemProps> = ({
         onClick={onToggle}
         className="w-full flex justify-between items-center py-5 focus:outline-none cursor-pointer"
       >
-        <h5 className="text-left">
+        <h5 className={`${isRTL ? "text-right" : "text-left"} ${isArabic ? "font-arabic" : ""}`}>
           {title}
         </h5>
         {isOpen ? (
@@ -83,7 +93,7 @@ const AccordionSingleItem: React.FC<AccordionSingleItemProps> = ({
           overflow: "hidden",
         }}
       >
-        <p className="pb-4 pt-0">{content}</p>
+        <p className={`pb-4 pt-0 ${isRTL ? "text-right" : "text-left"} ${isArabic ? "font-arabic" : ""}`}>{content}</p>
       </div>
     </div>
   );

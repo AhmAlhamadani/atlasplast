@@ -3,9 +3,10 @@ import { cn } from "../../lib/utils"
 interface SectionTitleProps {
   label?: string
   title: string
-  description?: string
+  description?: string | React.ReactNode
   align?: "left" | "center" | "right"
   className?: string
+  isArabic?: boolean
 }
 
 const SectionTitle = ({
@@ -14,6 +15,7 @@ const SectionTitle = ({
   description,
   align = "left",
   className,
+  isArabic = false,
 }: SectionTitleProps) => {
   const alignClass = {
     left: "text-left",
@@ -23,15 +25,9 @@ const SectionTitle = ({
 
   return (
     <div className={cn("max-w-[740px]", alignClass, className)}>
-      {label ? (
-        <span className="section-label block mb-2">
-          {label}
-        </span>
-      ) : null}
-      <h2>{title}</h2>
-      {description ? (
-        <p className="mt-3">{description}</p>
-      ) : null}
+      {label && <span className={`section-label block mb-2 ${isArabic ? 'font-arabic' : ''}`}>{label}</span>}
+      <h2 className={isArabic ? 'font-arabic' : ''}>{title}</h2>
+      {description && <div className={`mt-3 ${isArabic ? 'font-arabic' : ''}`}>{description}</div>}
     </div>
   )
 }

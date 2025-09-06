@@ -67,8 +67,8 @@ const ContactFormTwo = () => {
             <option value="" disabled>
               Choose a Option
             </option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
+            <option value="option1">Enquire About Product</option>
+            <option value="option2">Enquire About Investment</option>
           </select>
           {errors.option && (
             <p className="text-red-500 text-sm mt-1">{errors.option.message}</p>
