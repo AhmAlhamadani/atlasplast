@@ -50,8 +50,8 @@ const HeroStyle2 = () => {
             {t("hero.heading")}
           </h1>
 
-          <p // add max width on large and medium screens
-            className={`mt-7  text-white text-[20px] font-normal leading-7 ${isArabic ? 'font-arabic' : ''}`}
+          <p 
+            className={`mt-7 text-white text-[20px] font-normal leading-7 ${isArabic ? 'font-arabic' : ''}`}
             dangerouslySetInnerHTML={{ __html: t("hero.description").replace(/\n/g, '<br />') }}
           />
 
