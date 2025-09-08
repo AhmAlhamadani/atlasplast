@@ -12,16 +12,18 @@ const AboutStyle4 = () => {
 
   return (
     <div className="section-gap">
-      <Container className="lg:flex justify-between">
+      <Container className="lg:flex justify-between lg:items-start">
         {/* left part */}
         <div
           className={`lg:w-[40%] md:w-[80%] md:mx-auto lg:mx-0 w-full ${
             isRTL ? "flex-row-reverse" : ""
           }`}
         >
-          <div className="flex flex-col gap-5 ">
+          <div className="flex flex-col gap-5">
             <img
-              className="rounded-[10px] w-full max-w-[400px] mx-auto"
+              className={`rounded-[10px] w-full object-cover ${
+                isArabic ? "max-h-[250px]" : "max-h-[450px]"
+              }`}
               src={about1}
               alt="about image"
             />

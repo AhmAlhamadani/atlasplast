@@ -3,7 +3,6 @@ import Container from "../../common/Container"
 import { projects } from "../../../data/projectsData";
 import { useEffect } from "react";
 import ProjectInfo from "./ProjectInfo";
-import ShareIcon from "./ShareIcon";
 import { FiChevronsRight } from "react-icons/fi";
 import Pagination from "./Pagination";
 
@@ -31,10 +30,10 @@ const ProjectDetailsInfo = () => {
               {/************* project info start here **************/}
               <ProjectInfo currentProjecct={currentProjecct} />
 
-              <div className="pt-2 flex items-center gap-8">
+              {/* <div className="pt-2 flex items-center gap-8">
                 <h5>Share:</h5>
                 <ShareIcon />
-              </div>
+              </div> */}
             </div>
           </div>
 

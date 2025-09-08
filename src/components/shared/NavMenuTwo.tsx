@@ -62,11 +62,11 @@ const menuItems: MenuItem[] = [
   //     { href: "/service/tech-pro-services", label: "Services Details" },
   //   ],
   // },
-  {
-    title: "Articles",
-    href: "/blog",
+  // {
+  //   title: "Articles",
+  //   href: "/blog",
 
-  },
+  // },
   {
     title: "Contact Us",
     href: "/contact",

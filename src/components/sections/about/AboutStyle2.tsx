@@ -23,7 +23,7 @@ const AboutStyle2 = () => {
            </div>
            
            {/* main about section */}
-           <div className="flex flex-col lg:flex-row lg:gap-[30px] gap-12 md:mt-15 mt-12">
+           <div className="flex flex-col lg:flex-row lg:gap-[30px] gap-12 md:mt-15 mt-12 lg:items-stretch">
               {/* left part text */}
               <div className="lg:w-[40%] w-full flex flex-col gap-5">
                  {/* item 1 */}
@@ -70,7 +70,7 @@ const AboutStyle2 = () => {
 
               {/* right part image */}
               <div className="lg:w-[60%] w-full relative">
-                <img className="w-full md:h-[400px] h-[300px] rounded-[10px]" src={about} alt="about image" />
+                <img className="w-full h-full object-cover rounded-[10px]" src={about} alt="about image" />
 
                 <div className="bg-white rounded-[10px] border border-primaryBorder p-6 flex items-center gap-5 absolute xl:-bottom-14 bottom-8 right-5">
             <div>

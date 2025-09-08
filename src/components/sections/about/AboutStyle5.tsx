@@ -13,8 +13,8 @@ const AboutStyle5 = () => {
   const isArabic = i18n.language === "ar" || i18n.language === "ku";
 
   return (
-    <div className="mt-4">
-      <Container className="lg:flex justify-between">
+    <div className="lg:mt-[20px] md:mt-[30px] mt-[0px]">
+      <Container className="lg:flex justify-between items-start">
         {/* left part - Text */}
         <div className={`lg:w-[50%] md:w-[80%] md:mx-auto lg:mx-0 w-full ${isRTL ? "text-right" : ""}`}>
           <div className="flex flex-col gap-4">
@@ -55,7 +55,7 @@ const AboutStyle5 = () => {
         </div>
 
         {/* right part - Images */}
-        <div className={`lg:w-[47%] md:w-[80%] md:mx-auto lg:mx-0 w-full mt-10 lg:mt-0 flex gap-5 ${isRTL ? "flex-row-reverse" : ""}`}>
+        <div className={`lg:w-[47%] w-full mt-10 lg:mt-0 flex gap-5 justify-center lg:justify-start ${isRTL ? "flex-row-reverse" : ""}`}>
           <div className="flex flex-col gap-7">
             <img className="rounded-[10px]" src={about1} alt="about image" />
             <div className="bg-[#E5E8F2] rounded-[10px] md:p-7 p-3 shadow-about flex items-center gap-5">

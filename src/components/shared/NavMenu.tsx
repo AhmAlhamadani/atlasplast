@@ -42,13 +42,13 @@ const menuItems = [
   },
  
 
-  {
-    title: "Blog",
-    links: [
-      { href: "/blog", label: "Blog classic" },
-      { href: "/blog/your-tomorrow-enhanced-today", label: "Blog Details" },
-    ],
-  },
+  // {
+  //   title: "Blog",
+  //   links: [
+  //     { href: "/blog", label: "Blog classic" },
+  //     { href: "/blog/your-tomorrow-enhanced-today", label: "Blog Details" },
+  //   ],
+  // },
 
   
 

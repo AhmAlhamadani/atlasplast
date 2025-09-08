@@ -29,12 +29,6 @@ const BlogCardStyle2: React.FC<{ blog: BlogCardProps }> = ({ blog }) => {
               By {blog.author}
             </span>
           </span>
-          <span className="flex items-center gap-3">
-            <FaComment className="text-[16px] text-white" />
-            <span className="text-[16px] font-normal text-white">
-              {blog.comments} Comment
-            </span>
-          </span>
         </div>
 
         <Link to={blog.link}>
