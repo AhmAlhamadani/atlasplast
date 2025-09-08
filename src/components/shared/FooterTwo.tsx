@@ -1,11 +1,9 @@
 
 import Container from "../common/Container"
 import logo from "../../assets/logo/logo-white.svg";
-import { FaEnvelope, FaFacebookF, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaPinterestP } from "react-icons/fa"
-import { FaXTwitter } from "react-icons/fa6"
+import { FaEnvelope, FaFacebookF, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt} from "react-icons/fa"
 import { Link, useLocation } from "react-router-dom"
 import Button from "../common/Button"
-import { FiChevronsRight } from "react-icons/fi"
 import { cn } from "../../lib/utils"
 
 
