@@ -1,6 +1,6 @@
 
 import { useTranslation } from "react-i18next";
-//import team1 from "../../../assets/team/team-1.png";
+import team1 from "../../../assets/team/team-1.png";
 import team2 from "../../../assets/team/team-2.png";
 import team3 from "../../../assets/team/team-3.png";
 import team4 from "../../../assets/team/team-4.png";
@@ -15,7 +15,7 @@ const topTeamMembers = [
     id: 1,
     name: "Ameer Almusawi",
     title: "Founder - Chairman of the Board",
-    image: "",
+    image: team1,
     translationKey: "ameer",
     socials: [
       { icon: <FaYoutube size={18} />, link: "#" },

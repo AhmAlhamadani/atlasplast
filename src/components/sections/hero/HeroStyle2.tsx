@@ -23,7 +23,7 @@ const HeroStyle2 = () => {
         backgroundSize: 'cover'
       }}
     >
-      <Container className="lg:py-[120px] md:py-20 py-15">
+      <Container className="lg:py-[80px] md:py-20 py-19">
         {/* Brand */}
         <div
           className={`flex gap-2 items-center mt-[100px] ${
@@ -50,8 +50,8 @@ const HeroStyle2 = () => {
             {t("hero.heading")}
           </h1>
 
-          <p 
-            className={`mt-7 text-white text-[20px] font-normal leading-7 ${isArabic ? 'font-arabic' : ''}`}
+          <p // add max width on large and medium screens
+            className={`mt-7  text-white text-[20px] font-normal leading-7 ${isArabic ? 'font-arabic' : ''}`}
             dangerouslySetInnerHTML={{ __html: t("hero.description").replace(/\n/g, '<br />') }}
           />
 

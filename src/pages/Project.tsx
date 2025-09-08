@@ -1,5 +1,4 @@
 import Breadcrumb from "../components/common/Breadcrumb";
-import FaqStyle2 from "../components/sections/faq/FaqStyle2";
 import ProjectStyle3 from "../components/sections/project/ProjectStyle3";
 
 const Project = () => {

@@ -53,7 +53,7 @@ const FooterTwo = () => {
       {/* main footer start here */}
       <div className="mt-15 flex flex-wrap justify-between space-y-10 md:space-y-0 mb-20">
         {/* item 1 start */}
-        <div className="max-w-[440px]">
+        <div className="max-w-[480px]">
          {/* logo */}
          <Link to={'/'}>
          <img className=" object-contain" src={logo} alt="putech logo" />
@@ -61,16 +61,17 @@ const FooterTwo = () => {
 
          <ul className="text-[14px] text-white font-medium uppercase font-primary leading-7 flex flex-wrap space-x-6 mt-7">
             <li className="hover:text-primaryBlue hover:underline duration-300 ease-in-out"><Link to={'/'}>Home</Link></li>
-            <li className="hover:text-primaryBlue hover:underline duration-300 ease-in-out"><Link to={'/about'}>About Us</Link></li>
-            <li className="hover:text-primaryBlue hover:underline duration-300 ease-in-out"><Link to={'/service'}>Services</Link></li>
-            <li className="hover:text-primaryBlue hover:underline duration-300 ease-in-out"><Link to={'/project'}>Project</Link></li>
-            <li className="hover:text-primaryBlue hover:underline duration-300 ease-in-out"><Link to={'/contact'}>Contact</Link></li>
+            <li className="hover:text-primaryBlue hover:underline duration-300 ease-in-out"><Link to={'/about'}>About</Link></li>
+            <li className="hover:text-primaryBlue hover:underline duration-300 ease-in-out"><Link to={'/brands'}>Brands</Link></li>
+            <li className="hover:text-primaryBlue hover:underline duration-300 ease-in-out"><Link to={'/project'}>Projects</Link></li>
+            <li className="hover:text-primaryBlue hover:underline duration-300 ease-in-out"><Link to={'/blog'}>Articles</Link></li>
+            <li className="hover:text-primaryBlue hover:underline duration-300 ease-in-out"><Link to={'/contact'}>Contact Us</Link></li>
          </ul>
 
          {/* social media icon here */}
           <div className="mt-5 flex items-center gap-3">
           <a
-        href="#"
+        href="https://www.facebook.com/AtlasPlast.llc/"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-[#36180A] w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-primaryBlue duration-300 ease-in-out"
@@ -78,37 +79,20 @@ const FooterTwo = () => {
         <FaFacebookF size={18} />
       </a>
           <a
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-[#36180A] w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-primaryBlue duration-300 ease-in-out"
-      >
-        <FaXTwitter size={18} />
-      </a>
-          <a
-        href="#"
+        href="https://www.linkedin.com/company/atlas-plast/"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-[#36180A] w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-primaryBlue duration-300 ease-in-out"
       >
         <FaLinkedin size={18} />
       </a>
-
-          <a
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-[#36180A] w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-primaryBlue duration-300 ease-in-out"
-      >
-        <FaPinterestP size={18} />
-      </a>
           </div>
         </div>
 
             {/* item 2 here */}
-         <div className="max-w-[330px]">
+         <div className="max-w-[700px]">
            <h4 className="text-white">Contact</h4>
-           <div className="mt-7 flex flex-col gap-7">
+           <div className="mt-7 flex flex-col lg:flex-row gap-7 lg:gap-12">
 
            <div className="flex items-center gap-4">
           <div className="bg-white/10 w-10 h-10 flex justify-center items-center rounded-full">
@@ -116,7 +100,7 @@ const FooterTwo = () => {
         </div>
         <div>
           <p className="text-white mb-2">Address</p>
-          <h5 className="text-white">8502 Preston Rd., Maine 98380</h5>
+          <h5 className="text-white">Iraq, Baghdad, Kampsarah, 8F24+GFH</h5>
         </div>
       </div>
 
@@ -127,7 +111,7 @@ const FooterTwo = () => {
         </div>
         <div>
           <p className="text-white mb-2">Phone Number</p>
-          <h5 className="text-white">012 345 678 9101</h5>
+          <h5 className="text-white">(+964)7877661127</h5>
         </div>
       </div>
 
@@ -138,39 +122,11 @@ const FooterTwo = () => {
         </div>
         <div>
           <p className="text-white mb-2">Email</p>
-          <h5 className="text-white">jackson.graham@example.com</h5>
+          <h5 className="text-white">info@atlasplast.com</h5>
         </div>
       </div>
            </div>
            
-            
-         </div>
-
-         {/* item 3 here */}
-         <div className="max-w-[330px]">
-           <h4 className="text-white">Services</h4>
-           <div className="flex flex-col space-y-5 mt-7">
-           <div className="flex items-start gap-2">
-              <FiChevronsRight className="text-white w-5 h-5 mt-1 flex-shrink-0" />
-              <p className="text-white">Data Dynamo Services</p>
-            </div>
-           <div className="flex items-start gap-2">
-              <FiChevronsRight className="text-white w-5 h-5 mt-1 flex-shrink-0" />
-              <p className="text-white">Data Link Dynamics</p>
-            </div>
-           <div className="flex items-start gap-2">
-              <FiChevronsRight className="text-white w-5 h-5 mt-1 flex-shrink-0" />
-              <p className="text-white">NexGen Innovations</p>
-            </div>
-           <div className="flex items-start gap-2">
-              <FiChevronsRight className="text-white w-5 h-5 mt-1 flex-shrink-0" />
-              <p className="text-white">Cyber Stream Technologies</p>
-            </div>
-           <div className="flex items-start gap-2">
-              <FiChevronsRight className="text-white w-5 h-5 mt-1 flex-shrink-0" />
-              <p className="text-white">Code Wave Creations</p>
-            </div>
-           </div>
             
          </div>
 
@@ -180,7 +136,7 @@ const FooterTwo = () => {
        {/* footer bottom */}
        <div className="py-[30px] md:flex justify-between items-center">
          <div>
-          <p className="text-white">© Yoursitename  2025 | All Rights Reserved</p>
+          <p className="text-white">© Atlasplast  2025 | All Rights Reserved</p>
          </div>
           <div className="mt-2 md:mt-0">
             <ul className="flex flex-wrap items-center space-x-7">

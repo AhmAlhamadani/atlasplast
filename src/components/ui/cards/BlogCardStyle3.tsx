@@ -1,5 +1,5 @@
 
-import { FaComment, FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 type BlogCardStyle3Props = {
@@ -8,7 +8,6 @@ type BlogCardStyle3Props = {
     slug: string;
     date: string;
     author: string;
-    comments: number;
     title: string;
     image: string;
   };
@@ -30,12 +29,6 @@ const BlogCardStyle3 = ({ blog }: BlogCardStyle3Props) => {
           <FaUser className="text-[16px] text-primary" />
           <span className="text-[16px] font-medium text-textColor">
             By {blog.author}
-          </span>
-        </span>
-        <span className="flex items-center gap-3">
-          <FaComment className="text-[16px] text-primary" />
-          <span className="text-[16px] font-medium text-textColor">
-            {blog.comments} Comment
           </span>
         </span>
       </div>

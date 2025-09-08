@@ -9,7 +9,7 @@ import {
   } from "react-icons/fa";
 import Tag from "./Tag";
 import Pagination from "./Pagination";
-import BlogComment from "../../ui/blog/BlogComment";
+// import BlogComment from "../../ui/blog/BlogComment";
 import type { BlogItem } from "../../../data/blogData";
 
 
@@ -109,7 +109,7 @@ const BlogDetailsInfo = ({currentBlog}:BlogInfoProps) => {
        
        {/* Blog Comment start */}
      <div>
-      <BlogComment/>
+      {/* <BlogComment/> */}
      </div>
     </div>
   </div>

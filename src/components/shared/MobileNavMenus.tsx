@@ -38,10 +38,10 @@ export const menuItems = [
     title: "Projects",
     href: "/project",
   },
-  {
-    title: "Articles",
-    href: "/blog",
-  },
+  // {
+  //   title: "Articles",
+  //   href: "/blog",
+  // },
   {
     title: "Contact Us",
     href: "/contact",
