@@ -37,7 +37,17 @@ const ServiceCard = ({ service }: ServiceCardProps) => {
       </div>
 
       <hr className="text-primaryBorder group-hover:text-primaryBlue my-5" />
-      <p className={isArabic ? 'font-arabic' : ''}>{translatedContent.description}</p>
+      <p 
+        className={isArabic ? 'font-arabic' : ''}
+        style={{ 
+          direction: isArabic ? 'rtl' : 'ltr',
+          unicodeBidi: 'isolate'
+        }}
+        dangerouslySetInnerHTML={{ 
+          __html: translatedContent.description
+            .replace(/\b(PPR|PVC|uPVC|PP|HDPE)\b/g, '<span dir="ltr" style="unicode-bidi: embed;">$1</span>')
+        }}
+      />
 
       <div className={`mt-[30px] ${isRTL ? "flex justify-end" : ""}`}>
         {/* <Link to={`/service/${service.slug}`}>

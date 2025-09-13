@@ -1,9 +1,8 @@
 import { useTranslation } from "react-i18next";
 import Container from "../../common/Container";
-import about1 from "../../../assets/about/about-1.png";
-import about2 from "../../../assets/about/about-2.png";
-import about3 from "../../../assets/about/about-3.png";
-import icon from "../../../assets/about/icon.svg";
+import about1 from "../../../assets/about/about-4.png";
+import about2 from "../../../assets/about/about-6.png";
+import about3 from "../../../assets/about/about-7.png";
 
 const AboutStyle5 = () => {
   const { t, i18n } = useTranslation();
@@ -56,17 +55,8 @@ const AboutStyle5 = () => {
 
         {/* right part - Images */}
         <div className={`lg:w-[47%] w-full mt-10 lg:mt-0 flex gap-5 justify-center lg:justify-start ${isRTL ? "flex-row-reverse" : ""}`}>
-          <div className="flex flex-col gap-7">
-            <img className="rounded-[10px]" src={about1} alt="about image" />
-            <div className="bg-[#E5E8F2] rounded-[10px] md:p-7 p-3 shadow-about flex items-center gap-5">
-              <div>
-                <img src={icon} alt="search icon" />
-              </div>
-              <div className={isRTL ? "text-right" : ""}>
-                <h3 className={isArabic ? 'font-arabic' : ''}>10+</h3>
-                <p className={isArabic ? 'font-arabic' : ''}>{t("about.honourable_awards")}</p>
-              </div>
-            </div>
+          <div className="flex flex-col gap-7"> 
+            <img className="rounded-[10px] h-full object-cover" src={about1} alt="about image" />
           </div>
 
           <div className="flex flex-col gap-7">

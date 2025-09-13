@@ -6,6 +6,7 @@ import FunFacts from "../components/sections/funfacts/FunFacts";
 import ContactStyle2 from "../components/sections/contact/ContactStyle2";
 import ProjectStyle2 from "../components/sections/project/ProjectStyle2";
 import ServiceStyle2 from "../components/sections/service/ServiceStyle2";
+// import ClientTestimonial from "../components/sections/testimonial/ClientTestimonial";
 // import BlogStyle2 from "../components/sections/blog/BlogStyle2";
 
 const HomeTwo = () => {
@@ -18,7 +19,7 @@ const HomeTwo = () => {
       <FunFacts />
       <TeamStyle2 />
       <ProjectStyle2 />
-      
+    {/* <ClientTestimonial /> */}
      {/* <BlogStyle2 /> */}
      <ContactStyle2 />
     </div>

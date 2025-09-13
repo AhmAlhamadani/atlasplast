@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import SectionTitle from "../../common/SectionTitle";
-import about1 from "../../../assets/about/about-1.png";
+import about1 from "../../../assets/about/about-5.png";
 
 const AboutStyle4 = () => {
   const { t, i18n } = useTranslation();
@@ -13,6 +13,7 @@ const AboutStyle4 = () => {
   return (
     <div className="section-gap">
       <Container className="lg:flex justify-between lg:items-start">
+        
         {/* left part */}
         <div
           className={`lg:w-[40%] md:w-[80%] md:mx-auto lg:mx-0 w-full ${

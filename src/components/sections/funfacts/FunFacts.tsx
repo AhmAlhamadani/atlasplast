@@ -12,9 +12,9 @@ type StatItem = {
 
 const stats: StatItem[] = [
   { id: 1, end: 100, suffix: "+", translationKey: "team_member" },
-  { id: 2, end: 4, suffix: "", translationKey: "mega_warehouses" },
-  { id: 3, end: 30, suffix: "+", translationKey: "distribution_partners" },
-  { id: 4, end: 19, suffix: "", translationKey: "governorates" },
+  { id: 2, end: 7, suffix: "", translationKey: "mega_warehouses" },
+  { id: 3, end: 20, suffix: "+", translationKey: "distribution_partners" },
+  { id: 4, end: 6, suffix: "", translationKey: "governorates" },
 ];
 
 const FunFacts: React.FC = () => {

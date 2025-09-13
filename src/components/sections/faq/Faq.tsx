@@ -1,6 +1,6 @@
 
 import { useTranslation } from "react-i18next";
-import faq1 from "../../../assets/faq/faq-thumb1.png"
+import faq1 from "../../../assets/faq/faq-thumb2.png"
 import { accordionData } from "../../../data/accordionData"
 import Accordion from "../../common/AccordionItem"
 import Container from "../../common/Container"
@@ -34,17 +34,6 @@ const Faq = () => {
          {/* image part */}
          <div className={`lg:w-[43%] w-full mt-10 lg:mt-0 relative ${isRTL ? "lg:order-first" : ""}`}>
            <img className="w-full h-auto rounded-[10px]" src={faq1} alt="faq-thumb1" />
-           <div className="bg-[#E1F0FD] rounded-[20px] shadow-faq p-5 flex items-center gap-5 absolute bottom-5 right-5">
-            <div>
-              <img src='/icons/business/Search results for Winner.svg' alt="search icon" />
-            </div>
-
-             <div className={isRTL ? "text-right" : ""}>
-                <h3 className={isArabic ? 'font-arabic' : ''}>2k+</h3>
-                 <p className={isArabic ? 'font-arabic' : ''}>{t("faq.project_completed")}</p>
-             </div>
-             
-           </div>
          </div>
         </div>
         </Container>

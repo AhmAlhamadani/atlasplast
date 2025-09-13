@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import logoWhite from "../../assets/logo/logo-white.svg";
 import logo from "../../assets/logo/logo.svg";
 import Button from "../common/Button";
@@ -10,10 +11,14 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 
 const NavbarTwo = () => {
+  const { t, i18n } = useTranslation();
   const [isSticky, setIsSticky] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+
+  // Check if current language is Arabic
+  const isArabic = i18n.language === "ar" || i18n.language === "ku";
 
   // Close sidebar
   const closeSidebar = useCallback(() => {
@@ -59,8 +64,8 @@ const NavbarTwo = () => {
 
               {/* Actions */}
               <div className="flex items-center gap-7 ">
-                <Button onClick={() => setSidebarOpen(true)} className="ml-5">
-                  Info
+                <Button onClick={() => setSidebarOpen(true)} className={`ml-5 ${isArabic ? 'font-arabic' : ''}`}>
+                  {t("navigation.info")}
                 </Button>
 
                 {/* Desktop Language Dropdown */}

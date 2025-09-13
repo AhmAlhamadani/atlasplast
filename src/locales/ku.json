@@ -6,5 +6,22 @@
       "button": "Başlayın",
       "trusted_number": "2000+",
       "trusted_text": "Güvenilen Ortaklar Atlas Kalitesini Ülke Genelinde Dağıtıyor"
+    },
+    "contact_form": {
+      "name_placeholder": "Navê Te",
+      "phone_placeholder": "Hejmara Telefonê ya Te",
+      "option_placeholder": "Vebijarkek Hilbijêre",
+      "option_product": "Li Ser Berhemê Pirsgirêk",
+      "option_investment": "Li Ser Veberhênanê Pirsgirêk",
+      "message_placeholder": "Peyama xwe li vir binivîse..",
+      "send_button": "Niha Bişîne",
+      "validation": {
+        "name_required": "Nav pêwîst e",
+        "phone_required": "Hejmara telefonê pêwîst e",
+        "phone_invalid": "Hejmara telefonê ya rast pêwîst e",
+        "option_required": "Ji kerema xwe vebijarkek hilbijêre",
+        "message_required": "Peyam pêwîst e"
+      },
+      "success_message": "Form bi serkeftinê hat şandin!"
     }
 }

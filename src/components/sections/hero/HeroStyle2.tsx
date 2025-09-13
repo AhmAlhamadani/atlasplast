@@ -43,7 +43,7 @@ const HeroStyle2 = () => {
         {/* Heading and Description */}
         <div
           className={`mt-2 ${
-            isRTL ? "text-right w-full md:max-w-full" : "text-left max-w-[720px]"
+            isRTL ? "text-right max-w-[720px] ml-auto" : "text-left max-w-[720px]"
           }`}
         >
           <h1 className={`home-heading whitespace-pre-line pt-2 lg:text-[96px] md:text-[80px] text-[40px] font-bold text-white lg:leading-[96px] pb-10 md:leading-[85px] leading-11 tracking-[-1.92px] ${isArabic ? 'font-arabic' : ''}`}>
@@ -52,7 +52,15 @@ const HeroStyle2 = () => {
 
           <p 
             className={`mt-7 text-white text-[20px] font-normal leading-7 ${isArabic ? 'font-arabic' : ''}`}
-            dangerouslySetInnerHTML={{ __html: t("hero.description").replace(/\n/g, '<br />') }}
+            style={{ 
+              direction: isArabic ? 'rtl' : 'ltr',
+              unicodeBidi: 'isolate'
+            }}
+            dangerouslySetInnerHTML={{ 
+              __html: t("hero.description")
+                .replace(/\b(PPR|PVC|uPVC|PP|HDPE)\b/g, '<span dir="ltr" style="unicode-bidi: embed;">$1</span>')
+                .replace(/\n/g, '<br />') 
+            }}
           />
 
           <div className={`mt-12 ${isRTL ? "flex justify-end" : ""}`}>
@@ -100,7 +108,7 @@ const HeroStyle2 = () => {
             <h3 className={`text-white font-semibold text-[39px] font-secondary ${isArabic ? 'font-arabic' : ''}`}>
               {t("hero.trusted_number")}
             </h3>
-            <p className={`text-white text-[12px] leading-5 font-semibold whitespace-pre-line ${isArabic ? 'font-arabic' : ''}`}>
+            <p className={`text-white text-[12px] leading-5 font-semibold whitespace-pre-line ${isArabic ? 'font-arabic text-right' : ''}`}>
               {t("hero.trusted_text")}
             </p>
           </div>

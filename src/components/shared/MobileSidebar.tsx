@@ -3,17 +3,20 @@ import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { IoIosArrowForward } from "react-icons/io";
 import Container from "../common/Container";
 import { Link, useLocation } from "react-router-dom";
-import { menuItems } from "./MobileNavMenus";
+import { useMenuItems } from "./MobileNavMenus";
 import logo from "../../assets/logo/logo-white.svg";
 import logo2 from "../../assets/logo/logo.svg";
 import { IoClose } from "react-icons/io5";
 import { cn } from "../../lib/utils";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 
 const MobileSidebar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/" || location.pathname === "/home-two";
+  const { i18n } = useTranslation();
+  const menuItems = useMenuItems();
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -21,6 +24,9 @@ const MobileSidebar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const menuRef = useRef<HTMLDivElement | null>(null);
+
+  const isRTL = i18n.language === "ar" || i18n.language === "ku";
+  const isArabic = isRTL;
 
   const toggleIndex = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -102,8 +108,10 @@ const MobileSidebar = () => {
           {/* Sidebar */}
           <div
             ref={menuRef}
-            className={`fixed top-0 left-0 w-[85%] h-full bg-[#0D121E] shadow-lg z-50 transition-transform duration-500 transform ${
-              showSidebar ? "translate-x-0" : "-translate-x-full"
+            className={`fixed top-0 w-[85%] h-full bg-[#0D121E] shadow-lg z-50 transition-transform duration-500 transform ${
+              isRTL ? "right-0" : "left-0"
+            } ${
+              showSidebar ? "translate-x-0" : isRTL ? "translate-x-full" : "-translate-x-full"
             }`}
           >
             {/* Header */}
@@ -113,7 +121,9 @@ const MobileSidebar = () => {
               </Link>
 
               <button
-                className="w-10 h-10 rounded-full bg-primaryBlue text-white flex justify-center items-center absolute top-5 -right-4"
+                className={`w-10 h-10 rounded-full bg-primaryBlue text-white flex justify-center items-center absolute top-5 ${
+                  isRTL ? "-left-4" : "-right-4"
+                }`}
                 onClick={closeSidebar}
               >
                 <IoClose size={24} />
@@ -128,10 +138,10 @@ const MobileSidebar = () => {
                     <li key={item.title}>
                       {item.links ? (
                         <>
-                          <div className="w-full flex justify-between items-center text-white font-primary text-[18px] font-medium border-b-[.7px] border-primaryBorder/30 pb-5">
+                          <div className={`w-full flex justify-between items-center text-white text-[18px] font-medium border-b-[.7px] border-primaryBorder/30 pb-5 ${isRTL ? "flex-row-reverse" : ""}`}>
                             <Link
                               to={item.href}
-                              className="flex items-center gap-1"
+                              className={`flex items-center gap-1 ${isArabic ? "font-arabic" : "font-primary"} ${isRTL ? "text-right" : "text-left"}`}
                               onClick={closeSidebar}
                             >
                               {item.title}
@@ -143,7 +153,7 @@ const MobileSidebar = () => {
                               <IoIosArrowForward
                                 className={`text-[18px] transition-transform duration-300 ${
                                   activeIndex === index ? "rotate-90" : ""
-                                }`}
+                                } ${isRTL ? "rotate-180" : ""}`}
                               />
                             </button>
                           </div>
@@ -155,16 +165,18 @@ const MobileSidebar = () => {
                                 : "max-h-0"
                             }`}
                           >
-                            <ul className="pl-4 py-2 flex flex-col gap-3 mt-2 font-primary text-white text-[16px] max-h-[800px] overflow-y-auto">
+                            <ul className={`py-2 flex flex-col gap-3 mt-2 text-white text-[16px] max-h-[800px] overflow-y-auto ${isRTL ? "pr-4" : "pl-4"}`}>
                               {item.links.map((link, i) => (
                                 <li key={i}>
-                                  <Link
-                                    to={link.href}
-                                    className="text-[16px]"
+                                  <a
+                                    href={link.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`text-[16px] ${isArabic ? "font-arabic" : "font-primary"} ${isRTL ? "text-right" : "text-left"}`}
                                     onClick={closeSidebar}
                                   >
                                     {link.label}
-                                  </Link>
+                                  </a>
                                 </li>
                               ))}
                             </ul>
@@ -173,7 +185,7 @@ const MobileSidebar = () => {
                       ) : (
                         <Link
                           to={item.href}
-                          className="block text-white font-primary text-[18px] font-medium border-b-[.7px] border-primaryBorder/30 pb-5"
+                          className={`block text-white text-[18px] font-medium border-b-[.7px] border-primaryBorder/30 pb-5 ${isArabic ? "font-arabic" : "font-primary"} ${isRTL ? "text-right" : "text-left"}`}
                           onClick={closeSidebar}
                         >
                           {item.title}

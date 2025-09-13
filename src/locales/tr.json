@@ -6,6 +6,23 @@
       "button": "Başlayın",
       "trusted_number": "2000+",
       "trusted_text": "Güvenilen Ortaklar Atlas Kalitesini Ülke Genelinde Dağıtıyor"
+    },
+    "contact_form": {
+      "name_placeholder": "Adınız",
+      "phone_placeholder": "Telefon Numaranız",
+      "option_placeholder": "Bir Seçenek Seçin",
+      "option_product": "Ürün Hakkında Soru",
+      "option_investment": "Yatırım Hakkında Soru",
+      "message_placeholder": "Mesajınızı buraya yazın..",
+      "send_button": "Şimdi Gönder",
+      "validation": {
+        "name_required": "Ad gerekli",
+        "phone_required": "Telefon numarası gerekli",
+        "phone_invalid": "Geçerli telefon numarası gerekli",
+        "option_required": "Lütfen bir seçenek seçin",
+        "message_required": "Mesaj gerekli"
+      },
+      "success_message": "Form başarıyla gönderildi!"
     }
-  }
+}
   

@@ -1,44 +1,47 @@
 {
     "hero": {
       "brand": "ATLAS PLAST",
-      "heading": "Over 35 Years Supplying Piping Systems",
-      "description": "Atlas Plast is Iraq’s leading supplier in piping solutions, supplying iraq with quality PPR PIPES, PPs PIPES, HDPE PIPES, and U PVC PIPES. Now further expanding into ceramics, sanitary ware and heating",
+      "heading": "Over 50 Years Supplying Piping Systems",
+      "description": "Atlas Plast is Iraq’s leading supplier in piping solutions, supplying iraq with quality PPR, PVC/uPVC, PP, and HDPE pipes. Now further expanding into ceramics, sanitary ware and heating",
       "button": "Contact Us",
-      "trusted_number": "2000+",
+      "trusted_number": "200+",
       "trusted_text": "Trusted Partners Distributing \n Atlas Quality Nationwide"
     },
     "services": {
-      "label": "What We Offer",
+      "label": "What We Provide",
       "title": "Our Solutions",
       "read_more": "",
       "items": {
         "piping_systems": {
           "title": "Piping Systems",
-          "description": "Atlas distributes complete water solutions including clean and sewage water systems, pumps, and heaters. We supply PPR, PPs, HDPE, and U-PVC pipes to meet sanitary, construction, and agricultural needs."
+          "description": "Atlas distributes complete water solutions including clean and sewage water systems, pumps, and heaters. We supply PPR, PVC/UPVC, PP, and HDPE pipes pipes to meet sanitary, construction, and agricultural needs."
         },
         "sanitary_ware": {
           "title": "Sanitary Ware",
-          "description": "Atlas supplies sanitary products such as toilets, showers, sinks, and accessories. Our solutions are built for everyday use, combining durability, reliability, and modern design for homes and projects."
+          "description": "Atlas provides sanitary products that offer durability, reliability, and modern design for homes and projects."
         },
         "ceramics": {
           "title": "Ceramics",
-          "description": "Atlas offers a wide range of ceramic tiles and finishes, from glazed ceramic and durable porcelain to outdoor and pool-grade options. Designed for strength, water resistance, and modern style, our tiles enhance residential and commercial spaces across Iraq."
+          "description": "Atlas offers a wide range of ceramic tiles and finishes, from glazed ceramics to durable porcelain. Our tiles are designed to be strong, water-resistant, and modern in style."
         }
       }
     },
     "funfacts": {
       "team_member": "Team member",
       "mega_warehouses": "Mega Warehouses",
-      "distribution_partners": "Distribution Partners",
-      "governorates": "Governorates"
+      "distribution_partners": "Brands",
+      "governorates": "Branches"
     },
     "about": {
       "label": "Our Story",
-      "title": "Pipes, Sanitary & Ceramics for Iraq",
-      "description_1": "For over half a century, Atlas has grown from a local supplier into one of Iraq's most respected providers of piping systems, sanitary ware, and ceramics. As the first company to introduce plastic pipes to the Iraqi market, Atlas pioneered a new era of modern, durable, and reliable piping solutions, setting the standard for quality and innovation in the industry.",
-      "description_2": "Atlas imports products from leading manufacturers in Germany, Serbia, the UAE, and Turkey. Renowned for genuine, high-quality products, we supply agents with all the fittings and accessories needed for seamless pipe assembly and installation. With a network spanning all governorates and over 100 trusted active sellers across Iraq, Atlas stands on loyalty, trust, professionalism, and international expertise—building long-term partnerships and delivering consistent value nationwide.",
+      "title": "Pipes, Sanitary & Ceramics",
+      "description_1": "For over half a century, Atlas has grown from a local supplier into Iraq's most respected provider of piping systems, sanitary ware, and ceramics. As the first company to introduce plastic pipes to the Iraqi market, Atlas pioneered a new era of modern, durable, and reliable piping solutions, setting the standard for quality and innovation in the industry.",
+      "description_2": "Atlas imports products from leading manufacturers in Germany, Serbia, Saudi Arabia, Switzerland, Austria, and Turkey. Renowned for genuine, high-quality products, we supply agents with all the fittings and accessories needed for seamless pipe assembly and installation. With a network spanning all iraqi governorates and over 100 trusted active sellers across Iraq, Atlas stands on loyalty, trust, professionalism, and international expertise—building long-term partnerships and delivering consistent value nationwide.",
       "honourable_awards": "Honourable Awards",
-      "more_about_us": "More About Us"
+      "more_about_us": "More About Us",
+      "breadcrumb_title": "About Us",
+      "breadcrumb_home": "Home",
+      "breadcrumb_about": "About Us"
     },
     "aboutStyle4": {
       "label": "From The Beginning",
@@ -83,15 +86,18 @@
         },
         "yasmine": {
           "name": "Yasmine",
-          "title": "Project Manager"
+          "title": "HR Manager"
         }
       }
     },
     "projects": {
       "label": "Latest Project",
-      "title": "Your Tomorrow Enhanced Today Tech Forward",
+      "title": "Project's Supplied by Atlas Plast",
       "more": "More",
-      "explore_button": "Explore Our Other Projects"
+      "explore_button": "Explore Our Other Projects",
+      "breadcrumb_title": "Projects",
+      "breadcrumb_home": "Home",
+      "breadcrumb_projects": "Projects"
     },
     "contact": {
       "label": "Contact",
@@ -103,12 +109,77 @@
       "email": "Email",
       "email_value": "atlasplast@info.com",
       "get_in_touch": "Get In Touch",
-      "contact_text": "Contact"
+      "contact_text": "Contact",
+      "breadcrumb_title": "Contact Us",
+      "breadcrumb_home": "Home",
+      "breadcrumb_contact": "Contact Us"
     },
     "faq": {
       "label": "Ask Question",
       "title": "Our Frequently Asked Questions",
       "project_completed": "Project Completed"
+    },
+    "project_details": {
+      "breadcrumb_title": "Project Details",
+      "breadcrumb_home": "Home",
+      "breadcrumb_project_details": "Project Details"
+    },
+    "brands": {
+      "label": "Brands",
+      "title": "Atlas Plast & Our Trusted Partners",
+      "description_1": "Atlas Plast has been a pioneer in Iraq's water and sanitary solutions since 1990. We distribute high-quality pipes, fittings, and sanitaryware, collaborating closely with top global manufacturers around the world to bring the best products to our customers.",
+      "description_2": "Our product range includes PPR, PPS, HDPE, and UPVC pipes, sanitaryware, and polyethylene products sourced from trusted global suppliers.",
+      "description_3": "Atlas Plast collaborates with leading German manufacturers such as +GF+ and WISA, ensuring that our customers receive high-quality, reliable, and innovative piping and sanitary solutions.",
+      "breadcrumb_title": "Brands",
+      "breadcrumb_home": "Home",
+      "breadcrumb_brands": "Brands",
+      "products_sold": "Products We Sell",
+      "country_origin": "Country of Origin",
+      "established": "Established",
+      "manufactured_origin": "Manufactured Origin",
+      "view_details": "View Details",
+      "hide_details": "Hide Details",
+      "years_partnership": "Years Partnership",
+      "total_brands": "Total Brands",
+      "countries_represented": "Countries Represented",
+      "years_experience": "Years Experience"
+    },
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "brands": "Brands",
+      "projects": "Projects",
+      "contact_us": "Contact Us",
+      "info": "Info"
+    },
+    "contact_form": {
+      "name_placeholder": "Your Name",
+      "phone_placeholder": "Your Phone Number",
+      "option_placeholder": "Choose an Option",
+      "option_product": "Enquire About Product",
+      "option_investment": "Enquire About Investment",
+      "message_placeholder": "Message here..",
+      "send_button": "Send Now",
+      "validation": {
+        "name_required": "Name is required",
+        "phone_required": "Phone number is required",
+        "phone_invalid": "Valid phone number is required",
+        "option_required": "Please select an option",
+        "message_required": "Message is required"
+      },
+      "success_message": "Form submitted successfully!"
+    },
+    "footer": {
+      "schedule_call": "Let's Schedule A Call",
+      "phone_number": "Phone Number",
+      "contact_us": "Contact Us",
+      "contact": "Contact",
+      "address": "Address",
+      "email": "Email",
+      "copyright": "© Atlasplast 2025 | All Rights Reserved",
+      "terms_condition": "Terms & Condition",
+      "privacy_policy": "Privacy Policy",
+      "articles": "Articles"
     }
   }
   
