@@ -34,7 +34,7 @@ const ProjectStyle2 = () => {
             <img
               className="w-full h-auto rounded-[10px]"
               src={project.image}
-              alt={project.title}
+              alt={project.title[i18n.language as keyof typeof project.title] || project.title.en}
             />
 
             <div
@@ -67,7 +67,7 @@ const ProjectStyle2 = () => {
             <img
               className="w-full h-auto rounded-[10px]"
               src={project.image}
-              alt={project.title}
+              alt={project.title[i18n.language as keyof typeof project.title] || project.title.en}
             />
 
             <div

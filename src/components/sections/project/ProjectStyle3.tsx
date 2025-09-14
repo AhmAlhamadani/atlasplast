@@ -17,7 +17,7 @@ const ProjectStyle3 = () => {
                   <img
                     className="w-full h-auto rounded-[10px]"
                     src={project.image}
-                    alt={project.title}
+                    alt={project.title.en}
                   />
 
                   <div
@@ -53,7 +53,7 @@ const ProjectStyle3 = () => {
                   <img
                     className="w-full h-auto rounded-[10px]"
                     src={project.image}
-                    alt={project.title}
+                    alt={project.title.en}
                   />
 
                   <div
