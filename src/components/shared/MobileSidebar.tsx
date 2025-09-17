@@ -139,13 +139,22 @@ const MobileSidebar = () => {
                       {item.links ? (
                         <>
                           <div className={`w-full flex justify-between items-center text-white text-[18px] font-medium border-b-[.7px] border-primaryBorder/30 pb-5 ${isRTL ? "flex-row-reverse" : ""}`}>
-                            <Link
-                              to={item.href}
-                              className={`flex items-center gap-1 ${isArabic ? "font-arabic" : "font-primary"} ${isRTL ? "text-right" : "text-left"}`}
-                              onClick={closeSidebar}
-                            >
-                              {item.title}
-                            </Link>
+                            {item.href ? (
+                              <Link
+                                to={item.href}
+                                className={`flex items-center gap-1 ${isArabic ? "font-arabic" : "font-primary"} ${isRTL ? "text-right" : "text-left"}`}
+                                onClick={closeSidebar}
+                              >
+                                {item.title}
+                              </Link>
+                            ) : (
+                              <button
+                                onClick={() => toggleIndex(index)}
+                                className={`flex items-center gap-1 ${isArabic ? "font-arabic" : "font-primary"} ${isRTL ? "text-right" : "text-left"} text-white text-[18px] font-medium`}
+                              >
+                                {item.title}
+                              </button>
+                            )}
                             <button
                               onClick={() => toggleIndex(index)}
                               className="bg-primaryBlue w-8 h-8 rounded-sm flex justify-center items-center"
@@ -168,15 +177,13 @@ const MobileSidebar = () => {
                             <ul className={`py-2 flex flex-col gap-3 mt-2 text-white text-[16px] max-h-[800px] overflow-y-auto ${isRTL ? "pr-4" : "pl-4"}`}>
                               {item.links.map((link, i) => (
                                 <li key={i}>
-                                  <a
-                                    href={link.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                  <Link
+                                    to={link.href}
                                     className={`text-[16px] ${isArabic ? "font-arabic" : "font-primary"} ${isRTL ? "text-right" : "text-left"}`}
                                     onClick={closeSidebar}
                                   >
                                     {link.label}
-                                  </a>
+                                  </Link>
                                 </li>
                               ))}
                             </ul>

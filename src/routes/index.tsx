@@ -12,9 +12,9 @@ import Blog from "../pages/Blog";
 import BlogDetails from "../pages/BlogDetails";
 import TermsAndConditions from "../pages/TermsAndConditions";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
-import Brands from "../pages/Brands";
 import HomeTwoLayout from "../components/layout/HomeTwoLayout";
 import InnerPageLayout from "../components/layout/InnerPageLayout";
+import BrandDetails from "../pages/BrandDetails";
 
 // const router = createBrowserRouter([
 //   {
@@ -71,7 +71,7 @@ const router = createBrowserRouter([
       { path: "service/:slug", element: <ServiceDetails /> },
       { path: "blog", element: <Blog /> },
       { path: "blog/:slug", element: <BlogDetails /> },
-      { path: "brands", element: <Brands /> },
+      { path: "brand/:slug", element: <BrandDetails /> },
       { path: "terms-condition", element: <TermsAndConditions /> },
       { path: "privacy-policy", element: <PrivacyPolicy /> },
       { path: "*", element: <NotFound /> },

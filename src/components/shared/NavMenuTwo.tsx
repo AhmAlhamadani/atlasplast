@@ -30,28 +30,27 @@ const useMenuItems = (): MenuItem[] => {
     },
     {
       title: t("navigation.brands"),
-      href: "/brands",
       links: [
-        { href: "https://www.georgfischer.com/en.html", label: "+GF+" },
-        { href: "https://turanmak.com/?lang=en", label: "Turan Borfit" },
-        { href: "https://www.polymelt.com/", label: "Polomelt" },
-        { href: "https://www.poloplast.com/en-at.html", label: "Poloplast" },
-        { href: "https://www.wisa-sanitair.com/en/", label: "Wisa" },
-        { href: "https://www.alvit.com.tr/en", label: "Alvit" },
-        { href: "https://pimtas.com/", label: "Pimtas" },
-        { href: "https://nassarplastic.com/", label: "Nassar" },
-        { href: "https://www.aquapa.com.tr/en/index", label: "Aquapa" },
-        { href: "https://www.dabpumps.com/en", label: "DAB" },
-        { href: "https://quarterbath.com/en", label: "Quarter Bath" },
-        { href: "https://kas.com.tr/en/", label: "KAS" },
-        { href: "https://www.facebook.com/guarriarmature/", label: "Guarri" },
-        { href: "https://www.ascfixing.com/", label: "asclik clamp" },
-        { href: "https://www.ostendorf-kunststoffe.com/en/", label: "Ostendorf" },
-        { href: "https://www.facebook.com/Shield.EngG/", label: "Shield" },
-        { href: "https://www.candanmakina.com/", label: "Candan" },
-        { href: "https://www.baenninger.de/en.html", label: "Bänninger" },
-        { href: "https://www.saudiceramics.com/en/", label: "Saudi Ceramics" },
-        { href: "https://almunifpipes.com/", label: "Almunif Pipes" },
+        { href: "/brand/gf-plus", label: "+GF+" },
+        { href: "/brand/turan-borfit", label: "Turan Borfit" },
+        { href: "/brand/polomelt", label: "Polomelt" },
+        { href: "/brand/poloplast", label: "Poloplast" },
+        { href: "/brand/wisa", label: "Wisa" },
+        { href: "/brand/alvit", label: "Alvit" },
+        { href: "/brand/pimtas", label: "Pimtas" },
+        { href: "/brand/nassar", label: "Nassar" },
+        { href: "/brand/aqua-pa", label: "Aqua PA" },
+        { href: "/brand/dab", label: "DAB" },
+        { href: "/brand/quarter-bath", label: "Quarter Bath" },
+        { href: "/brand/kas", label: "KAS" },
+        { href: "/brand/guarri", label: "Guarri" },
+        { href: "/brand/asclik-clamp", label: "asclik clamp" },
+        { href: "/brand/ostendorf", label: "Ostendorf" },
+        { href: "/brand/shield", label: "Shield" },
+        { href: "/brand/candan", label: "Candan" },
+        { href: "/brand/banninger", label: "Bänninger" },
+        { href: "/brand/saudi-ceramics", label: "Saudi Ceramics" },
+        { href: "/brand/almunif-pipes", label: "Almunif Pipes" },
       ],
     },
     {
@@ -152,9 +151,9 @@ const NavMenuTwo = ({ isSticky }: { isSticky: boolean }) => {
                             </ul>
                           </>
                         ) : (
-                          <a href={link.href} target="_blank" rel="noopener noreferrer" className={`nav-sub-menu ${isArabic ? "font-arabic" : ""}`} role="menuitem">
+                          <Link to={link.href} className={`nav-sub-menu ${isArabic ? "font-arabic" : ""}`} role="menuitem">
                             {link.label}
-                          </a>
+                          </Link>
                         )}
                       </li>
                     ))}
