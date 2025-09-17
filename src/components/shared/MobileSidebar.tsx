@@ -11,12 +11,40 @@ import { cn } from "../../lib/utils";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
+interface MenuLink {
+  href: string;
+  label: string;
+}
+
+interface MenuItemWithHref {
+  title: string;
+  href: string;
+  links?: never;
+}
+
+interface MenuItemWithLinks {
+  title: string;
+  href?: never;
+  links: MenuLink[];
+}
+
+type MenuItem = MenuItemWithHref | MenuItemWithLinks;
+
 
 const MobileSidebar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/" || location.pathname === "/home-two";
   const { i18n } = useTranslation();
-  const menuItems = useMenuItems();
+  const menuItems: MenuItem[] = useMenuItems();
+
+  // Type guard functions
+  const hasHref = (item: MenuItem): item is MenuItem & { href: string } => {
+    return 'href' in item && item.href !== undefined;
+  };
+
+  const hasLinks = (item: MenuItem): item is MenuItem & { links: Array<{ href: string; label: string }> } => {
+    return 'links' in item && item.links !== undefined;
+  };
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -136,25 +164,15 @@ const MobileSidebar = () => {
                 <ul className="flex flex-col gap-5">
                   {menuItems.map((item, index) => (
                     <li key={item.title}>
-                      {item.links ? (
+                      {hasLinks(item) ? (
                         <>
                           <div className={`w-full flex justify-between items-center text-white text-[18px] font-medium border-b-[.7px] border-primaryBorder/30 pb-5 ${isRTL ? "flex-row-reverse" : ""}`}>
-                            {item.href ? (
-                              <Link
-                                to={item.href}
-                                className={`flex items-center gap-1 ${isArabic ? "font-arabic" : "font-primary"} ${isRTL ? "text-right" : "text-left"}`}
-                                onClick={closeSidebar}
-                              >
-                                {item.title}
-                              </Link>
-                            ) : (
-                              <button
-                                onClick={() => toggleIndex(index)}
-                                className={`flex items-center gap-1 ${isArabic ? "font-arabic" : "font-primary"} ${isRTL ? "text-right" : "text-left"} text-white text-[18px] font-medium`}
-                              >
-                                {item.title}
-                              </button>
-                            )}
+                            <button
+                              onClick={() => toggleIndex(index)}
+                              className={`flex items-center gap-1 ${isArabic ? "font-arabic" : "font-primary"} ${isRTL ? "text-right" : "text-left"} text-white text-[18px] font-medium`}
+                            >
+                              {item.title}
+                            </button>
                             <button
                               onClick={() => toggleIndex(index)}
                               className="bg-primaryBlue w-8 h-8 rounded-sm flex justify-center items-center"
@@ -189,7 +207,7 @@ const MobileSidebar = () => {
                             </ul>
                           </div>
                         </>
-                      ) : (
+                      ) : hasHref(item) ? (
                         <Link
                           to={item.href}
                           className={`block text-white text-[18px] font-medium border-b-[.7px] border-primaryBorder/30 pb-5 ${isArabic ? "font-arabic" : "font-primary"} ${isRTL ? "text-right" : "text-left"}`}
@@ -197,7 +215,7 @@ const MobileSidebar = () => {
                         >
                           {item.title}
                         </Link>
-                      )}
+                      ) : null}
                     </li>
                   ))}
                 </ul>

@@ -1,7 +1,26 @@
 
 import { useTranslation } from "react-i18next";
 
-export const useMenuItems = () => {
+interface MenuLink {
+  href: string;
+  label: string;
+}
+
+interface MenuItemWithHref {
+  title: string;
+  href: string;
+  links?: never;
+}
+
+interface MenuItemWithLinks {
+  title: string;
+  href?: never;
+  links: MenuLink[];
+}
+
+type MenuItem = MenuItemWithHref | MenuItemWithLinks;
+
+export const useMenuItems = (): MenuItem[] => {
   const { t } = useTranslation();
   
   return [
