@@ -69,7 +69,7 @@ const BrandDetails = () => {
                    </div>
 
                    {/* Website Button */}
-                   <div className="pt-4 border-t border-gray-100">
+                   <div className="pt-2">
                      {brandData.website && (
                        <Button
                          onClick={() => window.open(brandData.website, "_blank")}
@@ -88,7 +88,7 @@ const BrandDetails = () => {
                   <img
                     src={brandData.galleryImages[0]}
                     alt="brand product showcase"
-                    className="w-full h-full object-cover"
+                    className="w-full h-52 object-cover"
                   />
                 </div>
               )}
