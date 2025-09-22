@@ -2,27 +2,27 @@
     "hero": {
       "brand": "ATLAS PLAST",
       "heading": "Over 50 Years Supplying Piping Systems",
-      "description": "Atlas Plast is Iraq’s leading supplier in piping solutions, supplying iraq with quality PPR, PVC/uPVC, PP, and HDPE pipes. Now further expanding into ceramics, sanitary ware and heating",
+      "description": "Atlas Plast is Iraq’s leading supplier in piping solutions, supplying quality PPR, PVC/uPVC, PP, and HDPE pipes. Now further expanding into ceramics, sanitary ware and heating",
       "button": "Contact Us",
-      "trusted_number": "200+",
+      "trusted_number": "00+",
       "trusted_text": "Trusted Partners Distributing \n Atlas Quality Nationwide"
     },
     "services": {
-      "label": "What We Provide",
-      "title": "Our Solutions",
+      "label": "Rely on Us",
+      "title": "Solutions We Distribute",
       "read_more": "",
       "items": {
         "piping_systems": {
           "title": "Piping Systems",
-          "description": "Atlas distributes complete water solutions including clean and sewage water systems, pumps, and heaters. We supply PPR, PVC/UPVC, PP, and HDPE pipes pipes to meet sanitary, construction, and agricultural needs."
+          "description": "Atlas delivers complete water infrastructure solutions, including clean and sewage water systems, pumps, and heaters. We distribute high-quality PPR, PVC/UPVC, PP, and HDPE pipes designed to meet the diverse needs of sanitary, construction, and agricultural projects."
         },
         "sanitary_ware": {
           "title": "Sanitary Ware",
-          "description": "Atlas provides sanitary products that offer durability, reliability, and modern design for homes and projects."
+          "description": "Atlas supplies reliable sanitary ware built for durability, functionality, and modern appeal. Our range currently focuses on both Western and Eastern toilets, providing practical solutions that meet residential and commercial requirements."
         },
         "ceramics": {
           "title": "Ceramics",
-          "description": "Atlas offers a wide range of ceramic tiles and finishes, from glazed ceramics to durable porcelain. Our tiles are designed to be strong, water-resistant, and modern in style."
+          "description": "Atlas offers a wide selection of ceramic tiles and finishes, from glazed ceramics to resilient porcelain. Our tiles combine strength, water resistance, and contemporary design, making them a trusted choice for stylish and long-lasting spaces."
         }
       }
     },
