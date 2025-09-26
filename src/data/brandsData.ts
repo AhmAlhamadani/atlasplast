@@ -1,3 +1,8 @@
+// Import brand images
+import banningerLogo from '../assets/brands/banninger-logo.png';
+import banningerProduct1 from '../assets/brands/banninger/product1.png';
+import banningerProduct2 from '../assets/brands/banninger/product2.png';
+
 export interface BrandData {
   id: string;
   slug: string;
@@ -738,14 +743,11 @@ export const brandsData: BrandData[] = [
     },
     established: "1909",
     website: "https://www.baenninger.de/en.html",
-    logo: "/src/assets/brands/banninger-logo.png",
-    mainImage: "/src/assets/brands/banninger/product1.png",
+    logo: banningerLogo,
+    mainImage: banningerProduct1,
     galleryImages: [
-      "/src/assets/brands/banninger/product2.png",
-      "/src/assets/brands/banninger/product1.png",
-      "/src/assets/brands/banninger/product1.png",
-      "/src/assets/brands/banninger/product1.png",
-      "/src/assets/brands/banninger/product1.png"
+      banningerProduct2,
+      banningerProduct1,
     ]
   },
   // {
