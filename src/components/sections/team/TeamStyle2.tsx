@@ -5,6 +5,8 @@ import team2 from "../../../assets/team/team-2.png";
 import team3 from "../../../assets/team/team-3.png";
 import team4 from "../../../assets/team/team-4.png";
 import team5 from "../../../assets/team/team-5.png";
+import team6 from "../../../assets/team/team-6.png";
+import team7 from "../../../assets/team/team-7.png";
 import { FaLinkedinIn, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import Container from "../../common/Container";
 import SectionTitle from "../../common/SectionTitle";
@@ -78,10 +80,10 @@ const bottomTeamMembers = [
   },
   {
     id: 6,
-    name: "Deniz Yilmaz",
-    title: "Imports Manager",
-    image: "",
-    translationKey: "deniz",
+    name: "Ahmed Abdulrazak",
+    title: "Egypt Branch Manager",
+    image: team6,
+    translationKey: "ahmed",
     socials: [
       { icon: <FaYoutube size={16} />, link: "#" },
       { icon: <FaLinkedinIn size={16} />, link: "#" },
@@ -91,8 +93,8 @@ const bottomTeamMembers = [
   {
     id: 7,
     name: "Yasmine",
-    title: "Project Manager",
-    image: "",
+    title: "HR Manager",
+    image: team7,
     translationKey: "yasmine",
     socials: [
       { icon: <FaYoutube size={16} />, link: "#" },

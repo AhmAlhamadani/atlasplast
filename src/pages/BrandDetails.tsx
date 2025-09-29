@@ -7,7 +7,7 @@ import { FiChevronsRight } from "react-icons/fi";
 import { getBrandBySlug } from "../data/brandsData";
 
 const BrandDetails = () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const { slug } = useParams<{ slug: string }>();
   const isRTL = i18n.language === "ar" || i18n.language === "ku";
   const isArabic = isRTL;
@@ -26,7 +26,8 @@ const BrandDetails = () => {
       <Breadcrumb
         title={brandData.name}
         breadcrumb={[
-          { name: "Home", href: "/" },
+          { name: t("brand_details.breadcrumb_home"), href: "/" },
+          { name: t("brand_details.breadcrumb_brands"), href: "/brands" },
           { name: brandData.name },
         ]}
         isRTL={isRTL}
@@ -57,12 +58,12 @@ const BrandDetails = () => {
 
                    {/* Brand Stats */}
                    <div className="space-y-4 mb-6">
-                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                       <span className="text-sm text-gray-600">Established</span>
+                     <div className={`flex justify-between items-center py-2 border-b border-gray-100 ${isRTL ? "flex-row-reverse" : ""}`}>
+                       <span className="text-sm text-gray-600">{t("brand_details.established")}</span>
                        <span className="font-semibold text-gray-900">{brandData.established}</span>
                      </div>
-                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                       <span className="text-sm text-gray-600">Origin</span>
+                     <div className={`flex justify-between items-center py-2 border-b border-gray-100 ${isRTL ? "flex-row-reverse" : ""}`}>
+                       <span className="text-sm text-gray-600">{t("brand_details.origin")}</span>
                        <span className="font-semibold text-gray-900">{isArabic ? brandData.origin.ar : brandData.origin.en}</span>
                      </div>
 
@@ -75,7 +76,7 @@ const BrandDetails = () => {
                          onClick={() => window.open(brandData.website, "_blank")}
                          className="w-full text-sm px-4 py-3"
                        >
-                         Visit Official Website
+                         {t("brand_details.visit_website")}
                        </Button>
                      )}
                    </div>
@@ -119,11 +120,11 @@ const BrandDetails = () => {
           {/* Products */}
           <div className={`${isRTL ? "text-right" : "text-left"}`}>
             <h3 className={`mb-5 ${isArabic ? "font-arabic" : "font-primary"}`}>
-              Products We Distribute
+              {t("brand_details.products_distribute")}
             </h3>
-            <p className={`mb-5 ${isArabic ? "font-arabic" : "font-secondary"}`}>
+            {/* <p className={`mb-5 ${isArabic ? "font-arabic" : "font-secondary"}`}>
               We distribute a comprehensive range of high-quality products from this brand, designed to meet diverse industrial and commercial needs.
-            </p>
+            </p> */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-[30px]">
               {(isArabic ? brandData.products.ar : brandData.products.en).map((product, idx) => (
                 <div
@@ -150,11 +151,11 @@ const BrandDetails = () => {
           {/* Brand Advantages */}
           <div className={`${isRTL ? "text-right" : "text-left"}`}>
             <h3 className={`mb-5 ${isArabic ? "font-arabic" : "font-primary"}`}>
-              Brand Advantages
+              {t("brand_details.brand_advantages")}
             </h3>
-            <p className={`mb-5 ${isArabic ? "font-arabic" : "font-secondary"}`}>
+            {/* <p className={`mb-5 ${isArabic ? "font-arabic" : "font-secondary"}`}>
               Discover the key advantages that make this brand a preferred choice for industry professionals worldwide.
-            </p>
+            </p> */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-[30px]">
               {(isArabic ? brandData.brandAdvantages.ar : brandData.brandAdvantages.en).map((point, idx) => (
                 <div
@@ -178,11 +179,11 @@ const BrandDetails = () => {
             </div>
           </div>
 
-          {/* Gallery */}
+          {/* Gallery - Only show if there are additional images beyond the first one */}
           {brandData.galleryImages && brandData.galleryImages.length > 1 && (
             <div className="mt-[30px]">
               <h3 className={`text-xl font-bold mb-6 ${isArabic ? "font-arabic" : "font-primary"}`}>
-                Product Gallery
+                {t("brand_details.product_gallery")}
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {brandData.galleryImages.slice(1).map((img, idx) => (

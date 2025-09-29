@@ -3,6 +3,7 @@ import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { brandsData } from "../../data/brandsData";
 
 interface MenuLink {
   href: string;
@@ -19,6 +20,12 @@ interface MenuItem {
 const useMenuItems = (): MenuItem[] => {
   const { t } = useTranslation();
   
+  // Generate brand links from brandsData
+  const brandLinks = brandsData.map(brand => ({
+    href: `/brand/${brand.slug}`,
+    label: brand.name
+  }));
+  
   return [
     {
       title: t("navigation.home"),
@@ -30,28 +37,7 @@ const useMenuItems = (): MenuItem[] => {
     },
     {
       title: t("navigation.brands"),
-      links: [
-        // { href: "/brand/gf-plus", label: "+GF+" },
-        // { href: "/brand/turan-borfit", label: "Turan Borfit" },
-        // { href: "/brand/polomelt", label: "Polomelt" },
-        // { href: "/brand/poloplast", label: "Poloplast" },
-        // { href: "/brand/wisa", label: "Wisa" },
-        // { href: "/brand/alvit", label: "Alvit" },
-        // { href: "/brand/pimtas", label: "Pimtas" },
-        // { href: "/brand/nassar", label: "Nassar" },
-        // { href: "/brand/aqua-pa", label: "Aqua PA" },
-        // { href: "/brand/dab", label: "DAB" },
-        // { href: "/brand/quarter-bath", label: "Quarter Bath" },
-        // { href: "/brand/kas", label: "KAS" },
-        // { href: "/brand/guarri", label: "Guarri" },
-        // { href: "/brand/asclik-clamp", label: "asclik clamp" },
-        // { href: "/brand/ostendorf", label: "Ostendorf" },
-        // { href: "/brand/shield", label: "Shield" },
-        // { href: "/brand/candan", label: "Candan" },
-        { href: "/brand/banninger", label: "Bänninger" },
-        // { href: "/brand/saudi-ceramics", label: "Saudi Ceramics" },
-        // { href: "/brand/almunif-pipes", label: "Almunif Pipes" },
-      ],
+      links: brandLinks,
     },
     {
       title: t("navigation.projects"),

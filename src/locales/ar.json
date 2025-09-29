@@ -30,7 +30,7 @@
       "team_member": "عضو فريق",
       "mega_warehouses": "مستودعات ضخمة",
       "distribution_partners": "الوكالات التجارية",
-      "governorates": "فروعنا"
+      "successful_projects": "مشاريع ناجحة"
     },
     "about": {
       "label": "قصتنا",
@@ -176,6 +176,16 @@
         "message_required": "الرسالة مطلوبة"
       },
       "success_message": "تم إرسال النموذج بنجاح!"
+    },
+    "brand_details": {
+      "products_distribute": "المنتجات التي نوزعها",
+      "brand_advantages": "مزايا العلامة التجارية",
+      "product_gallery": "معرض المنتجات",
+      "visit_website": "زيارة الموقع الرسمي",
+      "established": "تأسست",
+      "origin": "بلد المنشأ",
+      "breadcrumb_home": "الرئيسية",
+      "breadcrumb_brands": "العلامات التجارية"
     },
     "footer": {
       "schedule_call": "دعنا نحدد موعداً للمكالمة",

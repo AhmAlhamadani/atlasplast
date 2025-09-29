@@ -1,7 +1,40 @@
 // Import brand images
 import banningerLogo from '../assets/brands/banninger-logo.png';
-import banningerProduct1 from '../assets/brands/banninger/product1.png';
-import banningerProduct2 from '../assets/brands/banninger/product2.png';
+import banningerMain from '../assets/brands/banninger/product1.png';
+import banningerProduct from '../assets/brands/banninger/product2.png';
+
+import georgFischerLogo from '../assets/brands/brand-5.png';
+import georgFischerMain from '../assets/brands/georg-fischer/main.png';
+import georgFischerProduct from '../assets/brands/georg-fischer/product.png';
+
+import turanBorfitLogo from '../assets/brands/brand-7.png';
+import turanBorfitMain from '../assets/brands/turan-borfit/main.png';
+import turanBorfitProduct from '../assets/brands/turan-borfit/product.png';
+
+import aquapaLogo from '../assets/brands/brand-2.png';
+import aquapaMain from '../assets/brands/aquapa/main.png';
+import aquapaProduct from '../assets/brands/aquapa/product.png';
+
+import pimtasLogo from '../assets/brands/brand-6.png';
+import pimtasMain from '../assets/brands/pimtas/main.png';
+import pimtasProduct from '../assets/brands/pimtas/product.png';
+
+import candanMakinaLogo from '../assets/brands/brand-16.png';
+import candanMakinaMain from '../assets/brands/candan-makina/main.png';
+import candanMakinaProduct from '../assets/brands/candan-makina/product.png';
+
+import ascelikClampLogo from '../assets/brands/brand-18.png';
+import ascelikClampMain from '../assets/brands/ascelik-clamp/main.png';
+import ascelikClampProduct from '../assets/brands/ascelik-clamp/product.png';
+
+import kasLogo from '../assets/brands/brand-3.png';
+import kasMain from '../assets/brands/kas/main.png';
+import kasProduct from '../assets/brands/kas/product.png';
+
+
+import quarterBathLogo from '../assets/brands/brand-14.png';
+import quarterBathMain from '../assets/brands/quarter-bath/main.png';
+import quarterBathProduct from '../assets/brands/quarter-bath/product.png';
 
 export interface BrandData {
   id: string;
@@ -31,686 +64,6 @@ export interface BrandData {
 }
 
 export const brandsData: BrandData[] = [
-  // {
-  //   id: "gf-plus",
-  //   slug: "gf-plus",
-  //   name: "+GF+",
-  //   origin: {
-  //     en: "Switzerland",
-  //     ar: "سويسرا"
-  //   },
-  //   products: {
-  //     en: ["PP Silent (Hakan)", "HDPE (Hakan)", "PPR (Hakan)", "3A (Hakan)", "PE (Hakan)", "Galvanized"],
-  //     ar: ["PP Silent (Hakan)", "HDPE (Hakan)", "PPR (Hakan)", "3A (Hakan)", "PE (Hakan)", "Galvanized"]
-  //   },
-  //   description: {
-  //     en: "Leading Swiss manufacturer of piping systems and industrial solutions with over 200 years of experience in precision engineering and innovation.",
-  //     ar: "مصنع سويسري رائد في أنظمة الأنابيب والحلول الصناعية مع أكثر من 200 عام من الخبرة في الهندسة الدقيقة والابتكار."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Swiss Engineering Excellence",
-  //       "200+ Years of Innovation",
-  //       "Global Quality Standards",
-  //       "Comprehensive Product Range"
-  //     ],
-  //     ar: [
-  //       "التميز الهندسي السويسري",
-  //       "أكثر من 200 عام من الابتكار",
-  //       "معايير الجودة العالمية",
-  //       "مجموعة منتجات شاملة"
-  //     ]
-  //   },
-  //   established: "1802",
-  //   website: "https://www.georgfischer.com/en.html",
-  //   logo: "/src/assets/brands/banninger-logo.png",
-  //   mainImage: "/src/assets/brands/brand-1.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-1.png",
-  //     "/src/assets/brands/brand-2.png",
-  //     "/src/assets/brands/brand-3.png"
-  //   ]
-  // },
-  // {
-  //   id: "turan-borfit",
-  //   slug: "turan-borfit",
-  //   name: "Turan Borfit",
-  //   origin: {
-  //     en: "Turkey",
-  //     ar: "تركيا"
-  //   },
-  //   products: {
-  //     en: ["HDPE Pipes", "PE Fittings", "Gas Pipes", "Water Pipes"],
-  //     ar: ["أنابيب البولي إيثيلين عالي الكثافة", "ملحقات البولي إيثيلين", "أنابيب الغاز", "أنابيب المياه"]
-  //   },
-  //   description: {
-  //     en: "Turkish manufacturer specializing in polyethylene piping solutions with advanced technology and sustainable manufacturing practices.",
-  //     ar: "مصنع تركي متخصص في حلول أنابيب البولي إيثيلين عالية الجودة مع التكنولوجيا المتقدمة وممارسات التصنيع المستدامة."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Advanced PE Technology",
-  //       "Sustainable Manufacturing",
-  //       "Quality Assurance",
-  //       "Customer Support"
-  //     ],
-  //     ar: [
-  //       "تكنولوجيا البولي إيثيلين المتقدمة",
-  //       "التصنيع المستدام",
-  //       "ضمان الجودة",
-  //       "دعم العملاء"
-  //     ]
-  //   },
-  //   established: "1995",
-  //   website: "https://turanmak.com/?lang=en",
-  //   logo: "/src/assets/brands/brand-2.png",
-  //   mainImage: "/src/assets/brands/brand-2.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-2.png",
-  //     "/src/assets/brands/brand-3.png",
-  //     "/src/assets/brands/brand-4.png"
-  //   ]
-  // },
-  // {
-  //   id: "polomelt",
-  //   slug: "polomelt",
-  //   name: "Polymelt",
-  //   origin: {
-  //     en: "Germany",
-  //     ar: "ألمانيا"
-  //   },
-  //   products: {
-  //     en: ["PVC Pipes", "uPVC Pipes", "Fittings", "Accessories"],
-  //     ar: ["أنابيب البولي فينيل كلوريد", "أنابيب البولي فينيل كلوريد غير الملدن", "الملحقات", "الإكسسوارات"]
-  //   },
-  //   description: {
-  //     en: "Leading Turkish manufacturer of PVC and uPVC piping systems with innovative solutions for modern infrastructure needs.",
-  //     ar: "مصنع تركي رائد في أنظمة الأنابيب البلاستيكية المتطورة مع حلول مبتكرة لاحتياجات البنية التحتية الحديثة."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Innovative PVC Solutions",
-  //       "Modern Infrastructure Focus",
-  //       "Quality Manufacturing",
-  //       "Technical Expertise"
-  //     ],
-  //     ar: [
-  //       "حلول البولي فينيل كلوريد المبتكرة",
-  //       "التركيز على البنية التحتية الحديثة",
-  //       "التصنيع عالي الجودة",
-  //       "الخبرة التقنية"
-  //     ]
-  //   },
-  //   established: "1947",
-  //   website: "https://www.polymelt.com/",
-  //   logo: "/src/assets/brands/brand-3.png",
-  //   mainImage: "/src/assets/brands/brand-3.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-3.png",
-  //     "/src/assets/brands/brand-4.png",
-  //     "/src/assets/brands/brand-5.png"
-  //   ]
-  // },
-  // {
-  //   id: "poloplast",
-  //   slug: "poloplast",
-  //   name: "Poloplast",
-  //   origin: {
-  //     en: "Austria",
-  //     ar: "النمسا"
-  //   },
-  //   products: {
-  //     en: ["PE Pipes", "Fittings", "Valves", "Manholes"],
-  //     ar: ["أنابيب البولي إيثيلين", "الملحقات", "الصمامات", "أغطية الصرف الصحي"]
-  //   },
-  //   description: {
-  //     en: "Austrian manufacturer known for high-quality plastic piping systems with European standards and environmental responsibility.",
-  //     ar: "مصنع نمساوي معروف بأنظمة الأنابيب البلاستيكية عالية الجودة مع المعايير الأوروبية والمسؤولية البيئية."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "European Quality Standards",
-  //       "Environmental Responsibility",
-  //       "Reliable Performance",
-  //       "Innovation Focus"
-  //     ],
-  //     ar: [
-  //       "معايير الجودة الأوروبية",
-  //       "المسؤولية البيئية",
-  //       "الأداء الموثوق",
-  //       "التركيز على الابتكار"
-  //     ]
-  //   },
-  //   established: "1954",
-  //   website: "https://www.poloplast.com/en-at.html",
-  //   logo: "/src/assets/brands/brand-4.png",
-  //   mainImage: "/src/assets/brands/brand-4.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-4.png",
-  //     "/src/assets/brands/brand-5.png",
-  //     "/src/assets/brands/brand-6.png"
-  //   ]
-  // },
-  // {
-  //   id: "wisa",
-  //   slug: "wisa",
-  //   name: "Wisa",
-  //   origin: {
-  //     en: "Netherlands",
-  //     ar: "هولندا"
-  //   },
-  //   products: {
-  //     en: ["PPR Pipes", "Fittings", "Heating Systems", "Cooling Systems"],
-  //     ar: ["أنابيب البولي بروبيلين", "الملحقات", "أنظمة التدفئة", "أنظمة التبريد"]
-  //   },
-  //   description: {
-  //     en: "German manufacturer specializing in PPR piping systems and heating solutions with advanced thermal technology.",
-  //     ar: "مصنع ألماني متخصص في أنظمة الأنابيب وأنظمة التدفئة المتطورة مع التكنولوجيا الحرارية المتقدمة."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Advanced Thermal Technology",
-  //       "PPR System Expertise",
-  //       "Heating Solutions",
-  //       "Energy Efficiency"
-  //     ],
-  //     ar: [
-  //       "التكنولوجيا الحرارية المتقدمة",
-  //       "خبرة أنظمة البولي بروبيلين",
-  //       "حلول التدفئة",
-  //       "كفاءة الطاقة"
-  //     ]
-  //   },
-  //   established: "1865",
-  //   website: "https://www.wisa-sanitair.com/en/",
-  //   logo: "/src/assets/brands/brand-5.png",
-  //   mainImage: "/src/assets/brands/brand-5.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-5.png",
-  //     "/src/assets/brands/brand-6.png",
-  //     "/src/assets/brands/brand-7.png"
-  //   ]
-  // },
-  // {
-  //   id: "alvit",
-  //   slug: "alvit",
-  //   name: "Alvit",
-  //   origin: {
-  //     en: "Italy",
-  //     ar: "إيطاليا"
-  //   },
-  //   products: {
-  //     en: ["Valves", "Fittings", "Accessories", "Tools"],
-  //     ar: ["الصمامات", "الملحقات", "الإكسسوارات", "الأدوات"]
-  //   },
-  //   description: {
-  //     en: "Italian manufacturer specializing in valve systems and pipe accessories with precision engineering and reliable performance.",
-  //     ar: "مصنع إيطالي متخصص في أنظمة الصمامات وملحقات الأنابيب مع الهندسة الدقيقة والأداء الموثوق."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Precision Engineering",
-  //       "Reliable Performance",
-  //       "Italian Quality",
-  //       "Comprehensive Solutions"
-  //     ],
-  //     ar: [
-  //       "الهندسة الدقيقة",
-  //       "الأداء الموثوق",
-  //       "الجودة الإيطالية",
-  //       "الحلول الشاملة"
-  //     ]
-  //   },
-  //   established: "1988",
-  //   website: "https://www.alvit.com.tr/en",
-  //   logo: "/src/assets/brands/brand-6.png",
-  //   mainImage: "/src/assets/brands/brand-6.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-6.png",
-  //     "/src/assets/brands/brand-7.png",
-  //     "/src/assets/brands/brand-8.png"
-  //   ]
-  // },
-  // {
-  //   id: "pimtas",
-  //   slug: "pimtas",
-  //   name: "Pimtas",
-  //   origin: {
-  //     en: "Turkey",
-  //     ar: "تركيا"
-  //   },
-  //   products: {
-  //     en: ["PVC Pipes", "Drainage Systems", "Sewer Systems", "Fittings"],
-  //     ar: ["أنابيب البولي فينيل كلوريد", "أنظمة الصرف", "أنظمة المجاري", "الملحقات"]
-  //   },
-  //   description: {
-  //     en: "Turkish manufacturer of plastic piping systems for infrastructure with focus on drainage and sewer solutions.",
-  //     ar: "مصنع تركي لأنظمة الأنابيب البلاستيكية للبنية التحتية مع التركيز على حلول الصرف والمجاري."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Infrastructure Focus",
-  //       "Drainage Expertise",
-  //       "Quality Materials",
-  //       "Technical Support"
-  //     ],
-  //     ar: [
-  //       "التركيز على البنية التحتية",
-  //       "خبرة الصرف",
-  //       "مواد عالية الجودة",
-  //       "الدعم التقني"
-  //     ]
-  //   },
-  //   established: "1977",
-  //   website: "https://pimtas.com/",
-  //   logo: "/src/assets/brands/brand-7.png",
-  //   mainImage: "/src/assets/brands/brand-7.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-7.png",
-  //     "/src/assets/brands/brand-8.png",
-  //     "/src/assets/brands/brand-9.png"
-  //   ]
-  // },
-  // {
-  //   id: "nassar",
-  //   slug: "nassar",
-  //   name: "Nassar",
-  //   origin: {
-  //     en: "Egypt",
-  //     ar: "مصر"
-  //   },
-  //   products: {
-  //     en: ["PE Pipes", "PPR Pipes", "Heating Systems", "Cooling Systems"],
-  //     ar: ["أنابيب البولي إيثيلين", "أنابيب البولي بروبيلين", "أنظمة التدفئة", "أنظمة التبريد"]
-  //   },
-  //   description: {
-  //     en: "Turkish manufacturer of high-quality polymer solutions for building technology with innovative heating and cooling systems.",
-  //     ar: "مصنع تركي لحلول البوليمر عالية الجودة لتقنيات البناء مع أنظمة التدفئة والتبريد المبتكرة."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Polymer Expertise",
-  //       "Building Technology",
-  //       "Innovative Systems",
-  //       "Quality Assurance"
-  //     ],
-  //     ar: [
-  //       "خبرة البوليمر",
-  //       "تقنيات البناء",
-  //       "أنظمة مبتكرة",
-  //       "ضمان الجودة"
-  //     ]
-  //   },
-  //   established: "1982",
-  //   website: "https://nassarplastic.com/",
-  //   logo: "/src/assets/brands/brand-8.png",
-  //   mainImage: "/src/assets/brands/brand-8.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-8.png",
-  //     "/src/assets/brands/brand-9.png",
-  //     "/src/assets/brands/brand-10.png"
-  //   ]
-  // },
-  // {
-  //   id: "aqua-pa",
-  //   slug: "aqua-pa",
-  //   name: "Aqua PA",
-  //   origin: {
-  //     en: "Turkey",
-  //     ar: "تركيا"
-  //   },
-  //   products: {
-  //     en: ["PE-X Pipes", "PPR Pipes", "Heating Systems", "Plumbing Systems"],
-  //     ar: ["أنابيب البولي إيثيلين المتشابك", "أنابيب البولي بروبيلين", "أنظمة التدفئة", "أنظمة السباكة"]
-  //   },
-  //   description: {
-  //     en: "German manufacturer of plastic piping systems for heating and plumbing with advanced cross-linked polyethylene technology.",
-  //     ar: "مصنع ألماني لأنظمة الأنابيب البلاستيكية للتدفئة والسباكة مع تكنولوجيا البولي إيثيلين المتشابك المتقدمة."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "PE-X Technology",
-  //       "Heating Systems",
-  //       "Plumbing Solutions",
-  //       "German Engineering"
-  //     ],
-  //     ar: [
-  //       "تكنولوجيا البولي إيثيلين المتشابك",
-  //       "أنظمة التدفئة",
-  //       "حلول السباكة",
-  //       "الهندسة الألمانية"
-  //     ]
-  //   },
-  //   established: "1990",
-  //   website: "https://www.aquapa.com.tr/en/index",
-  //   logo: "/src/assets/brands/brand-9.png",
-  //   mainImage: "/src/assets/brands/brand-9.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-9.png",
-  //     "/src/assets/brands/brand-10.png",
-  //     "/src/assets/brands/brand-11.png"
-  //   ]
-  // },
-  // {
-  //   id: "dab",
-  //   slug: "dab",
-  //   name: "DAB",
-  //   origin: {
-  //     en: "Italy",
-  //     ar: "إيطاليا"
-  //   },
-  //   products: {
-  //     en: ["Water Pumps", "Booster Systems", "Circulation Pumps", "Accessories"],
-  //     ar: ["مضخات المياه", "أنظمة التعزيز", "مضخات الدوران", "الإكسسوارات"]
-  //   },
-  //   description: {
-  //     en: "Italian manufacturer specializing in water pumps and pumping systems with energy-efficient solutions and reliable performance.",
-  //     ar: "مصنع إيطالي متخصص في مضخات المياه وأنظمة الضخ مع حلول موفرة للطاقة وأداء موثوق."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Energy Efficiency",
-  //       "Pump Technology",
-  //       "Reliable Performance",
-  //       "Italian Quality"
-  //     ],
-  //     ar: [
-  //       "كفاءة الطاقة",
-  //       "تكنولوجيا المضخات",
-  //       "الأداء الموثوق",
-  //       "الجودة الإيطالية"
-  //     ]
-  //   },
-  //   established: "1975",
-  //   website: "https://www.dabpumps.com/en",
-  //   logo: "/src/assets/brands/brand-10.png",
-  //   mainImage: "/src/assets/brands/brand-10.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-10.png",
-  //     "/src/assets/brands/brand-11.png",
-  //     "/src/assets/brands/brand-12.png"
-  //   ]
-  // },
-  // {
-  //   id: "quarter-bath",
-  //   slug: "quarter-bath",
-  //   name: "Quarter Bath",
-  //   origin: {
-  //     en: "Turkey",
-  //     ar: "تركيا"
-  //   },
-  //   products: {
-  //     en: ["Bathroom Accessories", "Shower Systems", "Faucets", "Bathroom Furniture"],
-  //     ar: ["إكسسوارات الحمام", "أنظمة الدش", "الحنفيات", "أثاث الحمام"]
-  //   },
-  //   description: {
-  //     en: "Turkish manufacturer of bathroom accessories and solutions with modern design and functional excellence.",
-  //     ar: "مصنع تركي لإكسسوارات الحمام والحلول الصحية مع التصميم العصري والتميز الوظيفي."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Modern Design",
-  //       "Functional Excellence",
-  //       "Bathroom Solutions",
-  //       "Quality Materials"
-  //     ],
-  //     ar: [
-  //       "التصميم العصري",
-  //       "التميز الوظيفي",
-  //       "حلول الحمامات",
-  //       "مواد عالية الجودة"
-  //     ]
-  //   },
-  //   established: "2006",
-  //   website: "https://quarterbath.com/en",
-  //   logo: "/src/assets/brands/brand-11.png",
-  //   mainImage: "/src/assets/brands/brand-11.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-11.png",
-  //     "/src/assets/brands/brand-12.png",
-  //     "/src/assets/brands/brand-13.png"
-  //   ]
-  // },
-  // {
-  //   id: "kas",
-  //   slug: "kas",
-  //   name: "KAS",
-  //   origin: {
-  //     en: "Turkey",
-  //     ar: "تركيا"
-  //   },
-  //   products: {
-  //     en: ["Ceramic Tiles", "Sanitary Ware", "Bathroom Accessories", "Design Solutions"],
-  //     ar: ["بلاط السيراميك", "الأدوات الصحية", "إكسسوارات الحمام", "حلول التصميم"]
-  //   },
-  //   description: {
-  //     en: "Turkish manufacturer of ceramic tiles and sanitary ware with innovative design solutions and premium quality materials.",
-  //     ar: "مصنع تركي للبلاط السيراميك والأدوات الصحية مع حلول تصميم مبتكرة ومواد عالية الجودة."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Innovative Design",
-  //       "Premium Quality",
-  //       "Ceramic Expertise",
-  //       "Design Solutions"
-  //     ],
-  //     ar: [
-  //       "التصميم المبتكر",
-  //       "الجودة المتميزة",
-  //       "خبرة السيراميك",
-  //       "حلول التصميم"
-  //     ]
-  //   },
-  //   established: "1970",
-  //   website: "https://kas.com.tr/en/",
-  //   logo: "/src/assets/brands/brand-12.png",
-  //   mainImage: "/src/assets/brands/brand-12.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-12.png",
-  //     "/src/assets/brands/brand-13.png",
-  //     "/src/assets/brands/brand-14.png"
-  //   ]
-  // },
-  // {
-  //   id: "guarri",
-  //   slug: "guarri",
-  //   name: "Guarri",
-  //   origin: {
-  //     en: "Turkey",
-  //     ar: "تركيا"
-  //   },
-  //   products: {
-  //     en: ["Sanitary Ware", "Bathroom Solutions", "Fittings", "Accessories"],
-  //     ar: ["الأدوات الصحية", "حلول الحمامات", "الملحقات", "الإكسسوارات"]
-  //   },
-  //   description: {
-  //     en: "Italian manufacturer of sanitary ware and bathroom solutions with elegant design and superior functionality.",
-  //     ar: "مصنع إيطالي للأدوات الصحية وحلول الحمامات مع التصميم الأنيق والوظائف المتفوقة."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Elegant Design",
-  //       "Superior Functionality",
-  //       "Italian Craftsmanship",
-  //       "Bathroom Solutions"
-  //     ],
-  //     ar: [
-  //       "التصميم الأنيق",
-  //       "الوظائف المتفوقة",
-  //       "الحرفية الإيطالية",
-  //       "حلول الحمامات"
-  //     ]
-  //   },
-  //   established: "2002",
-  //   website: "https://www.facebook.com/guarriarmature/",
-  //   logo: "/src/assets/brands/brand-13.png",
-  //   mainImage: "/src/assets/brands/brand-13.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-13.png",
-  //     "/src/assets/brands/brand-14.png",
-  //     "/src/assets/brands/brand-15.png"
-  //   ]
-  // },
-  // {
-  //   id: "asclik-clamp",
-  //   slug: "asclik-clamp",
-  //   name: "Asclik Clamp",
-  //   origin: {
-  //     en: "Turkey",
-  //     ar: "تركيا"
-  //   },
-  //   products: {
-  //     en: ["Pipe Clamps", "Fittings", "Accessories", "Installation Tools"],
-  //     ar: ["مشابك الأنابيب", "الملحقات", "الإكسسوارات", "أدوات التركيب"]
-  //   },
-  //   description: {
-  //     en: "Turkish manufacturer specializing in pipe clamps and installation accessories with precision engineering and reliable fastening solutions.",
-  //     ar: "مصنع تركي متخصص في مشابك الأنابيب وإكسسوارات التركيب مع الهندسة الدقيقة وحلول الربط الموثوقة."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Precision Engineering",
-  //       "Reliable Fastening",
-  //       "Installation Expertise",
-  //       "Quality Materials"
-  //     ],
-  //     ar: [
-  //       "الهندسة الدقيقة",
-  //       "الربط الموثوق",
-  //       "خبرة التركيب",
-  //       "مواد عالية الجودة"
-  //     ]
-  //   },
-  //   established: "2016",
-  //   website: "https://www.ascfixing.com/",
-  //   logo: "/src/assets/brands/brand-14.png",
-  //   mainImage: "/src/assets/brands/brand-14.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-14.png",
-  //     "/src/assets/brands/brand-15.png",
-  //     "/src/assets/brands/brand-1.png"
-  //   ]
-  // },
-  // {
-  //   id: "ostendorf",
-  //   slug: "ostendorf",
-  //   name: "Ostendorf",
-  //   origin: {
-  //     en: "Germany",
-  //     ar: "ألمانيا"
-  //   },
-  //   products: {
-  //     en: ["Ceramic Tiles", "Porcelain Tiles", "Bathroom Solutions", "Design Tiles"],
-  //     ar: ["بلاط السيراميك", "بلاط البورسلين", "حلول الحمامات", "بلاط التصميم"]
-  //   },
-  //   description: {
-  //     en: "German manufacturer of high-quality ceramic and porcelain tiles with innovative designs and superior durability.",
-  //     ar: "مصنع ألماني للبلاط السيراميك والبورسلين عالي الجودة مع تصاميم مبتكرة ومتانة متفوقة."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Superior Durability",
-  //       "Innovative Designs",
-  //       "German Quality",
-  //       "Ceramic Expertise"
-  //     ],
-  //     ar: [
-  //       "المتانة المتفوقة",
-  //       "التصاميم المبتكرة",
-  //       "الجودة الألمانية",
-  //       "خبرة السيراميك"
-  //     ]
-  //   },
-  //   established: "1973",
-  //   website: "https://www.ostendorf-kunststoffe.com/en/",
-  //   logo: "/src/assets/brands/brand-15.png",
-  //   mainImage: "/src/assets/brands/brand-15.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-15.png",
-  //     "/src/assets/brands/brand-1.png",
-  //     "/src/assets/brands/brand-2.png"
-  //   ]
-  // },
-  // {
-  //   id: "shield",
-  //   slug: "shield",
-  //   name: "Shield",
-  //   origin: {
-  //     en: "Egypt",
-  //     ar: "مصر"
-  //   },
-  //   products: {
-  //     en: ["Protective Coatings", "Pipe Protection", "Insulation Materials", "Accessories"],
-  //     ar: ["الطلاءات الواقية", "حماية الأنابيب", "مواد العزل", "الإكسسوارات"]
-  //   },
-  //   description: {
-  //     en: "Turkish manufacturer of protective coatings and insulation materials with advanced protection technology and environmental solutions.",
-  //     ar: "مصنع تركي للطلاءات الواقية ومواد العزل مع تكنولوجيا الحماية المتقدمة والحلول البيئية."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Protection Technology",
-  //       "Environmental Solutions",
-  //       "Insulation Expertise",
-  //       "Quality Materials"
-  //     ],
-  //     ar: [
-  //       "تكنولوجيا الحماية",
-  //       "الحلول البيئية",
-  //       "خبرة العزل",
-  //       "مواد عالية الجودة"
-  //     ]
-  //   },
-  //   established: "2018",
-  //   website: "https://www.facebook.com/Shield.EngG/",
-  //   logo: "/src/assets/brands/brand-1.png",
-  //   mainImage: "/src/assets/brands/brand-1.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-1.png",
-  //     "/src/assets/brands/brand-2.png",
-  //     "/src/assets/brands/brand-3.png"
-  //   ]
-  // },
-  // {
-  //   id: "candan",
-  //   slug: "candan",
-  //   name: "Candan",
-  //   origin: {
-  //     en: "Turkey",
-  //     ar: "تركيا"
-  //   },
-  //   products: {
-  //     en: ["Sanitary Ware", "Bathroom Solutions", "Fittings", "Accessories"],
-  //     ar: ["الأدوات الصحية", "حلول الحمامات", "الملحقات", "الإكسسوارات"]
-  //   },
-  //   description: {
-  //     en: "Turkish manufacturer of sanitary ware and bathroom solutions with modern design and reliable performance.",
-  //     ar: "مصنع تركي للأدوات الصحية وحلول الحمامات مع التصميم العصري والأداء الموثوق."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Modern Design",
-  //       "Reliable Performance",
-  //       "Bathroom Solutions",
-  //       "Quality Assurance"
-  //     ],
-  //     ar: [
-  //       "التصميم العصري",
-  //       "الأداء الموثوق",
-  //       "حلول الحمامات",
-  //       "ضمان الجودة"
-  //     ]
-  //   },
-  //   established: "1979",
-  //   website: "https://www.candanmakina.com/",
-  //   logo: "/src/assets/brands/brand-2.png",
-  //   mainImage: "/src/assets/brands/brand-2.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-2.png",
-  //     "/src/assets/brands/brand-3.png",
-  //     "/src/assets/brands/brand-4.png"
-  //   ]
-  // },
   {
     id: "banninger",
     slug: "banninger",
@@ -725,7 +78,7 @@ export const brandsData: BrandData[] = [
     },
     description: {
       en: "Bänninger Kunststoff-Produkte GmbH is a German company with a long-standing reputation for high-quality plastic pipes and fittings. Its roots go back to 1909, and the plastics division was acquired in 1987, forming the foundation of today's operations. With around 250 employees across facilities in Reiskirchen and Staßfurt, Bänninger is recognized as a technical leader in the pipe industry, committed to quality, safety, sustainability, and social responsibility.",
-      ar: "Bänninger Kunststoff-Produkte GmbH هي شركة ألمانية تتمتع بسمعة طويلة الأمد في أنابيب وملحقات البلاستيك عالية الجودة. تعود جذورها إلى عام 1909، وتم الاستحواذ على قسم البلاستيك في عام 1987، مما شكل أساس العمليات اليوم. مع حوالي 250 موظف في مرافق Reiskirchen و Staßfurt، تُعرف Bänninger كقائد تقني في صناعة الأنابيب، ملتزمة بالجودة والسلامة والاستدامة والمسؤولية الاجتماعية."
+      ar: "تُعد Bänninger Kunststoff-Produkte GmbH شركة ألمانية تتمتع بسمعة عريقة في مجال أنابيب وملحقات البلاستيك عالية الجودة. تعود جذورها إلى عام 1909، وتم الاستحواذ على قسم البلاستيك في عام 1987، مما شكّل أساس عملياتها الحالية. ومع حوالي 250 موظفًا في مرافق Reiskirchen و Staßfurt، تُعرف Bänninger كشركة رائدة تقنيًا في صناعة الأنابيب، ملتزمة بالجودة والسلامة والاستدامة والمسؤولية الاجتماعية."
     },
     brandAdvantages: {
       en: [
@@ -736,101 +89,348 @@ export const brandsData: BrandData[] = [
       ],
       ar: [
         "التميز الهندسي الألماني",
-        "ضمان الجودة الشامل مع ضمان 10 سنوات",
+        "ضمان جودة شامل مع كفالة لمدة 10 سنوات",
         "الاستدامة والمسؤولية الاجتماعية",
-        "الدعم المرتكز على العملاء"
+        "الدعم الموجه للعملاء"
       ]
     },
     established: "1909",
     website: "https://www.baenninger.de/en.html",
     logo: banningerLogo,
-    mainImage: banningerProduct1,
+    mainImage: banningerMain,
     galleryImages: [
-      banningerProduct2,
-      banningerProduct1,
+      banningerProduct
+    ]
+  },  
+  {
+    id: "georgfischer",
+    slug: "georg-fischer",
+    name: "Georg Fischer",
+    origin: {
+      en: "Switzerland",
+      ar: "سويسرا"
+    },
+    products: {
+      en: ["PVC Pipes & Fittings", "PPR Pipes & Fittings", "PPB Silent Premium & 3A Systems", "PE Pipes"],
+      ar: ["أنابيب وملحقات PVC", "أنابيب وملحقات PPR", "أنظمة PPB Silent Premium و 3A", "أنابيب PE"]
+    },
+    description: {
+      en: "Georg Fischer (GF) is a Swiss-based global leader in piping systems and industrial solutions, with a history dating back to 1802. GF Piping Systems offers a wide portfolio of plastic piping solutions, serving building technology, utilities, and industrial applications. With innovation, quality, and sustainability at its core, GF provides reliable solutions for the safe transport of water, chemicals, and gases.",
+      ar: "تعد Georg Fischer (GF) شركة سويسرية رائدة عالميًا في أنظمة الأنابيب والحلول الصناعية، وتعود جذورها إلى عام 1802. تقدم GF Piping Systems مجموعة واسعة من حلول الأنابيب البلاستيكية، وتخدم مجالات تكنولوجيا المباني والمرافق والتطبيقات الصناعية. مع التركيز على الابتكار والجودة والاستدامة، توفر GF حلولاً موثوقة لنقل المياه والمواد الكيميائية والغازات بأمان."
+    },
+    brandAdvantages: {
+      en: [
+        "Swiss Precision and Engineering Heritage",
+        "Comprehensive Plastic Piping Solutions",
+        "Innovative and Sustainable Technologies",
+        "Trusted Worldwide with Strong Customer Support"
+      ],
+      ar: [
+        "الدقة السويسرية والإرث الهندسي",
+        "حلول شاملة للأنابيب البلاستيكية",
+        "تقنيات مبتكرة ومستدامة",
+        "موثوقة عالميًا مع دعم قوي للعملاء"
+      ]
+    },
+    established: "1802",
+    website: "https://www.gfps.com/",
+    logo: georgFischerLogo,
+    mainImage: georgFischerMain,
+    galleryImages: [
+      georgFischerProduct
     ]
   },
-  // {
-  //   id: "saudi-ceramics",
-  //   slug: "saudi-ceramics",
-  //   name: "Saudi Ceramics",
-  //   origin: {
-  //     en: "Saudi Arabia",
-  //     ar: "المملكة العربية السعودية"
-  //   },
-  //   products: {
-  //     en: ["Ceramic Tiles", "Sanitary Ware", "Bathroom Accessories", "Design Solutions"],
-  //     ar: ["بلاط السيراميك", "الأدوات الصحية", "إكسسوارات الحمام", "حلول التصميم"]
-  //   },
-  //   description: {
-  //     en: "Saudi manufacturer of premium ceramic tiles and sanitary ware with innovative designs and superior quality standards.",
-  //     ar: "مصنع سعودي للبلاط السيراميك والأدوات الصحية المتميزة مع تصاميم مبتكرة ومعايير جودة متفوقة."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Premium Quality",
-  //       "Innovative Designs",
-  //       "Saudi Excellence",
-  //       "Design Solutions"
-  //     ],
-  //     ar: [
-  //       "الجودة المتميزة",
-  //       "التصاميم المبتكرة",
-  //       "التميز السعودي",
-  //       "حلول التصميم"
-  //     ]
-  //   },
-  //   established: "1977",
-  //   website: "https://www.saudiceramics.com/en/",
-  //   logo: "/src/assets/brands/brand-3.png",
-  //   mainImage: "/src/assets/brands/brand-3.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-3.png",
-  //     "/src/assets/brands/brand-4.png",
-  //     "/src/assets/brands/brand-5.png"
-  //   ]
-  // },
-  // {
-  //   id: "almunif-pipes",
-  //   slug: "almunif-pipes",
-  //   name: "Almunif Pipes",
-  //   origin: {
-  //     en: "Saudi Arabia",
-  //     ar: "المملكة العربية السعودية"
-  //   },
-  //   products: {
-  //     en: ["PE Pipes", "PVC Pipes", "Fittings", "Drainage Systems"],
-  //     ar: ["أنابيب البولي إيثيلين", "أنابيب البولي فينيل كلوريد", "الملحقات", "أنظمة الصرف"]
-  //   },
-  //   description: {
-  //     en: "Saudi manufacturer of plastic piping systems for various applications with focus on quality and reliability.",
-  //     ar: "مصنع سعودي لأنظمة الأنابيب البلاستيكية لتطبيقات متنوعة مع التركيز على الجودة والموثوقية."
-  //   },
-  //   brandAdvantages: {
-  //     en: [
-  //       "Quality Focus",
-  //       "Reliability",
-  //       "Saudi Manufacturing",
-  //       "Diverse Applications"
-  //     ],
-  //     ar: [
-  //       "التركيز على الجودة",
-  //       "الموثوقية",
-  //       "التصنيع السعودي",
-  //       "تطبيقات متنوعة"
-  //     ]
-  //   },
-  //   established: "1987",
-  //   website: "https://almunifpipes.com/",
-  //   logo: "/src/assets/brands/brand-4.png",
-  //   mainImage: "/src/assets/brands/brand-4.png",
-  //   galleryImages: [
-  //     "/src/assets/brands/brand-4.png",
-  //     "/src/assets/brands/brand-5.png",
-  //     "/src/assets/brands/brand-6.png"
-  //   ]
-  // }
+  {
+    id: "turanborfit",
+    slug: "turan-borfit",
+    name: "Turan Borfit",
+    origin: {
+      en: "Turkey",
+      ar: "تركيا"
+    },
+    products: {
+      en: ["HDPE Pipes", "PE Pipes", "Butt welding machine", "PP fittings"],
+      ar: ["أنابيب HDPE", "أنابيب PE", "آلة اللحام بالقطعة", "ملحقات PP"]
+    },
+    description: {
+      en: "Turan Borfit is a Turkish manufacturer specialized in HDPE piping systems. Founded in 1995, the company has built a strong reputation for durability, performance, and environmental responsibility. Turan Borfit provides reliable solutions for water distribution, gas systems, and infrastructure projects, combining advanced production technologies with practical expertise to deliver high-quality HDPE pipes and fittings.",
+      ar: "تأسست شركة Turan Borfit في عام 1995 وهي شركة تركية متخصصة في أنظمة أنابيب HDPE. اكتسبت سمعة قوية بفضل تركيزها على المتانة والأداء والمسؤولية البيئية. توفر الشركة حلولاً موثوقة لتوزيع المياه وأنظمة الغاز ومشاريع البنية التحتية، من خلال دمج تقنيات الإنتاج المتقدمة مع الخبرة العملية لتقديم أنابيب وملحقات HDPE عالية الجودة."
+    },
+    brandAdvantages: {
+      en: [
+        "Specialized Expertise in HDPE Systems",
+        "Durable and Reliable Infrastructure Solutions",
+        "Advanced Production Technologies",
+        "Commitment to Quality and Sustainability"
+      ],
+      ar: [
+        "خبرة متخصصة في أنظمة HDPE",
+        "حلول بنية تحتية متينة وموثوقة",
+        "تقنيات إنتاج متقدمة",
+        "الالتزام بالجودة والاستدامة"
+      ]
+    },
+    established: "1995",
+    website: "https://turanmak.com/?lang=en",
+    logo: turanBorfitLogo,
+    mainImage: turanBorfitMain,
+    galleryImages: [
+      turanBorfitProduct
+    ]
+  },
+  {
+    id: "aquapa",
+    slug: "aquapa",
+    name: "Aquapa",
+    origin: {
+      en: "Turkey",
+      ar: "تركيا"
+    },
+    products: {
+      en: ["PPR Pipes & Fittings", "Silent PP Pipes & Fittings", "PVC Pipes & Fittings"],
+      ar: ["أنابيب وملحقات PPR", "أنابيب وملحقات PP الصامت", "أنابيب وملحقات PVC"]
+    },
+    description: {
+      en: "Aquapa Plastik is a Turkish manufacturer producing high-quality PPR, PVC, and Silent PP piping systems. Founded in 1980, the company operates modern factories in Veliköy and Çerkezköy, supplying a wide range of pipes, fittings, and accessories. Recognized among Turkey’s top exporters since 2014, Aquapa serves customers in over 90 countries across five continents.",
+      ar: "تأسست شركة Aquapa Plastik في عام 1980 وهي شركة تركية تصنّع أنظمة أنابيب عالية الجودة من PPR وPVC وPP الصامت. تدير مصانع حديثة في Veliköy وÇerkezköy لإنتاج مجموعة واسعة من الأنابيب والملحقات والمرفقات. معروفة بين كبار المصدرين الأتراك منذ عام 2014، تخدم Aquapa عملاء في أكثر من 90 دولة عبر خمس قارات."
+    },
+    brandAdvantages: {
+      en: [
+        "Wide range of piping systems including silent and standard PP",
+        "Strong export record and international presence",
+        "Modern factories and strict quality assurance",
+        "Complete piping solutions: pipes, fittings, and accessories"
+      ],
+      ar: [
+        "مجموعة واسعة من أنظمة الأنابيب بما فيها PP الصامت والعادي",
+        "سجل تصدير قوي وحضور دولي",
+        "مصانع حديثة وضمان جودة صارم",
+        "حلول أنابيب متكاملة: أنابيب، ملحقات، مرفقات"
+      ]
+    },
+    established: "1980",
+    website: "https://www.aquapa.com.tr/en/",
+    logo: aquapaLogo,
+    mainImage: aquapaMain,
+    galleryImages: [
+      aquapaProduct,
+    ]
+  },
+  {
+    id: "pimtas",
+    slug: "pimtas",
+    name: "Pimtaş",
+    origin: {
+      en: "Turkey",
+      ar: "تركيا"
+    },
+    products: {
+      en: [
+        "PPR Pipes & Fittings",
+        "PP Compression Fittings",
+        "PVC & UPVC Pipes & Fittings",
+        "HDPE Pipes",
+        "Pool Equipment"
+      ],
+      ar: [
+        "أنابيب وملحقات PPR",
+        "ملحقات ضغط PP",
+        "أنابيب وملحقات PVC وUPVC",
+        "أنابيب HDPE",
+        "معدات المسابح"
+      ]
+    },
+    description: {
+      en: "Founded in 1977, Pimtaş is one of Turkey’s leading manufacturers in plastic piping systems and pool equipment. The company produces a wide range of solutions including PPR, PP compression fittings, PVC & UPVC, and HDPE piping systems, as well as specialized equipment for swimming pools. With strong export activities to over 80 countries, Pimtaş combines technical expertise, modern production facilities, and a commitment to innovation and quality.",
+      ar: "تأسست شركة Pimtaş في عام 1977 وتعد من أبرز الشركات التركية المصنعة لأنظمة الأنابيب البلاستيكية ومعدات المسابح. تنتج الشركة مجموعة واسعة من الحلول تشمل PPR، وملحقات ضغط PP، وأنظمة PVC وUPVC، وأنابيب HDPE، بالإضافة إلى معدات متخصصة للمسابح. تصدر Pimtaş منتجاتها إلى أكثر من 80 دولة، وتجمع بين الخبرة التقنية والمصانع الحديثة والالتزام بالابتكار والجودة."
+    },
+    brandAdvantages: {
+      en: [
+        "Established expertise since 1977",
+        "Comprehensive product range in plastic piping",
+        "Strong international export presence",
+        "Specialized solutions for pool systems"
+      ],
+      ar: [
+        "خبرة راسخة منذ عام 1977",
+        "مجموعة شاملة من منتجات الأنابيب البلاستيكية",
+        "حضور قوي في الأسواق الدولية",
+        "حلول متخصصة لأنظمة المسابح"
+      ]
+    },
+    established: "1977",
+    website: "https://pimtas.com/en/",
+    logo: pimtasLogo,
+    mainImage: pimtasMain,
+    galleryImages: [
+      pimtasProduct,
+    ]
+  },
+  {
+    id: "candanmakina",
+    slug: "candan-makina",
+    name: "Candan Makina",
+    origin: {
+      en: "Turkey",
+      ar: "تركيا"
+    },
+    products: {
+      en: [
+        "Welding Machines & Accessories",
+        "Pipe Cutters & Sharpeners",
+        "Test Pressure Pumps",
+        "Brass Valves & Unions",
+      ],
+      ar: [
+        "آلات وأكسسوارات لحام الأنابيب البلاستيكية",
+        "مقصات وأنصال تنعيم الأنابيب البلاستيكية",
+        "مضخات اختبار الضغط",
+        "صمامات نحاسية ووصلات",
+      ]
+    },
+    description: {
+      en: "Candan Makina is a Turkish company originally founded in **1979** (as Ercan Pres Dokum), later institutionalized in 1997 as Candan Makina Yedek Parça San. ve Tic. Ltd. Şti. It is a leading manufacturer of welding machines for plastic pipes (PPR, PE, PVC), cutters, sharpeners, test pressure pumps, brass valves, and unions. It also does aluminum injection & casting and produces customized spare parts for electrical power transmission. Candan exports to many countries worldwide and operates with a strong emphasis on quality control, timely delivery, and competitive pricing.",
+      ar: "شركة Candan Makina هي شركة تركية تأسست عام 1979 باسم Ercan Pres Dokum، ثم تَحوّلت إلى مؤسسة رسمية في 1997 باسم Candan Makina Yedek Parça San. ve Tic. Ltd. Şti. تُعد من الشركات الرائدة في تصنيع آلات لحام الأنابيب البلاستيكية (PPR, PE, PVC)، والمقصات، وأدوات شحذ الأنابيب، ومضخات اختبار الضغط، وصمامات نحاسية ووصلات. كما تقوم بعمليات حقن وصب الألمنيوم، وتنتج قطع غيار مخصصة لقطاع نقل الطاقة الكهربائي. تصدّر منتجاتها إلى العديد من الدول حول العالم، وتعمل بتركيز قوي على مراقبة الجودة، والتسليم في الوقت المحدد، والأسعار التنافسية."
+    },
+    brandAdvantages: {
+      en: [
+        "Over 40 years of experience in plastic pipe welding & equipment",
+        "Multiple specialized product lines: valves, welded machines, casting parts",
+        "Quality certified and tested to meet international & DIN norms",
+        "Strong export network (to ~60-70+ countries), with good after-sales service"
+      ],
+      ar: [
+        "أكثر من 40 سنة خبرة في لحام الأنابيب البلاستيكية والمعدات",
+        "عدة خطوط إنتاج متخصصة: صمامات، آلات اللحام، أجزاء الصب",
+        "شهادات جودة واختبارات تلبي المعايير الدولية ومعايير DIN",
+        "شبكة تصدير قوية (إلى حوالي 60-70+ دولة)، وخدمة ما بعد البيع جيدة"
+      ]
+    },
+    established: "1979",
+    website: "https://www.candanmakina.com/",
+    logo: candanMakinaLogo,
+    mainImage: candanMakinaMain,
+    galleryImages: [
+      candanMakinaProduct,
+    ]
+  },
+  {
+    id: "ascelikkelepce",
+    slug: "ascelik-kelepce",
+    name: "Asçelik Clamp",
+    origin: {
+      en: "Turkey",
+      ar: "تركيا"
+    },
+    products: {
+      en: ["Pipe Clamps", "Pipe Fixings"],
+      ar: ["قلابات تثبيت الأنابيب", "تثبيتات الأنابيب"]
+    },
+    description: {
+      en: "Asçelik Clamp (ASC Asçelik Kelepçe San. Tic. Ltd. Şti.) is a Turkish manufacturer specialized in clamps and pipe fixings. Established in 2016 as part of AS Engineering (founded in 2005), Asçelik produces high-quality clamps with various nut options, heavy-duty clamps, sprinkler wire clamps and other fixings. With capacity of ~3 million clamps per month, modern factory + warehouse, export to ~45 countries, and multiple international certifications (CE, GOST-R, UL, FM, TSEK).",
+      ar: "شركة Asçelik Clamp (ASC Asçelik Kelepçe San. Tic. Ltd. Şti.) هي شركة تركية متخصصة في القلابات وتثبيت الأنابيب. تأسست عام 2016 كجزء من AS Engineering (المؤسسة منذ 2005)، تنتج Asçelik قلابات عالية الجودة مع خيارات صواميل متعددة، قلابات ثقيلة، قلابات للرش، وأغلاقات تثبيت أخرى. بقدرة إنتاجية تقارب 3 ملايين قُلبة شهريًا، مصنع ومستودع حديثان، تصدير إلى حوالي 45 دولة، وتحمل شهادات دولية متعددة (CE، GOST-R، UL، FM، TSEK)."
+    },
+    brandAdvantages: {
+      en: [
+        "Specialist in high-quality clamps & fixings",
+        "Large production capacity with fast delivery",
+        "Multiple international quality certifications",
+        "Wide export market, trusted in many countries"
+      ],
+      ar: [
+        "متخصص في قلابات وتثبيتات عالية الجودة",
+        "قدرة إنتاج كبيرة مع توصيل سريع",
+        "شهادات جودة دولية متعددة",
+        "سوق تصدير واسع، موثوق به في العديد من الدول"
+      ]
+    },
+    established: "2016",
+    website: "https://www.ascfixing.com/",
+    logo: ascelikClampLogo,
+    mainImage: ascelikClampMain,
+    galleryImages: [
+      ascelikClampProduct,
+    ]
+  },
+  {
+    id: "kas",
+    slug: "kas",
+    name: "KAS",
+    origin: {
+      en: "Turkey",
+      ar: "تركيا"
+    },
+    products: {
+      en: ["PPR Pipes & Fittings", "Faucets / Sanitary Ware"],
+      ar: ["أنابيب وملحقات PPR", "حنفيات / أدوات صحية"]
+    },
+    description: {
+      en: "KAS (Kayalar Group) is a Turkish plumbing systems manufacturer offering products such as PPR piping (pipes & fittings), valves, brass fittings, and a wide range of faucets/ sanitary ware. Their portfolio includes underfloor heating, flexible hoses, and related components. :contentReference[oaicite:0]{index=0} Their PPR systems are designed for continuous use up to 90 °C and short peaks to 100 °C with long service life. :contentReference[oaicite:1]{index=1}",
+      ar: "تُعد KAS (مجموعة كايالر) شركة تركية متخصصة في أنظمة السباكة، تقدّم منتجات مثل أنابيب وملحقات PPR، الصمامات والملحقات النحاسية، ومجموعة واسعة من الحنفيات / الأدوات الصحية. يشمل مجال نشاطهم الأنظمة الأرضية الدافئة والخرطومات المرنة ومكونات ذات صلة. :contentReference[oaicite:2]{index=2} تم تصميم أنظمة PPR الخاصة بهم للعمل المستمر حتى 90 °C مع ذروة مؤقتة تصل إلى 100 °C وعمر خدمة طويل. :contentReference[oaicite:3]{index=3}"
+    },
+    brandAdvantages: {
+      en: [
+        "Integrated plumbing product lines (pipes, fittings, sanitary ware)",
+        "Strong reputation in Turkish plumbing industry",
+        "Certifications & technical support",
+        "Design for hot & cold water applications"
+      ],
+      ar: [
+        "خطوط منتجات سباكة متكاملة (أنابيب، ملحقات، أدوات صحية)",
+        "سمعة قوية في صناعة السباكة التركية",
+        "شهادات ودعم فني",
+        "تصميم لتطبيقات المياه الساخنة والباردة"
+      ]
+    },
+    established: "1970",  // approximate, Kayalar group origin year according to sources :contentReference[oaicite:4]{index=4}
+    website: "https://kas.com.tr/en/",
+    logo: kasLogo,
+    mainImage: kasMain,
+    galleryImages: [
+      kasProduct,
+    ]
+  },
+  {
+    id: "quarterbath",
+    slug: "quarter-bath",
+    name: "Quarter Bath",
+    origin: {
+      en: "Turkey",
+      ar: "تركيا"
+    },
+    products: {
+      en: ["Sanitary Ware / Ceramics (Washbasins, WCs, Bidets, Urinals)", "Bathroom Furniture & Cabinets"],
+      ar: ["أدوات صحية / سيراميك (أحواض غسيل، مراحيض، بيديه، كراسي الزوار)", "أثاث الحمام والخزائن"]
+    },
+    description: {
+      en: "Quarter Bath is a Turkish brand producing a wide portfolio of sanitary ware and bathroom ceramics. Their product range includes washbasins, toilets (WCs), bidets, urinals, bathroom furniture, and accessories. Collections include “Deep,” “Concorde,” “Round Line,” among others, offering modern design and functional aesthetics.",
+      ar: "تُعد Quarter Bath علامة تركية تنتج مجموعة واسعة من الأدوات الصحية والسيراميك الحمَّامي. تشمل منتجاتها الأحواض، المراحيض، البيديه، الكراسي الزوار، الأثاث الحمّامي والملحقات. من مجموعاتها: “Deep”، “Concorde”، “Round Line” وغيرها، وتجمع بين التصميم العصري والجمالية العملية."
+    },
+    brandAdvantages: {
+      en: [
+        "Comprehensive sanitary ceramics & furniture lines",
+        "Modern design with multiple collections to suit various styles",
+        "High production capacity and export‑oriented",
+        "Functional and aesthetic balance in product design"
+      ],
+      ar: [
+        "خطوط سيراميك وأدوات صحية شاملة",
+        "تصميم عصري مع مجموعات متعددة لتناسب أذواقًا مختلفة",
+        "قدرة إنتاجية عالية وتوجه تصديري",
+        "توازن بين الوظيفة والجمالية في تصميم المنتج"
+      ]
+    },
+    established: "1993",
+    website: "https://quarterbath.com/en/",
+    logo: quarterBathLogo,
+    mainImage: quarterBathMain,
+    galleryImages: [
+      quarterBathProduct,
+    ]
+  }
 ];
+
+
 
 // Helper function to get brand by slug
 export const getBrandBySlug = (slug: string): BrandData | undefined => {

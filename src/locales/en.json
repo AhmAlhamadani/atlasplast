@@ -4,7 +4,7 @@
       "heading": "Over 50 Years Supplying Piping Systems",
       "description": "Atlas Plast is Iraq’s leading supplier in piping solutions, supplying quality PPR, PVC/uPVC, PP, and HDPE pipes. Now further expanding into ceramics, sanitary ware and heating",
       "button": "Contact Us",
-      "trusted_number": "00+",
+      "trusted_number": "600+",
       "trusted_text": "Trusted Partners Distributing \n Atlas Quality Nationwide"
     },
     "services": {
@@ -30,7 +30,7 @@
       "team_member": "Team member",
       "mega_warehouses": "Mega Warehouses",
       "distribution_partners": "Brands",
-      "governorates": "Branches"
+      "successful_projects": "Successful Projects"
     },
     "about": {
       "label": "Our Story",
@@ -168,6 +168,16 @@
         "message_required": "Message is required"
       },
       "success_message": "Form submitted successfully!"
+    },
+    "brand_details": {
+      "products_distribute": "Products We Distribute",
+      "brand_advantages": "Brand Advantages",
+      "product_gallery": "Product Gallery",
+      "visit_website": "Visit Official Website",
+      "established": "Established",
+      "origin": "Origin",
+      "breadcrumb_home": "Home",
+      "breadcrumb_brands": "Brands"
     },
     "footer": {
       "schedule_call": "Let's Schedule A Call",

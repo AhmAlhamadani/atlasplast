@@ -14,7 +14,7 @@ const stats: StatItem[] = [
   { id: 1, end: 100, suffix: "+", translationKey: "team_member" },
   { id: 2, end: 7, suffix: "", translationKey: "mega_warehouses" },
   { id: 3, end: 20, suffix: "+", translationKey: "distribution_partners" },
-  { id: 4, end: 6, suffix: "", translationKey: "governorates" },
+  { id: 4, end: 700, suffix: "+", translationKey: "successful_projects" },
 ];
 
 const FunFacts: React.FC = () => {
