@@ -36,6 +36,34 @@ import quarterBathLogo from '../assets/brands/brand-14.png';
 import quarterBathMain from '../assets/brands/quarter-bath/main.png';
 import quarterBathProduct from '../assets/brands/quarter-bath/product.png';
 
+import poloplastLogo from '../assets/brands/brand-15.png';
+import poloplastMain from '../assets/brands/poloplast/main.png';
+import poloplastProduct from '../assets/brands/poloplast/product.png';
+
+import polymeltLogo from '../assets/brands/brand-1.png';
+import polymeltMain from '../assets/brands/polymelt/main.png';
+import polymeltProduct from '../assets/brands/polymelt/product.png';
+
+import ostendorfLogo from '../assets/brands/brand-17.png';
+import ostendorfMain from '../assets/brands/ostendorf/main.png';
+import ostendorfProduct from '../assets/brands/ostendorf/product.png';
+
+import dabPumpsLogo from '../assets/brands/brand-11.png';
+import dabPumpsMain from '../assets/brands/dab-pumps/main.png';
+import dabPumpsProduct from '../assets/brands/dab-pumps/product.png';
+
+import saudiCeramicsLogo from '../assets/brands/brand-10.png';
+import saudiCeramicsMain from '../assets/brands/saudi-ceramics/main.png';
+import saudiCeramicsProduct from '../assets/brands/saudi-ceramics/product.png';
+
+import nassarPlasticLogo from '../assets/brands/brand-9.png';
+import nassarPlasticMain from '../assets/brands/nassar-plastic/main.png';
+import nassarPlasticProduct from '../assets/brands/nassar-plastic/product.png';
+
+import wisaLogo from '../assets/brands/brand-8.png';
+import wisaMain from '../assets/brands/wisa/main.png';
+import wisaProduct from '../assets/brands/wisa/product.png';
+
 export interface BrandData {
   id: string;
   slug: string;
@@ -73,7 +101,7 @@ export const brandsData: BrandData[] = [
       ar: "ألمانيا"
     },
     products: {
-      en: ["PPR Pipes", "Fittings", "Heating Systems", "Plumbing Systems"],
+      en: ["PPR Pipes", "PPR Fittings"],
       ar: ["أنابيب البولي بروبيلين", "الملحقات", "أنظمة التدفئة", "أنظمة السباكة"]
     },
     description: {
@@ -111,7 +139,7 @@ export const brandsData: BrandData[] = [
       ar: "سويسرا"
     },
     products: {
-      en: ["PVC Pipes & Fittings", "PPR Pipes & Fittings", "PPB Silent Premium & 3A Systems", "PE Pipes"],
+      en: ["Silenta Premium", "Silenta 3A", "Aquasystem", "Ecofit"],
       ar: ["أنابيب وملحقات PVC", "أنابيب وملحقات PPR", "أنظمة PPB Silent Premium و 3A", "أنابيب PE"]
     },
     description: {
@@ -149,7 +177,7 @@ export const brandsData: BrandData[] = [
       ar: "تركيا"
     },
     products: {
-      en: ["HDPE Pipes", "PE Pipes", "Butt welding machine", "PP fittings"],
+      en: ["HDPE", "Welding machine"],
       ar: ["أنابيب HDPE", "أنابيب PE", "آلة اللحام بالقطعة", "ملحقات PP"]
     },
     description: {
@@ -187,7 +215,7 @@ export const brandsData: BrandData[] = [
       ar: "تركيا"
     },
     products: {
-      en: ["PPR Pipes & Fittings", "Silent PP Pipes & Fittings", "PVC Pipes & Fittings"],
+      en: ["PPR", "Silent PP", "PVC"],
       ar: ["أنابيب وملحقات PPR", "أنابيب وملحقات PP الصامت", "أنابيب وملحقات PVC"]
     },
     description: {
@@ -226,11 +254,10 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        "PPR Pipes & Fittings",
+        "PPR Fittings",
         "PP Compression Fittings",
-        "PVC & UPVC Pipes & Fittings",
-        "HDPE Pipes",
-        "Pool Equipment"
+        "UPVC",
+        "HDPE"
       ],
       ar: [
         "أنابيب وملحقات PPR",
@@ -276,10 +303,9 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        "Welding Machines & Accessories",
+        "Welding Machines",
         "Pipe Cutters & Sharpeners",
         "Test Pressure Pumps",
-        "Brass Valves & Unions",
       ],
       ar: [
         "آلات وأكسسوارات لحام الأنابيب البلاستيكية",
@@ -323,7 +349,7 @@ export const brandsData: BrandData[] = [
       ar: "تركيا"
     },
     products: {
-      en: ["Pipe Clamps", "Pipe Fixings"],
+      en: ["Pipe Clamps & Fixings"],
       ar: ["قلابات تثبيت الأنابيب", "تثبيتات الأنابيب"]
     },
     description: {
@@ -360,8 +386,8 @@ export const brandsData: BrandData[] = [
       en: "Turkey",
       ar: "تركيا"
     },
-    products: {
-      en: ["PPR Pipes & Fittings", "Faucets / Sanitary Ware"],
+    products: { 
+      en: ["PPR", "Faucets / Sanitary Ware"],
       ar: ["أنابيب وملحقات PPR", "حنفيات / أدوات صحية"]
     },
     description: {
@@ -399,7 +425,7 @@ export const brandsData: BrandData[] = [
       ar: "تركيا"
     },
     products: {
-      en: ["Sanitary Ware / Ceramics (Washbasins, WCs, Bidets, Urinals)", "Bathroom Furniture & Cabinets"],
+      en: ["Sanitary Ware", "Bathroom Furniture"],
       ar: ["أدوات صحية / سيراميك (أحواض غسيل، مراحيض، بيديه، كراسي الزوار)", "أثاث الحمام والخزائن"]
     },
     description: {
@@ -427,7 +453,307 @@ export const brandsData: BrandData[] = [
     galleryImages: [
       quarterBathProduct,
     ]
-  }
+  },
+  {
+    id: "poloplast",
+    slug: "poloplast",
+    name: "Poloplast",
+    origin: {
+      en: "Austria",
+      ar: "النمسا"
+    },
+    products: {
+      en: ["PP pipes", "PP fittings"],
+      ar: ["أنابيب POLO-KAL NG متعددة الطبقات من البولي بروبيلين"]
+    },
+    description: {
+      en: "Poloplast GmbH, founded in 1954 in Linz, Austria, is a leading manufacturer of plastic pipe systems. They specialize in high-performance, multi-layer polypropylene pipe solutions for building drainage, wastewater disposal, and industrial applications. POLO-KAL NG offers excellent sound insulation, easy assembly, and suitability for both residential and commercial projects.",
+      ar: "تأسست Poloplast GmbH عام 1954 في لينز، النمسا، وهي شركة رائدة في صناعة أنظمة الأنابيب البلاستيكية. تتخصص في حلول الأنابيب متعددة الطبقات من البولي بروبيلين عالية الأداء لتصريف المباني، والتخلص من مياه الصرف، والتطبيقات الصناعية. يوفر نظام POLO-KAL NG عزل صوت ممتاز، وسهولة في التركيب، ومناسب للمشاريع السكنية والتجارية."
+    },
+    brandAdvantages: {
+      en: [
+        "Advanced multi-layer pipe technology",
+        "Reliable solutions for building drainage and wastewater",
+        "Commitment to sustainability and recycling",
+        "High quality standards and proven reliability"
+      ],
+      ar: [
+        "تقنية أنابيب متعددة الطبقات متقدمة",
+        "حلول موثوقة لتصريف المباني ومياه الصرف",
+        "الالتزام بالاستدامة وإعادة التدوير",
+        "معايير جودة عالية وموثوقية مثبتة"
+      ]
+    },
+    established: "1954",
+    website: "https://www.poloplast.com/en-at/",
+    logo: poloplastLogo,
+    mainImage: poloplastMain,
+    galleryImages: [
+      poloplastProduct,
+    ]
+  },
+  {
+    id: "polymelt",
+    slug: "polymelt",
+    name: "Polymelt",
+    origin: {
+      en: "Germany",
+      ar: "ألمانيا"
+    },
+    products: {
+      en: ["Polymutan PPR", "Ecosan PPR", "UV PPR"],
+      ar: ["أنابيب ومُوصلات PP-R و PP-RCT للمياه الصالحة للشرب، التدفئة، التبريد، والتطبيقات الصناعية"]
+    },
+    description: {
+      en: "Polymelt Piping Systems GmbH, established in 1968 and based in Ebenhofen, Bavaria, Germany, specializes in the development and manufacture of polypropylene (PP-R and PP-RCT) piping systems. Their products are used worldwide in residential construction, industrial plants, public facilities, and commercial buildings. The company is known for its high-quality standards and commitment to sustainability.",
+      ar: "تأسست شركة Polymelt Piping Systems GmbH في عام 1968 ومقرها في إيبنهوفن، بافاريا، ألمانيا، وتخصصت في تطوير وتصنيع أنظمة الأنابيب المصنوعة من البولي بروبيلين (PP-R و PP-RCT). تُستخدم منتجاتها في جميع أنحاء العالم في البناء السكني، المنشآت الصناعية، المنشآت العامة، والمباني التجارية. تشتهر الشركة بمعاييرها العالية والالتزام بالاستدامة."
+    },
+    brandAdvantages: {
+      en: [
+        "Corrosion-free and durable piping systems",
+        "Lightweight and easy to install",
+        "High thermal and chemical resistance",
+        "Low maintenance and long service life",
+        "Comprehensive product range for various applications"
+      ],
+      ar: [
+        "أنظمة أنابيب خالية من التآكل ودائمة",
+        "خفيفة الوزن وسهلة التركيب",
+        "مقاومة عالية للحرارة والمواد الكيميائية",
+        "قليل الصيانة وعمر خدمة طويل",
+        "مجموعة منتجات شاملة لتطبيقات متنوعة"
+      ]
+    },
+    established: "1968",
+    website: "https://www.polymelt.com/",
+    logo: polymeltLogo,
+    mainImage: polymeltMain,
+    galleryImages: [
+      polymeltProduct,
+    ]
+  },
+  {
+    id: "ostendorf",
+    slug: "ostendorf-kunststoffe",
+    name: "Ostendorf Kunststoffe",
+    origin: {
+      en: "Germany",
+      ar: "ألمانيا"
+    },
+    products: {
+      en: ["HT Safe", "Skolan Safe", "KG System"],
+      ar: ["HT Safe", "Skolan Safe", "نظام KG"]
+    },
+    description: {
+      en: "Ostendorf Kunststoffe GmbH, founded in 1948 in Vechta, Germany, is a leading manufacturer of plastic pipe systems. They specialize in high-performance drainage solutions for residential, commercial, and industrial applications. Products include HT Safe, Skolan Safe, and KG System, all designed for durability, sound insulation, and efficient wastewater disposal.",
+      ar: "تأسست Ostendorf Kunststoffe GmbH عام 1948 في فيختا، ألمانيا، وهي شركة رائدة في صناعة أنظمة الأنابيب البلاستيكية. تتخصص في حلول الصرف عالية الأداء للتطبيقات السكنية والتجارية والصناعية. تشمل منتجاتها HT Safe و Skolan Safe ونظام KG، جميعها مصممة للمتانة، العزل الصوتي، والتخلص الفعال من مياه الصرف."
+    },
+    brandAdvantages: {
+      en: [
+        "High-performance, sound-insulated drainage systems",
+        "Comprehensive product range for various applications",
+        "Durable and efficient wastewater solutions",
+        "Strict compliance with international quality standards",
+        "Focus on sustainability and recyclable materials"
+      ],
+      ar: [
+        "أنظمة صرف عالية الأداء مع عزل صوتي",
+        "مجموعة منتجات شاملة لتطبيقات متنوعة",
+        "حلول فعالة ودائمة لمياه الصرف",
+        "الالتزام الصارم بمعايير الجودة الدولية",
+        "التركيز على الاستدامة والمواد القابلة لإعادة التدوير"
+      ]
+    },
+    established: "1948",
+    website: "https://www.ostendorf-kunststoffe.com/",
+    logo: ostendorfLogo,
+    mainImage: ostendorfMain,
+    galleryImages: [
+      ostendorfProduct,
+    ]
+  },
+  {
+    id: "dabpumps",
+    slug: "dab-pumps",
+    name: "DAB Pumps",
+    origin: {
+      en: "Italy",
+      ar: "إيطاليا"
+    },
+    products: {
+      en: ["Power Pumps"],
+      ar: ["مضخات الطاقة (EsyBox، EsyBox Mini 3، EsyBox Max)"]
+    },
+    description: {
+      en: "DAB Pumps, founded in 1975 in Mestrino, Italy, is a leading manufacturer specializing in water movement and management technologies. Their Power Pumps, including the EsyBox, EsyBox Mini 3, and EsyBox Max, are advanced electronic pressure booster systems designed for residential and commercial applications. These systems utilize variable frequency drives (VFD) to maintain constant water pressure, ensuring energy efficiency and reliability.",
+      ar: "تأسست DAB Pumps في عام 1975 في ميسترينو، إيطاليا، وهي شركة رائدة متخصصة في تقنيات نقل وإدارة المياه. تشمل مضخات الطاقة الخاصة بهم، بما في ذلك EsyBox و EsyBox Mini 3 و EsyBox Max، أنظمة تعزيز الضغط الإلكترونية المتقدمة المصممة للتطبيقات السكنية والتجارية. تستخدم هذه الأنظمة محركات التردد المتغير (VFD) للحفاظ على ضغط المياه الثابت، مما يضمن الكفاءة في استهلاك الطاقة والموثوقية."
+    },
+    brandAdvantages: {
+      en: [
+        "Advanced electronic pressure booster systems",
+        "Variable frequency drive (VFD) technology for constant pressure",
+        "Energy-efficient and reliable performance",
+        "Compact and easy-to-install designs",
+        "Suitable for residential and commercial applications"
+      ],
+      ar: [
+        "أنظمة تعزيز الضغط الإلكترونية المتقدمة",
+        "تكنولوجيا محرك التردد المتغير (VFD) للحفاظ على الضغط الثابت",
+        "أداء موثوق وفعال من حيث استهلاك الطاقة",
+        "تصاميم مدمجة وسهلة التركيب",
+        "مناسبة للتطبيقات السكنية والتجارية"
+      ]
+    },
+    established: "1975",
+    website: "https://www.dabpumps.com/",
+    logo: dabPumpsLogo,
+    mainImage: dabPumpsMain,
+    galleryImages: [
+      dabPumpsProduct,
+    ]
+  },
+  {
+    id: "saudiceramics",
+    slug: "saudi-ceramics",
+    name: "Saudi Ceramics",
+    origin: {
+      en: "Saudi Arabia",
+      ar: "المملكة العربية السعودية"
+    },
+    products: {
+      en: [
+        "Ceramic Tiles",
+        "Porcelain Tiles",
+        "Sanitary Ware",
+        "Electric Water Heaters"
+      ],
+      ar: [
+        "بلاط السيراميك",
+        "بلاط البورسلين",
+        "الأدوات الصحية",
+        "سخانات المياه الكهربائية",
+        "منتجات بلاستيكية وأكريليك",
+        "الخلاطات والدش",
+        "حاويات الحمام الجاهزة",
+        "الطوب الأحمر",
+        "المعادن الصناعية"
+      ]
+    },
+    description: {
+      en: "Established in 1977 and headquartered in Riyadh, Saudi Ceramics is a leading Saudi joint-stock company specializing in ceramic and porcelain tiles, sanitary ware, electric water heaters, red bricks, and building & construction related products. The company operates 16 advanced manufacturing facilities across more than one million square meters, producing a wide range of products including ceramic and porcelain tiles, sanitary ware, electric water heaters, red bricks, and complementary products. Saudi Ceramics serves the local and international markets through over 60 retail showrooms, a robust e-commerce platform, strategic warehouse locations, and partnerships with key distributors across the Kingdom, ensuring full market coverage. The company also exports to more than 35 countries worldwide, adhering to global standards such as ISO 9001, SASO, and CE.",
+      ar: "تأسست شركة الخزف السعودي عام 1977 ومقرها الرياض، وهي شركة مساهمة سعودية رائدة متخصصة في بلاط السيراميك والبورسلين، والأدوات الصحية، وسخانات المياه الكهربائية، والطوب الأحمر، ومنتجات البناء والتشييد ذات الصلة. تدير الشركة 16 منشأة تصنيع متقدمة عبر أكثر من مليون متر مربع، وتنتج مجموعة واسعة من المنتجات بما في ذلك بلاط السيراميك والبورسلين، والأدوات الصحية، وسخانات المياه الكهربائية، والطوب الأحمر، والمنتجات المكملة. تخدم شركة الخزف السعودي الأسواق المحلية والدولية من خلال أكثر من 60 معرضًا للبيع بالتجزئة، ومنصة تجارة إلكترونية قوية، ومواقع مستودعات استراتيجية، وشراكات مع الموزعين الرئيسيين عبر المملكة، مما يضمن تغطية كاملة للسوق. كما تصدر الشركة إلى أكثر من 35 دولة حول العالم، ملتزمة بالمعايير العالمية مثل ISO 9001 و SASO و CE."
+    },
+    brandAdvantages: {
+      en: [
+        "Comprehensive product range catering to various construction and home improvement needs.",
+        "Established in 1977 with over 40 years of industry experience.",
+        "Operates 16 advanced manufacturing facilities across more than one million square meters.",
+        "Serves local and international markets through over 60 retail showrooms and a robust e-commerce platform.",
+        "Exports to more than 35 countries worldwide.",
+        "Adheres to global standards such as ISO 9001, SASO, and CE."
+      ],
+      ar: [
+        "مجموعة منتجات شاملة تلبي احتياجات البناء وتحسين المنازل المختلفة.",
+        "تأسست عام 1977 ولديها أكثر من 40 عامًا من الخبرة في الصناعة.",
+        "تشغل 16 منشأة تصنيع متقدمة عبر أكثر من مليون متر مربع.",
+        "تخدم الأسواق المحلية والدولية من خلال أكثر من 60 معرضًا للبيع بالتجزئة ومنصة تجارة إلكترونية قوية.",
+        "تصدر إلى أكثر من 35 دولة حول العالم.",
+        "تلتزم بالمعايير العالمية مثل ISO 9001 و SASO و CE."
+      ]
+    },
+    established: "1977",
+    website: "https://www.saudiceramics.com/",
+    logo: saudiCeramicsLogo,
+    mainImage: saudiCeramicsMain,
+    galleryImages: [
+      saudiCeramicsProduct, 
+    ]
+  },
+  {
+    id: "nassarplastic",
+    slug: "nassar-plastic",
+    name: "Nassar Plastic",
+    origin: {
+      en: "Egypt",
+      ar: "مصر"
+    },
+    products: {
+      en: ["PVC Pipes & Fittings", "PPR Pipes & Fittings"],
+      ar: ["أنابيب ومُوصلات PVC", "أنابيب ومُوصلات PPR"]
+    },
+    description: {
+      en: "Established in 1982 by Chemist El Sayed Ahmed Ismail Nassar, Nassar Plastic & Pipe Factories is a leading manufacturer of plastic piping systems in Egypt. The company specializes in producing high-quality PVC and PPR pipes and fittings for various applications, including water supply, drainage, and industrial systems. Nassar Plastic is committed to innovation, quality, and customer satisfaction.",
+      ar: "تأسست شركة نصار للبلاستيك ومصانع الأنابيب عام 1982 على يد الكيميائي السيد أحمد إسماعيل نصار، وهي شركة رائدة في تصنيع أنظمة الأنابيب البلاستيكية في مصر. تتخصص الشركة في إنتاج أنابيب ومُوصلات PVC وPPR عالية الجودة لمختلف التطبيقات، بما في ذلك إمدادات المياه، الصرف، والأنظمة الصناعية. تلتزم شركة نصار للبلاستيك بالابتكار والجودة ورضا العملاء."
+    },
+    brandAdvantages: {
+      en: [
+        "Over 40 years of industry experience",
+        "ISO-certified manufacturing processes",
+        "Wide range of PVC and PPR products",
+        "Commitment to quality and customer satisfaction",
+        "Competitive pricing and reliable delivery"
+      ],
+      ar: [
+        "أكثر من 40 عامًا من الخبرة في الصناعة",
+        "عمليات تصنيع معتمدة من ISO",
+        "مجموعة واسعة من منتجات PVC وPPR",
+        "الالتزام بالجودة ورضا العملاء",
+        "أسعار تنافسية وتسليم موثوق"
+      ]
+    },
+    established: "1982",
+    website: "https://plastic.nassarplastic.com/",
+    logo: nassarPlasticLogo,
+    mainImage: nassarPlasticMain,
+    galleryImages: [
+      nassarPlasticProduct,
+    ]
+  },
+  {
+    id: "wisa-sanitair",
+    slug: "wisa-sanitair",
+    name: "WISA Sanitair",
+    origin: {
+      en: "Netherlands",
+      ar: "هولندا"
+    },
+    products: {
+      en: ["Concealed Systems", "Flushing Plates"],
+      ar: ["أنظمة مخفية", "ألواح تدفق المياه"]
+    },
+    description: {
+      en: "WISA Sanitair, based in the Netherlands, specializes in innovative and high-quality bathroom solutions. Their product range includes concealed systems for toilets, washbasins, and urinals, as well as a variety of flushing plates made from materials like high-quality plastic, stainless steel, and tempered glass. These products are designed to offer durability, ease of installation, and aesthetic appeal.",
+      ar: "تتخصص WISA Sanitair، ومقرها في هولندا، في حلول الحمام المبتكرة وعالية الجودة. تشمل مجموعة منتجاتهم أنظمة مخفية للمراحيض والأحواض والمراحيض، بالإضافة إلى مجموعة متنوعة من ألواح التدفق المصنوعة من مواد مثل البلاستيك عالي الجودة والفولاذ المقاوم للصدأ والزجاج المقسى. تم تصميم هذه المنتجات لتوفير المتانة وسهولة التركيب والجاذبية الجمالية."
+    },
+    brandAdvantages: {
+      en: [
+        "Innovative and high-quality bathroom solutions",
+        "Wide range of concealed systems and flushing plates",
+        "Products made from durable materials",
+        "Ease of installation",
+        "Aesthetic and modern designs"
+      ],
+      ar: [
+        "حلول حمام مبتكرة وعالية الجودة",
+        "مجموعة واسعة من الأنظمة المخفية وألواح التدفق",
+        "منتجات مصنوعة من مواد متينة",
+        "سهولة التركيب",
+        "تصاميم جمالية وعصرية"
+      ]
+    },
+    established: "1957",
+    website: "https://www.wisa-sanitair.com/",
+    logo: wisaLogo,
+    mainImage: wisaMain,
+    galleryImages: [
+      wisaProduct,
+    ]
+  },
+
+  // 16 out of 23, Remaining:
+  // Guarri
+  // Pestan - check with MB
+  // FV - check with MB
 ];
 
 
