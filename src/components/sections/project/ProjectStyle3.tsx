@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 import { projects } from "../../../data/projectsData"
 import Container from "../../common/Container"
 
 const ProjectStyle3 = () => {
+  const { i18n } = useTranslation();
+
   return (
     <section className="section-gap">
         <Container>
@@ -19,6 +22,20 @@ const ProjectStyle3 = () => {
                     src={project.image}
                     alt={project.title.en}
                   />
+
+                  {/* Project Name Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 rounded-b-[10px]">
+                    <h3 className="text-white font-semibold text-lg mb-1">
+                      {project.title[i18n.language as keyof typeof project.title] || project.title.en}
+                    </h3>
+                    <div className="text-white/80 text-sm">
+                      <span className="line-clamp-2">
+                        {project.supplied[i18n.language as keyof typeof project.supplied]?.slice(0, 3).join(", ") || 
+                         project.supplied.en.slice(0, 3).join(", ")}
+                        {project.supplied[i18n.language as keyof typeof project.supplied]?.length > 3 && "..."}
+                      </span>
+                    </div>
+                  </div>
 
                   <div
                     className="absolute inset-0 bg-black/30 rounded-[10px] 
@@ -55,6 +72,20 @@ const ProjectStyle3 = () => {
                     src={project.image}
                     alt={project.title.en}
                   />
+
+                  {/* Project Name Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 rounded-b-[10px]">
+                    <h3 className="text-white font-semibold text-lg mb-1">
+                      {project.title[i18n.language as keyof typeof project.title] || project.title.en}
+                    </h3>
+                    <div className="text-white/80 text-sm">
+                      <span className="line-clamp-2">
+                        {project.supplied[i18n.language as keyof typeof project.supplied]?.slice(0, 3).join(", ") || 
+                         project.supplied.en.slice(0, 3).join(", ")}
+                        {project.supplied[i18n.language as keyof typeof project.supplied]?.length > 3 && "..."}
+                      </span>
+                    </div>
+                  </div>
 
                   <div
                     className="absolute inset-0 bg-black/30 rounded-[10px] 

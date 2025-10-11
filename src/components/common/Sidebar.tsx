@@ -28,7 +28,7 @@ const officeData: OfficeData[] = [
         contact: "Ahmad Shanshal"
       },
       {
-        address: "8F24+GFH, Baghdad, Kampsarah",
+        address: "8F24+GFH, Baghdad, Campsarah",
         phone: "+964 790 166 4058",
         contact: "WaiLl Almusawi"
       }

@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { useParams, Navigate } from "react-router-dom";
+import { useState } from "react";
 import Breadcrumb from "../components/common/Breadcrumb";
 import Container from "../components/common/Container";
 import Button from "../components/common/Button";
-import { FiChevronsRight } from "react-icons/fi";
+import { FiChevronsRight, FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { getBrandBySlug } from "../data/brandsData";
 
 const BrandDetails = () => {
@@ -11,9 +12,21 @@ const BrandDetails = () => {
   const { slug } = useParams<{ slug: string }>();
   const isRTL = i18n.language === "ar" || i18n.language === "ku";
   const isArabic = isRTL;
+  const [expandedProducts, setExpandedProducts] = useState<Set<number>>(new Set());
 
   // Get brand data by slug
   const brandData = slug ? getBrandBySlug(slug) : null;
+
+  // Toggle product expansion
+  const toggleProductExpansion = (index: number) => {
+    const newExpanded = new Set(expandedProducts);
+    if (newExpanded.has(index)) {
+      newExpanded.delete(index);
+    } else {
+      newExpanded.add(index);
+    }
+    setExpandedProducts(newExpanded);
+  };
 
   // Redirect to 404 if brand not found
   if (!brandData) {
@@ -125,24 +138,89 @@ const BrandDetails = () => {
             {/* <p className={`mb-5 ${isArabic ? "font-arabic" : "font-secondary"}`}>
               We distribute a comprehensive range of high-quality products from this brand, designed to meet diverse industrial and commercial needs.
             </p> */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-[30px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-5 mt-[30px]">
               {(isArabic ? brandData.products.ar : brandData.products.en).map((product, idx) => (
-                <div
-                  key={idx}
-                  className={`flex items-start gap-2 ${isRTL ? "flex-row-reverse" : ""}`}
-                >
-                  <FiChevronsRight
-                    className={`text-[#E5E8F2] w-5 h-5 mt-1 flex-shrink-0 ${
-                      isRTL ? "rotate-180" : ""
-                    }`}
-                  />
-                  <span
-                    className={`text-textColor text-[16px] font-normal leading-7 tracking-[-0.36px] ${
-                      isArabic ? "font-arabic" : "font-secondary"
-                    }`}
+                <div key={idx} className={`${product.specifications ? 'border border-gray-200 rounded-lg overflow-hidden' : ''}`}>
+                  {/* Product Header - Only clickable if has specifications */}
+                  <div
+                    className={`flex items-center justify-between p-4 ${
+                      product.specifications 
+                        ? 'cursor-pointer hover:bg-gray-50 transition-colors' 
+                        : ''
+                    } ${isRTL ? "flex-row-reverse" : ""}`}
+                    onClick={() => product.specifications && toggleProductExpansion(idx)}
                   >
-                    {product}
-                  </span>
+                    <div className={`flex items-start gap-2 ${isRTL ? "flex-row-reverse" : ""}`}>
+                      <FiChevronsRight
+                        className={`text-[#E5E8F2] w-5 h-5 mt-1 flex-shrink-0 ${
+                          isRTL ? "rotate-180" : ""
+                        }`}
+                      />
+                      <span
+                        className={`text-textColor text-[16px] font-normal leading-7 tracking-[-0.36px] ${
+                          isArabic ? "font-arabic" : "font-secondary"
+                        }`}
+                      >
+                        {product.name}
+                      </span>
+                    </div>
+                    {/* Dropdown Arrow - Only show if product has specifications */}
+                    {product.specifications && (
+                      <div className="flex-shrink-0">
+                        {expandedProducts.has(idx) ? (
+                          <FiChevronUp className="w-4 h-4 text-gray-500" />
+                        ) : (
+                          <FiChevronDown className="w-4 h-4 text-gray-500" />
+                        )}
+                      </div>
+                    )}
+                  </div>
+                  
+                  {/* Product Specifications - Expandable */}
+                  {product.specifications && (
+                    <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      expandedProducts.has(idx) ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
+                    }`}>
+                      <div className="border-t border-gray-200 bg-gray-50 p-4">
+                        {/* Specification Image */}
+                        {product.specificationImage && (
+                          <div className="mb-4 flex justify-center">
+                            <img
+                              src={product.specificationImage}
+                              alt={`${product.name} specifications`}
+                              className="w-3/4 h-auto rounded-lg shadow-sm"
+                            />
+                          </div>
+                        )}
+                        
+                        <div className="space-y-3">
+                          {Object.entries(product.specifications).map(([key, value]) => (
+                            <div
+                              key={key}
+                              className={`flex justify-between items-start gap-4 ${
+                                isRTL ? "flex-row-reverse" : ""
+                              }`}
+                            >
+                              <span
+                                className={`text-sm font-medium text-gray-700 flex-shrink-0 ${
+                                  isArabic ? "font-arabic" : "font-secondary"
+                                }`}
+                              >
+                                {key}:
+                              </span>
+                              <span
+                                className={`text-sm text-gray-600 text-right ${
+                                  isArabic ? "font-arabic" : "font-secondary"
+                                }`}
+                              >
+                                {value}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -158,22 +236,21 @@ const BrandDetails = () => {
             </p> */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-[30px]">
               {(isArabic ? brandData.brandAdvantages.ar : brandData.brandAdvantages.en).map((point, idx) => (
-                <div
-                  key={idx}
-                  className={`flex items-start gap-2 ${isRTL ? "flex-row-reverse" : ""}`}
-                >
-                  <FiChevronsRight
-                    className={`text-[#E5E8F2] w-5 h-5 mt-1 flex-shrink-0 ${
-                      isRTL ? "rotate-180" : ""
-                    }`}
-                  />
-                  <span
-                    className={`text-textColor text-[16px] font-normal leading-7 tracking-[-0.36px] ${
-                      isArabic ? "font-arabic" : "font-secondary"
-                    }`}
-                  >
-                    {point}
-                  </span>
+                <div key={idx} className="rounded-lg p-4">
+                  <div className={`flex items-start gap-2 ${isRTL ? "flex-row-reverse" : ""}`}>
+                    <FiChevronsRight
+                      className={`text-[#E5E8F2] w-5 h-5 mt-1 flex-shrink-0 ${
+                        isRTL ? "rotate-180" : ""
+                      }`}
+                    />
+                    <span
+                      className={`text-textColor text-[16px] font-normal leading-7 tracking-[-0.36px] ${
+                        isArabic ? "font-arabic" : "font-secondary"
+                      }`}
+                    >
+                      {point}
+                    </span>
+                  </div>
                 </div>
               ))}
             </div>

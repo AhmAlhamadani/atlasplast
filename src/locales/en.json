@@ -91,13 +91,13 @@
       }
     },
     "projects": {
-      "label": "Latest Project",
-      "title": "Project's Supplied by Atlas Plast",
+      "label": "Our Portfolio",
+      "title": "Explore Projects Atlas Plast Supplied",
       "more": "More",
-      "explore_button": "Explore Our Other Projects",
-      "breadcrumb_title": "Projects",
+      "explore_button": "Explore Our Portfolio",
+      "breadcrumb_title": "Portfolio",
       "breadcrumb_home": "Home",
-      "breadcrumb_projects": "Projects"
+      "breadcrumb_projects": "Portfolio"
     },
     "contact": {
       "label": "Contact",
@@ -148,7 +148,7 @@
       "home": "Home",
       "about": "About",
       "brands": "Brands",
-      "projects": "Projects",
+      "projects": "Our Portfolio",
       "contact_us": "Contact Us",
       "info": "Info"
     },

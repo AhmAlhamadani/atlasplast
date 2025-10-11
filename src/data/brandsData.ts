@@ -6,6 +6,10 @@ import banningerProduct from '../assets/brands/banninger/product2.png';
 import georgFischerLogo from '../assets/brands/brand-5.png';
 import georgFischerMain from '../assets/brands/georg-fischer/main.png';
 import georgFischerProduct from '../assets/brands/georg-fischer/product.png';
+import silentaPremiumSpecImage from '../assets/brands/georg-fischer/spec-images/silenta_premium.png';
+import silenta3aSpecImage from '../assets/brands/georg-fischer/spec-images/silenta_3a.png';
+import aquasystemSpecImage from '../assets/brands/georg-fischer/spec-images/aquasystem.png';
+import ecofitSpecImage from '../assets/brands/georg-fischer/spec-images/ecofit.png';
 
 import turanBorfitLogo from '../assets/brands/brand-7.png';
 import turanBorfitMain from '../assets/brands/turan-borfit/main.png';
@@ -30,7 +34,6 @@ import ascelikClampProduct from '../assets/brands/ascelik-clamp/product.png';
 import kasLogo from '../assets/brands/brand-3.png';
 import kasMain from '../assets/brands/kas/main.png';
 import kasProduct from '../assets/brands/kas/product.png';
-
 
 import quarterBathLogo from '../assets/brands/brand-14.png';
 import quarterBathMain from '../assets/brands/quarter-bath/main.png';
@@ -80,8 +83,20 @@ export interface BrandData {
     ar: string;
   };
   products: {
-    en: string[];
-    ar: string[];
+    en: Array<{
+      name: string;
+      specifications?: {
+        [key: string]: string;
+      };
+      specificationImage?: string;
+    }>;
+    ar: Array<{
+      name: string;
+      specifications?: {
+        [key: string]: string;
+      };
+      specificationImage?: string;
+    }>;
   };
   brandAdvantages: {
     en: string[];
@@ -93,120 +108,6 @@ export interface BrandData {
 
 export const brandsData: BrandData[] = [
   {
-    id: "banninger",
-    slug: "banninger",
-    name: "Bänninger",
-    origin: {
-      en: "Germany",
-      ar: "ألمانيا"
-    },
-    products: {
-      en: ["PPR Pipes", "PPR Fittings"],
-      ar: ["أنابيب البولي بروبيلين", "الملحقات", "أنظمة التدفئة", "أنظمة السباكة"]
-    },
-    description: {
-      en: "Bänninger Kunststoff-Produkte GmbH is a German company with a long-standing reputation for high-quality plastic pipes and fittings. Its roots go back to 1909, and the plastics division was acquired in 1987, forming the foundation of today's operations. With around 250 employees across facilities in Reiskirchen and Staßfurt, Bänninger is recognized as a technical leader in the pipe industry, committed to quality, safety, sustainability, and social responsibility.",
-      ar: "تُعد Bänninger Kunststoff-Produkte GmbH شركة ألمانية تتمتع بسمعة عريقة في مجال أنابيب وملحقات البلاستيك عالية الجودة. تعود جذورها إلى عام 1909، وتم الاستحواذ على قسم البلاستيك في عام 1987، مما شكّل أساس عملياتها الحالية. ومع حوالي 250 موظفًا في مرافق Reiskirchen و Staßfurt، تُعرف Bänninger كشركة رائدة تقنيًا في صناعة الأنابيب، ملتزمة بالجودة والسلامة والاستدامة والمسؤولية الاجتماعية."
-    },
-    brandAdvantages: {
-      en: [
-        "German Engineering Excellence",
-        "Comprehensive Quality Assurance with 10 Year Warranty",
-        "Sustainability and Social Responsibility",
-        "Customer-Centric Support"
-      ],
-      ar: [
-        "التميز الهندسي الألماني",
-        "ضمان جودة شامل مع كفالة لمدة 10 سنوات",
-        "الاستدامة والمسؤولية الاجتماعية",
-        "الدعم الموجه للعملاء"
-      ]
-    },
-    established: "1909",
-    website: "https://www.baenninger.de/en.html",
-    logo: banningerLogo,
-    mainImage: banningerMain,
-    galleryImages: [
-      banningerProduct
-    ]
-  },  
-  {
-    id: "georgfischer",
-    slug: "georg-fischer",
-    name: "Georg Fischer",
-    origin: {
-      en: "Switzerland",
-      ar: "سويسرا"
-    },
-    products: {
-      en: ["Silenta Premium", "Silenta 3A", "Aquasystem", "Ecofit"],
-      ar: ["أنابيب وملحقات PVC", "أنابيب وملحقات PPR", "أنظمة PPB Silent Premium و 3A", "أنابيب PE"]
-    },
-    description: {
-      en: "Georg Fischer (GF) is a Swiss-based global leader in piping systems and industrial solutions, with a history dating back to 1802. GF Piping Systems offers a wide portfolio of plastic piping solutions, serving building technology, utilities, and industrial applications. With innovation, quality, and sustainability at its core, GF provides reliable solutions for the safe transport of water, chemicals, and gases.",
-      ar: "تعد Georg Fischer (GF) شركة سويسرية رائدة عالميًا في أنظمة الأنابيب والحلول الصناعية، وتعود جذورها إلى عام 1802. تقدم GF Piping Systems مجموعة واسعة من حلول الأنابيب البلاستيكية، وتخدم مجالات تكنولوجيا المباني والمرافق والتطبيقات الصناعية. مع التركيز على الابتكار والجودة والاستدامة، توفر GF حلولاً موثوقة لنقل المياه والمواد الكيميائية والغازات بأمان."
-    },
-    brandAdvantages: {
-      en: [
-        "Swiss Precision and Engineering Heritage",
-        "Comprehensive Plastic Piping Solutions",
-        "Innovative and Sustainable Technologies",
-        "Trusted Worldwide with Strong Customer Support"
-      ],
-      ar: [
-        "الدقة السويسرية والإرث الهندسي",
-        "حلول شاملة للأنابيب البلاستيكية",
-        "تقنيات مبتكرة ومستدامة",
-        "موثوقة عالميًا مع دعم قوي للعملاء"
-      ]
-    },
-    established: "1802",
-    website: "https://www.gfps.com/",
-    logo: georgFischerLogo,
-    mainImage: georgFischerMain,
-    galleryImages: [
-      georgFischerProduct
-    ]
-  },
-  {
-    id: "turanborfit",
-    slug: "turan-borfit",
-    name: "Turan Borfit",
-    origin: {
-      en: "Turkey",
-      ar: "تركيا"
-    },
-    products: {
-      en: ["HDPE", "Welding machine"],
-      ar: ["أنابيب HDPE", "أنابيب PE", "آلة اللحام بالقطعة", "ملحقات PP"]
-    },
-    description: {
-      en: "Turan Borfit is a Turkish manufacturer specialized in HDPE piping systems. Founded in 1995, the company has built a strong reputation for durability, performance, and environmental responsibility. Turan Borfit provides reliable solutions for water distribution, gas systems, and infrastructure projects, combining advanced production technologies with practical expertise to deliver high-quality HDPE pipes and fittings.",
-      ar: "تأسست شركة Turan Borfit في عام 1995 وهي شركة تركية متخصصة في أنظمة أنابيب HDPE. اكتسبت سمعة قوية بفضل تركيزها على المتانة والأداء والمسؤولية البيئية. توفر الشركة حلولاً موثوقة لتوزيع المياه وأنظمة الغاز ومشاريع البنية التحتية، من خلال دمج تقنيات الإنتاج المتقدمة مع الخبرة العملية لتقديم أنابيب وملحقات HDPE عالية الجودة."
-    },
-    brandAdvantages: {
-      en: [
-        "Specialized Expertise in HDPE Systems",
-        "Durable and Reliable Infrastructure Solutions",
-        "Advanced Production Technologies",
-        "Commitment to Quality and Sustainability"
-      ],
-      ar: [
-        "خبرة متخصصة في أنظمة HDPE",
-        "حلول بنية تحتية متينة وموثوقة",
-        "تقنيات إنتاج متقدمة",
-        "الالتزام بالجودة والاستدامة"
-      ]
-    },
-    established: "1995",
-    website: "https://turanmak.com/?lang=en",
-    logo: turanBorfitLogo,
-    mainImage: turanBorfitMain,
-    galleryImages: [
-      turanBorfitProduct
-    ]
-  },
-  {
     id: "aquapa",
     slug: "aquapa",
     name: "Aquapa",
@@ -215,8 +116,16 @@ export const brandsData: BrandData[] = [
       ar: "تركيا"
     },
     products: {
-      en: ["PPR", "Silent PP", "PVC"],
-      ar: ["أنابيب وملحقات PPR", "أنابيب وملحقات PP الصامت", "أنابيب وملحقات PVC"]
+      en: [
+        { name: "PPR" },
+        { name: "Silent PP" },
+        { name: "PVC" }
+      ],
+      ar: [
+        { name: "أنابيب وملحقات PPR" },
+        { name: "أنابيب وملحقات PP الصامت" },
+        { name: "أنابيب وملحقات PVC" }
+      ]
     },
     description: {
       en: "Aquapa Plastik is a Turkish manufacturer producing high-quality PPR, PVC, and Silent PP piping systems. Founded in 1980, the company operates modern factories in Veliköy and Çerkezköy, supplying a wide range of pipes, fittings, and accessories. Recognized among Turkey’s top exporters since 2014, Aquapa serves customers in over 90 countries across five continents.",
@@ -245,6 +154,231 @@ export const brandsData: BrandData[] = [
     ]
   },
   {
+    id: "georgfischer",
+    slug: "georg-fischer",
+    name: "Georg Fischer",
+    origin: {
+      en: "Switzerland",
+      ar: "سويسرا"
+    },
+    products: {
+      en: [
+        {
+          name: "Silenta Premium",
+          specifications: {
+            "Diameter": "58 mm - 200 mm",
+            "Length": "0.15mt - 3mt",
+            "Color": "Light grey",
+            "Acoustic performance": "7 dB(A) / 2lt/ s acc. EN14366",
+            "Flammability class": "B2 acc. to DIN 4102",
+            "Pipes": "With and without socket",
+            "Standards": "DIN 4109, DIN 4102-B2"
+          },
+          specificationImage: silentaPremiumSpecImage
+        },
+        {
+          name: "Silenta 3A",
+          specifications: {
+            "Diameter": "40 mm - 200 mm",
+            "Length": "0.15mt - 3mt",
+            "Color": "Light blue",
+            "Acoustic performance": "17 dB(A) / 4lt/s acc. EN14366",
+            "Flammability class": "B2 acc. to DIN 4102",
+            "Pipes": "With socket",
+            "Standards": "DIN EN 1451-1, DIN 4109, DIN 4102-B2"
+          },
+          specificationImage: silenta3aSpecImage
+        },
+        {
+          name: "Aquasystem",
+          specifications: {
+            "Diameter": "d 20 mm to d 200 mm",
+            "Length": "4 meters",
+            "Color": "Grey, White, Green, Beige, Black",
+            "PN": "PN 10, PN 16, PN 20, PN 25",
+            "Standards": "EN ISO 15874, DIN 8077, DIN 8078, etc"
+          },
+          specificationImage: aquasystemSpecImage
+        },
+        {
+          name: "Ecofit",
+          specifications: {
+            "Diameter": "d 20 mm to d 355 mm",
+            "Length": "6, 12.5, meters",
+            "Color": "Black",
+            "SDR": "9, 11",
+            "Standards": "EN 12201-2, ISO 4427:2019, EN 12201:2013, AS/NZS 4130:2018"
+          },
+          specificationImage: ecofitSpecImage
+        }
+      ],
+      ar: [
+        {
+          name: "Silenta Premium",
+          specifications: {
+            "القطر": "58 مم - 200 مم",
+            "الطول": "0.15 متر - 3 متر",
+            "اللون": "رمادي فاتح",
+            "الأداء الصوتي": "7 ديسيبل (أ) / 2 لتر/ثانية حسب EN14366",
+            "فئة القابلية للاشتعال": "B2 حسب DIN 4102",
+            "الأنابيب": "مع وبدون مقبس",
+            "المعايير": "DIN 4109, DIN 4102-B2"
+          },
+          specificationImage: silentaPremiumSpecImage
+        },
+        {
+          name: "Silenta 3A",
+          specifications: {
+            "القطر": "40 مم - 200 مم",
+            "الطول": "0.15 متر - 3 متر",
+            "اللون": "أزرق فاتح",
+            "الأداء الصوتي": "17 ديسيبل (أ) / 4 لتر/ثانية حسب EN14366",
+            "فئة القابلية للاشتعال": "B2 حسب DIN 4102",
+            "الأنابيب": "مع مقبس",
+            "المعايير": "DIN EN 1451-1, DIN 4109, DIN 4102-B2"
+          },
+          specificationImage: silenta3aSpecImage
+        },
+        {
+          name: "Aquasystem",
+          specifications: {
+            "القطر": "20 مم إلى 200 مم",
+            "الطول": "4 أمتار",
+            "اللون": "رمادي، أبيض، أخضر، بيج، أسود",
+            "PN": "PN 10, PN 16, PN 20, PN 25",
+            "المعايير": "EN ISO 15874, DIN 8077, DIN 8078, إلخ"
+          },
+          specificationImage: aquasystemSpecImage
+        },
+        {
+          name: "ecoFIT",
+          specifications: {
+            "القطر": "20 مم إلى 355 مم",
+            "الطول": "6، 12.5، أمتار",
+            "اللون": "أسود",
+            "SDR": "9، 11",
+            "المعايير": "EN 12201-2, ISO 4427:2019, EN 12201:2013, AS/NZS 4130:2018"
+          },
+          specificationImage: ecofitSpecImage
+        }
+      ]
+    },
+    description: {
+      en: "Georg Fischer (GF) is a Swiss-based global leader in piping systems and industrial solutions, with a history dating back to 1802. GF Piping Systems offers a wide portfolio of plastic piping solutions, serving building technology, utilities, and industrial applications. With innovation, quality, and sustainability at its core, GF provides reliable solutions for the safe transport of water, chemicals, and gases.",
+      ar: "تعد Georg Fischer (GF) شركة سويسرية رائدة عالميًا في أنظمة الأنابيب والحلول الصناعية، وتعود جذورها إلى عام 1802. تقدم GF Piping Systems مجموعة واسعة من حلول الأنابيب البلاستيكية، وتخدم مجالات تكنولوجيا المباني والمرافق والتطبيقات الصناعية. مع التركيز على الابتكار والجودة والاستدامة، توفر GF حلولاً موثوقة لنقل المياه والمواد الكيميائية والغازات بأمان."
+    },
+    brandAdvantages: {
+      en: [
+        "Swiss Precision and Engineering Heritage",
+        "Comprehensive Plastic Piping Solutions",
+        "Innovative and Sustainable Technologies",
+        "Trusted Worldwide with Strong Customer Support"
+      ],
+      ar: [
+        "الدقة السويسرية والإرث الهندسي",
+        "حلول شاملة للأنابيب البلاستيكية",
+        "تقنيات مبتكرة ومستدامة",
+        "موثوقة عالميًا مع دعم قوي للعملاء"
+      ]
+    },
+    established: "1802",
+    website: "https://www.gfps.com/",
+    logo: georgFischerLogo,
+    mainImage: georgFischerMain,
+    galleryImages: [
+      georgFischerProduct
+    ]
+  },
+  {
+    id: "poloplast",
+    slug: "poloplast",
+    name: "Poloplast",
+    origin: {
+      en: "Austria",
+      ar: "النمسا"
+    },
+    products: {
+      en: [
+        { name: "PP pipes" },
+        { name: "PP fittings" }
+      ],
+      ar: [
+        { name: "أنابيب POLO-KAL NG متعددة الطبقات من البولي بروبيلين" }
+      ]
+    },
+    description: {
+      en: "Poloplast GmbH, founded in 1954 in Linz, Austria, is a leading manufacturer of plastic pipe systems. They specialize in high-performance, multi-layer polypropylene pipe solutions for building drainage, wastewater disposal, and industrial applications. POLO-KAL NG offers excellent sound insulation, easy assembly, and suitability for both residential and commercial projects.",
+      ar: "تأسست Poloplast GmbH عام 1954 في لينز، النمسا، وهي شركة رائدة في صناعة أنظمة الأنابيب البلاستيكية. تتخصص في حلول الأنابيب متعددة الطبقات من البولي بروبيلين عالية الأداء لتصريف المباني، والتخلص من مياه الصرف، والتطبيقات الصناعية. يوفر نظام POLO-KAL NG عزل صوت ممتاز، وسهولة في التركيب، ومناسب للمشاريع السكنية والتجارية."
+    },
+    brandAdvantages: {
+      en: [
+        "Advanced multi-layer pipe technology",
+        "Reliable solutions for building drainage and wastewater",
+        "Commitment to sustainability and recycling",
+        "High quality standards and proven reliability"
+      ],
+      ar: [
+        "تقنية أنابيب متعددة الطبقات متقدمة",
+        "حلول موثوقة لتصريف المباني ومياه الصرف",
+        "الالتزام بالاستدامة وإعادة التدوير",
+        "معايير جودة عالية وموثوقية مثبتة"
+      ]
+    },
+    established: "1954",
+    website: "https://www.poloplast.com/en-at/",
+    logo: poloplastLogo,
+    mainImage: poloplastMain,
+    galleryImages: [
+      poloplastProduct,
+    ]
+  },
+  {
+    id: "banninger",
+    slug: "banninger",
+    name: "Bänninger",
+    origin: {
+      en: "Germany",
+      ar: "ألمانيا"
+    },
+    products: {
+      en: [
+        { name: "PPR Pipes" },
+        { name: "PPR Fittings" }
+      ],
+      ar: [
+        { name: "أنابيب البولي بروبيلين" },
+        { name: "الملحقات" },
+        { name: "أنظمة التدفئة" },
+        { name: "أنظمة السباكة" }
+      ]
+    },
+    description: {
+      en: "Bänninger Kunststoff-Produkte GmbH is a German company with a long-standing reputation for high-quality plastic pipes and fittings. Its roots go back to 1909, and the plastics division was acquired in 1987, forming the foundation of today's operations. With around 250 employees across facilities in Reiskirchen and Staßfurt, Bänninger is recognized as a technical leader in the pipe industry, committed to quality, safety, sustainability, and social responsibility.",
+      ar: "تُعد Bänninger Kunststoff-Produkte GmbH شركة ألمانية تتمتع بسمعة عريقة في مجال أنابيب وملحقات البلاستيك عالية الجودة. تعود جذورها إلى عام 1909، وتم الاستحواذ على قسم البلاستيك في عام 1987، مما شكّل أساس عملياتها الحالية. ومع حوالي 250 موظفًا في مرافق Reiskirchen و Staßfurt، تُعرف Bänninger كشركة رائدة تقنيًا في صناعة الأنابيب، ملتزمة بالجودة والسلامة والاستدامة والمسؤولية الاجتماعية."
+    },
+    brandAdvantages: {
+      en: [
+        "German Engineering Excellence",
+        "Comprehensive Quality Assurance with 10 Year Warranty",
+        "Sustainability and Social Responsibility",
+        "Customer-Centric Support"
+      ],
+      ar: [
+        "التميز الهندسي الألماني",
+        "ضمان جودة شامل مع كفالة لمدة 10 سنوات",
+        "الاستدامة والمسؤولية الاجتماعية",
+        "الدعم الموجه للعملاء"
+      ]
+    },
+    established: "1909",
+    website: "https://www.baenninger.de/en.html",
+    logo: banningerLogo,
+    mainImage: banningerMain,
+    galleryImages: [
+      banningerProduct
+    ]
+  },  
+  {
     id: "pimtas",
     slug: "pimtas",
     name: "Pimtaş",
@@ -254,17 +388,17 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        "PPR Fittings",
-        "PP Compression Fittings",
-        "UPVC",
-        "HDPE"
+        { name: "PPR Fittings" },
+        { name: "PP Compression Fittings" },
+        { name: "UPVC" },
+        { name: "HDPE" }
       ],
       ar: [
-        "أنابيب وملحقات PPR",
-        "ملحقات ضغط PP",
-        "أنابيب وملحقات PVC وUPVC",
-        "أنابيب HDPE",
-        "معدات المسابح"
+        { name: "أنابيب وملحقات PPR" },
+        { name: "ملحقات ضغط PP" },
+        { name: "أنابيب وملحقات PVC وUPVC" },
+        { name: "أنابيب HDPE" },
+        { name: "معدات المسابح" }
       ]
     },
     description: {
@@ -294,6 +428,52 @@ export const brandsData: BrandData[] = [
     ]
   },
   {
+    id: "turanborfit",
+    slug: "turan-borfit",
+    name: "Turan Borfit",
+    origin: {
+      en: "Turkey",
+      ar: "تركيا"
+    },
+    products: {
+      en: [
+        { name: "HDPE" },
+        { name: "Welding machine" }
+      ],
+      ar: [
+        { name: "أنابيب HDPE" },
+        { name: "أنابيب PE" },
+        { name: "آلة اللحام بالقطعة" },
+        { name: "ملحقات PP" }
+      ]
+    },
+    description: {
+      en: "Turan Borfit is a Turkish manufacturer specialized in HDPE piping systems. Founded in 1995, the company has built a strong reputation for durability, performance, and environmental responsibility. Turan Borfit provides reliable solutions for water distribution, gas systems, and infrastructure projects, combining advanced production technologies with practical expertise to deliver high-quality HDPE pipes and fittings.",
+      ar: "تأسست شركة Turan Borfit في عام 1995 وهي شركة تركية متخصصة في أنظمة أنابيب HDPE. اكتسبت سمعة قوية بفضل تركيزها على المتانة والأداء والمسؤولية البيئية. توفر الشركة حلولاً موثوقة لتوزيع المياه وأنظمة الغاز ومشاريع البنية التحتية، من خلال دمج تقنيات الإنتاج المتقدمة مع الخبرة العملية لتقديم أنابيب وملحقات HDPE عالية الجودة."
+    },
+    brandAdvantages: {
+      en: [
+        "Specialized Expertise in HDPE Systems",
+        "Durable and Reliable Infrastructure Solutions",
+        "Advanced Production Technologies",
+        "Commitment to Quality and Sustainability"
+      ],
+      ar: [
+        "خبرة متخصصة في أنظمة HDPE",
+        "حلول بنية تحتية متينة وموثوقة",
+        "تقنيات إنتاج متقدمة",
+        "الالتزام بالجودة والاستدامة"
+      ]
+    },
+    established: "1995",
+    website: "https://turanmak.com/?lang=en",
+    logo: turanBorfitLogo,
+    mainImage: turanBorfitMain,
+    galleryImages: [
+      turanBorfitProduct
+    ]
+  },
+  {
     id: "candanmakina",
     slug: "candan-makina",
     name: "Candan Makina",
@@ -303,15 +483,15 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        "Welding Machines",
-        "Pipe Cutters & Sharpeners",
-        "Test Pressure Pumps",
+        { name: "Welding Machines" },
+        { name: "Pipe Cutters & Sharpeners" },
+        { name: "Test Pressure Pumps" }
       ],
       ar: [
-        "آلات وأكسسوارات لحام الأنابيب البلاستيكية",
-        "مقصات وأنصال تنعيم الأنابيب البلاستيكية",
-        "مضخات اختبار الضغط",
-        "صمامات نحاسية ووصلات",
+        { name: "آلات وأكسسوارات لحام الأنابيب البلاستيكية" },
+        { name: "مقصات وأنصال تنعيم الأنابيب البلاستيكية" },
+        { name: "مضخات اختبار الضغط" },
+        { name: "صمامات نحاسية ووصلات" }
       ]
     },
     description: {
@@ -349,8 +529,13 @@ export const brandsData: BrandData[] = [
       ar: "تركيا"
     },
     products: {
-      en: ["Pipe Clamps & Fixings"],
-      ar: ["قلابات تثبيت الأنابيب", "تثبيتات الأنابيب"]
+      en: [
+        { name: "Pipe Clamps & Fixings" }
+      ],
+      ar: [
+        { name: "قلابات تثبيت الأنابيب" },
+        { name: "تثبيتات الأنابيب" }
+      ]
     },
     description: {
       en: "Asçelik Clamp (ASC Asçelik Kelepçe San. Tic. Ltd. Şti.) is a Turkish manufacturer specialized in clamps and pipe fixings. Established in 2016 as part of AS Engineering (founded in 2005), Asçelik produces high-quality clamps with various nut options, heavy-duty clamps, sprinkler wire clamps and other fixings. With capacity of ~3 million clamps per month, modern factory + warehouse, export to ~45 countries, and multiple international certifications (CE, GOST-R, UL, FM, TSEK).",
@@ -387,8 +572,14 @@ export const brandsData: BrandData[] = [
       ar: "تركيا"
     },
     products: { 
-      en: ["PPR", "Faucets / Sanitary Ware"],
-      ar: ["أنابيب وملحقات PPR", "حنفيات / أدوات صحية"]
+      en: [
+        { name: "PPR" },
+        { name: "Faucets / Sanitary Ware" }
+      ],
+      ar: [
+        { name: "أنابيب وملحقات PPR" },
+        { name: "حنفيات / أدوات صحية" }
+      ]
     },
     description: {
       en: "KAS (Kayalar Group) is a Turkish plumbing systems manufacturer offering products such as PPR piping (pipes & fittings), valves, brass fittings, and a wide range of faucets/ sanitary ware. Their portfolio includes underfloor heating, flexible hoses, and related components. :contentReference[oaicite:0]{index=0} Their PPR systems are designed for continuous use up to 90 °C and short peaks to 100 °C with long service life. :contentReference[oaicite:1]{index=1}",
@@ -425,8 +616,14 @@ export const brandsData: BrandData[] = [
       ar: "تركيا"
     },
     products: {
-      en: ["Sanitary Ware", "Bathroom Furniture"],
-      ar: ["أدوات صحية / سيراميك (أحواض غسيل، مراحيض، بيديه، كراسي الزوار)", "أثاث الحمام والخزائن"]
+      en: [
+        { name: "Sanitary Ware" },
+        { name: "Bathroom Furniture" }
+      ],
+      ar: [
+        { name: "أدوات صحية / سيراميك (أحواض غسيل، مراحيض، بيديه، كراسي الزوار)" },
+        { name: "أثاث الحمام والخزائن" }
+      ]
     },
     description: {
       en: "Quarter Bath is a Turkish brand producing a wide portfolio of sanitary ware and bathroom ceramics. Their product range includes washbasins, toilets (WCs), bidets, urinals, bathroom furniture, and accessories. Collections include “Deep,” “Concorde,” “Round Line,” among others, offering modern design and functional aesthetics.",
@@ -454,44 +651,7 @@ export const brandsData: BrandData[] = [
       quarterBathProduct,
     ]
   },
-  {
-    id: "poloplast",
-    slug: "poloplast",
-    name: "Poloplast",
-    origin: {
-      en: "Austria",
-      ar: "النمسا"
-    },
-    products: {
-      en: ["PP pipes", "PP fittings"],
-      ar: ["أنابيب POLO-KAL NG متعددة الطبقات من البولي بروبيلين"]
-    },
-    description: {
-      en: "Poloplast GmbH, founded in 1954 in Linz, Austria, is a leading manufacturer of plastic pipe systems. They specialize in high-performance, multi-layer polypropylene pipe solutions for building drainage, wastewater disposal, and industrial applications. POLO-KAL NG offers excellent sound insulation, easy assembly, and suitability for both residential and commercial projects.",
-      ar: "تأسست Poloplast GmbH عام 1954 في لينز، النمسا، وهي شركة رائدة في صناعة أنظمة الأنابيب البلاستيكية. تتخصص في حلول الأنابيب متعددة الطبقات من البولي بروبيلين عالية الأداء لتصريف المباني، والتخلص من مياه الصرف، والتطبيقات الصناعية. يوفر نظام POLO-KAL NG عزل صوت ممتاز، وسهولة في التركيب، ومناسب للمشاريع السكنية والتجارية."
-    },
-    brandAdvantages: {
-      en: [
-        "Advanced multi-layer pipe technology",
-        "Reliable solutions for building drainage and wastewater",
-        "Commitment to sustainability and recycling",
-        "High quality standards and proven reliability"
-      ],
-      ar: [
-        "تقنية أنابيب متعددة الطبقات متقدمة",
-        "حلول موثوقة لتصريف المباني ومياه الصرف",
-        "الالتزام بالاستدامة وإعادة التدوير",
-        "معايير جودة عالية وموثوقية مثبتة"
-      ]
-    },
-    established: "1954",
-    website: "https://www.poloplast.com/en-at/",
-    logo: poloplastLogo,
-    mainImage: poloplastMain,
-    galleryImages: [
-      poloplastProduct,
-    ]
-  },
+
   {
     id: "polymelt",
     slug: "polymelt",
@@ -501,8 +661,14 @@ export const brandsData: BrandData[] = [
       ar: "ألمانيا"
     },
     products: {
-      en: ["Polymutan PPR", "Ecosan PPR", "UV PPR"],
-      ar: ["أنابيب ومُوصلات PP-R و PP-RCT للمياه الصالحة للشرب، التدفئة، التبريد، والتطبيقات الصناعية"]
+      en: [
+        { name: "Polymutan PPR" },
+        { name: "Ecosan PPR" },
+        { name: "UV PPR" }
+      ],
+      ar: [
+        { name: "أنابيب ومُوصلات PP-R و PP-RCT للمياه الصالحة للشرب، التدفئة، التبريد، والتطبيقات الصناعية" }
+      ]
     },
     description: {
       en: "Polymelt Piping Systems GmbH, established in 1968 and based in Ebenhofen, Bavaria, Germany, specializes in the development and manufacture of polypropylene (PP-R and PP-RCT) piping systems. Their products are used worldwide in residential construction, industrial plants, public facilities, and commercial buildings. The company is known for its high-quality standards and commitment to sustainability.",
@@ -541,8 +707,16 @@ export const brandsData: BrandData[] = [
       ar: "ألمانيا"
     },
     products: {
-      en: ["HT Safe", "Skolan Safe", "KG System"],
-      ar: ["HT Safe", "Skolan Safe", "نظام KG"]
+      en: [
+        { name: "HT Safe" },
+        { name: "Skolan Safe" },
+        { name: "KG System" }
+      ],
+      ar: [
+        { name: "HT Safe" },
+        { name: "Skolan Safe" },
+        { name: "نظام KG" }
+      ]
     },
     description: {
       en: "Ostendorf Kunststoffe GmbH, founded in 1948 in Vechta, Germany, is a leading manufacturer of plastic pipe systems. They specialize in high-performance drainage solutions for residential, commercial, and industrial applications. Products include HT Safe, Skolan Safe, and KG System, all designed for durability, sound insulation, and efficient wastewater disposal.",
@@ -581,8 +755,12 @@ export const brandsData: BrandData[] = [
       ar: "إيطاليا"
     },
     products: {
-      en: ["Power Pumps"],
-      ar: ["مضخات الطاقة (EsyBox، EsyBox Mini 3، EsyBox Max)"]
+      en: [
+        { name: "Power Pumps" }
+      ],
+      ar: [
+        { name: "مضخات الطاقة (EsyBox، EsyBox Mini 3، EsyBox Max)" }
+      ]
     },
     description: {
       en: "DAB Pumps, founded in 1975 in Mestrino, Italy, is a leading manufacturer specializing in water movement and management technologies. Their Power Pumps, including the EsyBox, EsyBox Mini 3, and EsyBox Max, are advanced electronic pressure booster systems designed for residential and commercial applications. These systems utilize variable frequency drives (VFD) to maintain constant water pressure, ensuring energy efficiency and reliability.",
@@ -622,21 +800,21 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        "Ceramic Tiles",
-        "Porcelain Tiles",
-        "Sanitary Ware",
-        "Electric Water Heaters"
+        { name: "Ceramic Tiles" },
+        { name: "Porcelain Tiles" },
+        { name: "Sanitary Ware" },
+        { name: "Electric Water Heaters" }
       ],
       ar: [
-        "بلاط السيراميك",
-        "بلاط البورسلين",
-        "الأدوات الصحية",
-        "سخانات المياه الكهربائية",
-        "منتجات بلاستيكية وأكريليك",
-        "الخلاطات والدش",
-        "حاويات الحمام الجاهزة",
-        "الطوب الأحمر",
-        "المعادن الصناعية"
+        { name: "بلاط السيراميك" },
+        { name: "بلاط البورسلين" },
+        { name: "الأدوات الصحية" },
+        { name: "سخانات المياه الكهربائية" },
+        { name: "منتجات بلاستيكية وأكريليك" },
+        { name: "الخلاطات والدش" },
+        { name: "حاويات الحمام الجاهزة" },
+        { name: "الطوب الأحمر" },
+        { name: "المعادن الصناعية" }
       ]
     },
     description: {
@@ -678,8 +856,14 @@ export const brandsData: BrandData[] = [
       ar: "مصر"
     },
     products: {
-      en: ["PVC Pipes & Fittings", "PPR Pipes & Fittings"],
-      ar: ["أنابيب ومُوصلات PVC", "أنابيب ومُوصلات PPR"]
+      en: [
+        { name: "PVC Pipes & Fittings" },
+        { name: "PPR Pipes & Fittings" }
+      ],
+      ar: [
+        { name: "أنابيب ومُوصلات PVC" },
+        { name: "أنابيب ومُوصلات PPR" }
+      ]
     },
     description: {
       en: "Established in 1982 by Chemist El Sayed Ahmed Ismail Nassar, Nassar Plastic & Pipe Factories is a leading manufacturer of plastic piping systems in Egypt. The company specializes in producing high-quality PVC and PPR pipes and fittings for various applications, including water supply, drainage, and industrial systems. Nassar Plastic is committed to innovation, quality, and customer satisfaction.",
@@ -718,8 +902,14 @@ export const brandsData: BrandData[] = [
       ar: "هولندا"
     },
     products: {
-      en: ["Concealed Systems", "Flushing Plates"],
-      ar: ["أنظمة مخفية", "ألواح تدفق المياه"]
+      en: [
+        { name: "Concealed Systems" },
+        { name: "Flushing Plates" }
+      ],
+      ar: [
+        { name: "أنظمة مخفية" },
+        { name: "ألواح تدفق المياه" }
+      ]
     },
     description: {
       en: "WISA Sanitair, based in the Netherlands, specializes in innovative and high-quality bathroom solutions. Their product range includes concealed systems for toilets, washbasins, and urinals, as well as a variety of flushing plates made from materials like high-quality plastic, stainless steel, and tempered glass. These products are designed to offer durability, ease of installation, and aesthetic appeal.",

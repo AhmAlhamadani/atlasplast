@@ -15,7 +15,7 @@ import TeamCard from "../../ui/cards/TeamCard";
 const topTeamMembers = [
   {
     id: 1,
-    name: "Ameer Almusawi",
+    name: "Eng. Ameer Almusawi",
     title: "Founder - Chairman of the Board",
     image: team1,
     translationKey: "ameer",
@@ -27,8 +27,8 @@ const topTeamMembers = [
   },
   {
     id: 2,
-    name: "Jaafar AlMusawi",
-    title: "C.E.O",
+    name: "Eng. Jaafar AlMusawi",
+    title: "CEO",
     image: team2,
     translationKey: "jaafar",
     socials: [
@@ -43,8 +43,8 @@ const topTeamMembers = [
 const bottomTeamMembers = [
   {
     id: 3,
-    name: "Mohammed Bajalan",
-    title: "Technology Officer",
+    name: "Dr. Mohammed Bajalan",
+    title: "CBDO",
     image: team3,
     translationKey: "mohammed",
     socials: [
@@ -80,10 +80,10 @@ const bottomTeamMembers = [
   },
   {
     id: 6,
-    name: "Ahmed Abdulrazak",
-    title: "Egypt Branch Manager",
+    name: "Saif Nabil",
+    title: "Sales Manager",
     image: team6,
-    translationKey: "ahmed",
+    translationKey: "saif",
     socials: [
       { icon: <FaYoutube size={16} />, link: "#" },
       { icon: <FaLinkedinIn size={16} />, link: "#" },

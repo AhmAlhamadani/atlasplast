@@ -47,9 +47,16 @@ const TeamCard: React.FC<{ member: TeamMember; size?: 'large' | 'small' }> = ({ 
       {/* Image */}
       <div className="relative">
         <img
-          className={`w-full object-cover rounded-[10px] aspect-square ${isSmall ? 'h-[200px]' : 'h-[340px]'}`}
           src={member.image}
           alt={translatedContent.name}
+            className={`rounded-[8px] max-h-[400px] object-cover object-top w-full ${isSmall ? 'h-[100px]' : 'h-[100px]'} transition-transform duration-300 group-hover:scale-105`}
+          loading="lazy"
+          style={{
+            imageRendering: "auto", // ensure default browser rendering for quality
+            maxWidth: "100%",
+            height: "auto",
+            display: "block"
+          }}
         />
         {/* <div className={`bg-[#E5E8F2] text-primaryBlue rounded-full flex justify-center items-center absolute left-1/2 -translate-x-1/2 -bottom-5 z-10 group-hover:text-secondaryColor duration-300 ease-in-out ${isSmall ? 'w-8 h-8' : 'w-10 h-10'}`}>
           <LuShare2 size={isSmall ? 16 : 20} />

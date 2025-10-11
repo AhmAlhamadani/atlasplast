@@ -45,6 +45,10 @@ export interface Project {
     en: string;
     ar: string;
   };
+  supplied: {
+    en: string[];
+    ar: string[];
+  };
   content: {
     heading: {
       en: string;
@@ -93,6 +97,10 @@ export const projects: Project[] = [
     location: {
       en: "Grand Millennium Hotel Sulaimani, Sulaymaniyah, Sulaymaniyah Governorate, 46001",
       ar: "فندق جراند ميلينيوم السليمانية، السليمانية، محافظة السليمانية، 46001"
+    },
+    supplied: {
+      en: ["Aquapa PPR Pipes", "Aquapa PPR Fittings", "Welding Machine", "PVC Pipes", "PVC Fittings"],
+      ar: ["أنابيب أكوابا PPR", "ملحقات أكوابا PPR", "آلة اللحام", "أنابيب PVC", "ملحقات PVC"]
     },
     content: {
       heading: {
@@ -184,6 +192,10 @@ export const projects: Project[] = [
     location: {
       en: "Karada Street, Baghdad, Baghdad Governorate, Iraq",
       ar: "شارع الكردا، بغداد، العراق"
+    },
+    supplied: {
+      en: ["Georg Fischer PPR Pipes", "Georg Fischer PPR Fittings", "Welding Machine", "PVC Pipes", "PVC Fittings"],
+      ar: ["أنابيب جورج فيشر PPR", "ملحقات جورج فيشر PPR", "آلة اللحام", "أنابيب PVC", "ملحقات PVC"]
     },
     content: {
       heading: {
@@ -277,6 +289,10 @@ export const projects: Project[] = [
       en: "Gulan Street (40m Road), near Erbil International Airport, Erbil, Iraq",
       ar: "شارع جولان (طريق 40م)، قرب مطار أربيل الدولي، أربيل، العراق"
     },
+    supplied: {
+      en: ["Poloplast PP Pipes", "Poloplast PP Fittings", "Welding Machine", "PVC Pipes", "PVC Fittings"],
+      ar: ["أنابيب بولوبلاست PP", "ملحقات بولوبلاست PP", "آلة اللحام", "أنابيب PVC", "ملحقات PVC"]
+    },
     content: {
       heading: {
         en: "Piping Infrastructure for MRF Four Towers",
@@ -367,6 +383,10 @@ export const projects: Project[] = [
       en: "Qadisaya Expy, Baghdad, Baghdad Governorate, Iraq",
       ar: "طريق القادسية السريع، بغداد، العراق"
     },
+    supplied: {
+      en: ["Polymelt PPR Pipes", "Polymelt PPR Fittings", "Welding Machine", "PVC Pipes", "PVC Fittings"],
+      ar: ["أنابيب بوليملت PPR", "ملحقات بوليملت PPR", "آلة اللحام", "أنابيب PVC", "ملحقات PVC"]
+    },
     content: {
       heading: {
         en: "Piping Infrastructure for Mövenpick Hotel & Resort",
@@ -456,6 +476,10 @@ export const projects: Project[] = [
     location: {
       en: "Baghdad International Airport, Baghdad Governorate, Iraq",
       ar: "مطار بغداد الدولي، محافظة بغداد، العراق"
+    },
+    supplied: {
+      en: ["Bänninger PPR Pipes", "Bänninger PPR Fittings", "Welding Machine", "PVC Pipes", "PVC Fittings"],
+      ar: ["أنابيب بينينجر PPR", "ملحقات بينينجر PPR", "آلة اللحام", "أنابيب PVC", "ملحقات PVC"]
     },
     content: {
       heading: {
