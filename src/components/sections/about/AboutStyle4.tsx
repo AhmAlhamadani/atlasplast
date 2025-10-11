@@ -22,8 +22,7 @@ const AboutStyle4 = () => {
         >
           <div className="flex flex-col gap-5">
             <img
-              className={`rounded-[10px] w-full object-cover ${
-                isArabic ? "max-h-[250px]" : "max-h-[450px]"
+              className={`rounded-[10px] w-full object-cover 
               }`}
               src={about1}
               alt="about image"
