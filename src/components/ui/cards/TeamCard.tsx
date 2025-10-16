@@ -17,7 +17,7 @@ export interface TeamMember {
   translationKey?: string;
 }
 
-const TeamCard: React.FC<{ member: TeamMember; size?: 'large' | 'small' }> = ({ member, size = 'large' }) => {
+const TeamCard: React.FC<{ member: TeamMember; size?: 'large' | 'small' | 'top' }> = ({ member, size = 'large' }) => {
   const { t, i18n } = useTranslation();
 
   // Check if current language is RTL
@@ -41,15 +41,16 @@ const TeamCard: React.FC<{ member: TeamMember; size?: 'large' | 'small' }> = ({ 
   const translatedContent = getTranslatedContent();
 
   const isSmall = size === 'small';
+  const isTop = size === 'top';
   
   return (
-    <div className={`bg-white border border-secondaryColor rounded-[10px] ${isSmall ? 'p-[20px]' : 'p-[30px]'} hover:border-primaryBlue duration-300 ease-in-out group relative overflow-hidden`}>
+    <div className={`bg-white border border-primaryBorder rounded-[10px] ${isSmall ? 'p-[20px]' : isTop ? 'p-[25px]' : 'p-[30px]'} hover:border-primaryBlue duration-300 ease-in-out group relative overflow-hidden`}>
       {/* Image */}
       <div className="relative">
         <img
           src={member.image}
           alt={translatedContent.name}
-            className={`rounded-[8px] max-h-[400px] object-cover object-top w-full ${isSmall ? 'h-[100px]' : 'h-[100px]'} transition-transform duration-300 group-hover:scale-105`}
+            className={`rounded-[8px] max-h-[400px] object-cover object-top w-full ${isSmall ? 'h-[100px]' : isTop ? 'h-[140px]' : 'h-[100px]'} transition-transform duration-300 group-hover:scale-105`}
           loading="lazy"
           style={{
             imageRendering: "auto", // ensure default browser rendering for quality
@@ -64,8 +65,8 @@ const TeamCard: React.FC<{ member: TeamMember; size?: 'large' | 'small' }> = ({ 
       </div>
 
       {/* Description */}
-      <div className={`text-center ${isSmall ? 'mt-[20px]' : 'mt-[30px]'} ${isRTL ? "text-right" : ""}`}>
-        <h4 className={`${isSmall ? 'text-base' : 'text-lg'} font-semibold ${isArabic ? 'font-arabic' : ''}`}>{translatedContent.name}</h4>
+      <div className={`text-center ${isSmall ? 'mt-[20px]' : isTop ? 'mt-[25px]' : 'mt-[30px]'} ${isRTL ? "text-right" : ""}`}>
+        <h4 className={`${isSmall ? 'text-base' : isTop ? 'text-lg' : 'text-lg'} font-semibold ${isArabic ? 'font-arabic' : ''}`}>{translatedContent.name}</h4>
         <p className={`text-sm text-gray-500 ${isArabic ? 'font-arabic' : ''}`}>{translatedContent.title}</p>
       </div>
 

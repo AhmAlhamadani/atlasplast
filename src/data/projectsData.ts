@@ -21,7 +21,12 @@ import baghdadInternationalAirportMain from "../assets/projects/project-4.png";
 import baghdadInternationalAirportProject1 from "../assets/projects/BaghdadAirport1.png";
 import baghdadInternationalAirportProject2 from "../assets/projects/BaghdadAirport2.png";
 
-
+// Movenbik
+// Dar salam 
+// Hotel Rixos - Ab Kh
+// -- Hakan 3a, Borfit, Pimtas, Ascelik, Nassar, aquapa, Hakan HDPE
+// -- Both PPR, PVC, HDPE
+// Bedu 
 
 
 export interface Project {
@@ -384,7 +389,7 @@ export const projects: Project[] = [
       ar: "طريق القادسية السريع، بغداد، العراق"
     },
     supplied: {
-      en: ["Polymelt PPR Pipes", "Polymelt PPR Fittings", "Welding Machine", "PVC Pipes", "PVC Fittings"],
+      en: ["Polo UV", "Hakan Premium", "Pimtas", "ascelik"], //PVC mainly
       ar: ["أنابيب بوليملت PPR", "ملحقات بوليملت PPR", "آلة اللحام", "أنابيب PVC", "ملحقات PVC"]
     },
     content: {

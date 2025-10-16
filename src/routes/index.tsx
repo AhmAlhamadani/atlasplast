@@ -15,6 +15,7 @@ import PrivacyPolicy from "../pages/PrivacyPolicy";
 import HomeTwoLayout from "../components/layout/HomeTwoLayout";
 import InnerPageLayout from "../components/layout/InnerPageLayout";
 import BrandDetails from "../pages/BrandDetails";
+import Team from "../pages/Team";
 
 // const router = createBrowserRouter([
 //   {
@@ -72,6 +73,7 @@ const router = createBrowserRouter([
       { path: "blog", element: <Blog /> },
       { path: "blog/:slug", element: <BlogDetails /> },
       { path: "brand/:slug", element: <BrandDetails /> },
+      { path: "team", element: <Team /> },
       { path: "terms-condition", element: <TermsAndConditions /> },
       { path: "privacy-policy", element: <PrivacyPolicy /> },
       { path: "*", element: <NotFound /> },

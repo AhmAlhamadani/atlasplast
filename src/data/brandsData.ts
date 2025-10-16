@@ -18,10 +18,16 @@ import turanBorfitProduct from '../assets/brands/turan-borfit/product.png';
 import aquapaLogo from '../assets/brands/brand-2.png';
 import aquapaMain from '../assets/brands/aquapa/main.png';
 import aquapaProduct from '../assets/brands/aquapa/product.png';
+import aquapaPprSpecImage from '../assets/brands/aquapa/spec-images/ppr.png';
+import aquapaSilentPpSpecImage from '../assets/brands/aquapa/spec-images/silent_pp.png';
 
 import pimtasLogo from '../assets/brands/brand-6.png';
 import pimtasMain from '../assets/brands/pimtas/main.png';
 import pimtasProduct from '../assets/brands/pimtas/product.png';
+import pimtasCompressionFittingsSpecImage from '../assets/brands/pimtas/spec-images/compression_fittings.png';
+import pimtasPe100SpecImage from '../assets/brands/pimtas/spec-images/pe100.png';
+import pimtasUpvcPressSpecImage from '../assets/brands/pimtas/spec-images/upvc_press.png';
+import pimtasPpFittingsSpecImage from '../assets/brands/pimtas/spec-images/pp_fittings.png';
 
 import candanMakinaLogo from '../assets/brands/brand-16.png';
 import candanMakinaMain from '../assets/brands/candan-makina/main.png';
@@ -34,18 +40,25 @@ import ascelikClampProduct from '../assets/brands/ascelik-clamp/product.png';
 import kasLogo from '../assets/brands/brand-3.png';
 import kasMain from '../assets/brands/kas/main.png';
 import kasProduct from '../assets/brands/kas/product.png';
+import kasPprSpecImage from '../assets/brands/kas/spec-images/ppr.png';
+import kasFaucetsSpecImage from '../assets/brands/kas/spec-images/faucets.png';
 
 import quarterBathLogo from '../assets/brands/brand-14.png';
 import quarterBathMain from '../assets/brands/quarter-bath/main.png';
 import quarterBathProduct from '../assets/brands/quarter-bath/product.png';
+import quarterBathSanitaryWareSpecImage from '../assets/brands/quarter-bath/spec-images/sanitary.png';
+import quarterBathFurnitureSpecImage from '../assets/brands/quarter-bath/spec-images/furniture.png';
 
 import poloplastLogo from '../assets/brands/brand-15.png';
 import poloplastMain from '../assets/brands/poloplast/main.png';
 import poloplastProduct from '../assets/brands/poloplast/product.png';
+import poloplastPoloKalNgSpecImage from '../assets/brands/poloplast/spec-images/polo_kal_ng.png';
+import poloplastPoloKal3sSpecImage from '../assets/brands/poloplast/spec-images/polo_kal_3s.png';
 
 import polymeltLogo from '../assets/brands/brand-1.png';
 import polymeltMain from '../assets/brands/polymelt/main.png';
 import polymeltProduct from '../assets/brands/polymelt/product.png';
+import polymeltPprSpecImage from '../assets/brands/polymelt/spec-images/ppr.png';
 
 import ostendorfLogo from '../assets/brands/brand-17.png';
 import ostendorfMain from '../assets/brands/ostendorf/main.png';
@@ -54,10 +67,15 @@ import ostendorfProduct from '../assets/brands/ostendorf/product.png';
 import dabPumpsLogo from '../assets/brands/brand-11.png';
 import dabPumpsMain from '../assets/brands/dab-pumps/main.png';
 import dabPumpsProduct from '../assets/brands/dab-pumps/product.png';
+import dabPumpsSpecImage from '../assets/brands/dab-pumps/spec-images/pump.png';
 
 import saudiCeramicsLogo from '../assets/brands/brand-10.png';
 import saudiCeramicsMain from '../assets/brands/saudi-ceramics/main.png';
 import saudiCeramicsProduct from '../assets/brands/saudi-ceramics/product.png';
+import saudiCeramicsAquahotSpecImage from '../assets/brands/saudi-ceramics/spec-images/aquahot.png';
+import saudiCeramicsOryxSpecImage from '../assets/brands/saudi-ceramics/spec-images/oryx.png';
+import saudiCeramicsPorcelainSpecImage from '../assets/brands/saudi-ceramics/spec-images/porcelain.png';
+import saudiCeramicsCeramicSpecImage from '../assets/brands/saudi-ceramics/spec-images/ceramic.png';
 
 import nassarPlasticLogo from '../assets/brands/brand-9.png';
 import nassarPlasticMain from '../assets/brands/nassar-plastic/main.png';
@@ -117,13 +135,55 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        { name: "PPR" },
-        { name: "Silent PP" },
+        {
+          name: "PPR",
+          specifications: {
+            "Diameter": "d 20 mm to d 110 mm",
+            "Length": "4 meters, 5.8 meters",
+            "Color": "Green, Black",
+            "PN": "PN 10, PN 16, PN 20, PN 25",
+            "Standards": "EN ISO 15874, ASTM, F-2389, DIN 8077, DIN 8078"
+          },
+          specificationImage: aquapaPprSpecImage
+        },
+        {
+          name: "Silent PP",
+          specifications: {
+            "Diameter": "50 mm - 160 mm",
+            "Length": "0.15mt - 3mt",
+            "Color": "Light blue",
+            "Acoustic performance": "22 dB(A) / 4lt/s acc.",
+            "Pipes": "With socket",
+            "Standards": "EN ISO 15874, DIN 8077, DIN 8078, ASTM F-2389"
+          },
+          specificationImage: aquapaSilentPpSpecImage
+        },
         { name: "PVC" }
       ],
       ar: [
-        { name: "أنابيب وملحقات PPR" },
-        { name: "أنابيب وملحقات PP الصامت" },
+        {
+          name: "أنابيب وملحقات PPR",
+          specifications: {
+            "القطر": "20 مم إلى 110 مم",
+            "الطول": "4 أمتار، 5.8 أمتار",
+            "اللون": "أخضر، أسود",
+            "PN": "PN 10, PN 16, PN 20, PN 25",
+            "المعايير": "EN ISO 15874, ASTM, F-2389, DIN 8077, DIN 8078"
+          },
+          specificationImage: aquapaPprSpecImage
+        },
+        {
+          name: "أنابيب وملحقات PP الصامت",
+          specifications: {
+            "القطر": "50 مم - 160 مم",
+            "الطول": "0.15 متر - 3 متر",
+            "اللون": "أزرق فاتح",
+            "الأداء الصوتي": "22 ديسيبل (أ) / 4 لتر/ثانية",
+            "الأنابيب": "مع مقبس",
+            "المعايير": "EN ISO 15874, DIN 8077, DIN 8078, ASTM F-2389"
+          },
+          specificationImage: aquapaSilentPpSpecImage
+        },
         { name: "أنابيب وملحقات PVC" }
       ]
     },
@@ -299,11 +359,68 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        { name: "PP pipes" },
-        { name: "PP fittings" }
+        {
+          name: "POLO KAL NG",
+          specifications: {
+            "Diameter": "32 mm - 200 mm",
+            "Length": "0.15mt - 3mt",
+            "Color": "Blue (RAL 5014)",
+            "Acoustic performance": "18 dB(A) / 2lt/ s acc. EN14366",
+            "Flammability class": "B2 acc. to DIN 4102",
+            "Pipes": "With and without socket",
+            "Chemical Resistance": "Resistant in pH range ~2 to 13.",
+            "Seal materials": "EPDM",
+            "Standards": "EN 1451-1, EN ISO 9969, EN 13501-1 – fire, DIN 4102, IMO Res. A.753(18"
+          },
+          specificationImage: poloplastPoloKalNgSpecImage
+        },
+        {
+          name: "POLO KAL 3S",
+          specifications: {
+            "Diameter": "75 mm - 160 mm",
+            "Length": "6mt -12mt, 100 mt",
+            "Color": "Light grey, RAL 7035",
+            "Acoustic performance": "12 dB(A) / 4lt/ s acc. DIN 4109",
+            "Flammability class": "D-s2, B2.",
+            "Pipes": "socket and builin EPM",
+            "Chemical Resistance": "Resistant in pH range ~2 to 13.",
+            "Seal materials": "EPDM",
+            "Standards": "DIN EN 12056, EN 14366, DIN 4109, B per EN 1451-1, DIN 1986-100"
+          },
+          specificationImage: poloplastPoloKal3sSpecImage
+        }
       ],
       ar: [
-        { name: "أنابيب POLO-KAL NG متعددة الطبقات من البولي بروبيلين" }
+        {
+          name: "POLO KAL NG",
+          specifications: {
+            "القطر": "32 مم - 200 مم",
+            "الطول": "0.15 متر - 3 متر",
+            "اللون": "أزرق (RAL 5014)",
+            "الأداء الصوتي": "18 ديسيبل (أ) / 2 لتر/ثانية حسب EN14366",
+            "فئة القابلية للاشتعال": "B2 حسب DIN 4102",
+            "الأنابيب": "مع وبدون مقبس",
+            "مقاومة المواد الكيميائية": "مقاومة في نطاق الأس الهيدروجيني ~2 إلى 13.",
+            "مواد الختم": "EPDM",
+            "المعايير": "EN 1451-1, EN ISO 9969, EN 13501-1 – fire, DIN 4102, IMO Res. A.753(18"
+          },
+          specificationImage: poloplastPoloKalNgSpecImage
+        },
+        {
+          name: "POLO KAL 3S",
+          specifications: {
+            "القطر": "75 مم - 160 مم",
+            "الطول": "6 متر -12 متر، 100 متر",
+            "اللون": "رمادي فاتح، RAL 7035",
+            "الأداء الصوتي": "12 ديسيبل (أ) / 4 لتر/ثانية حسب DIN 4109",
+            "فئة القابلية للاشتعال": "D-s2، B2.",
+            "الأنابيب": "مقبس ومبني في EPM",
+            "مقاومة المواد الكيميائية": "مقاومة في نطاق الأس الهيدروجيني ~2 إلى 13.",
+            "مواد الختم": "EPDM",
+            "المعايير": "DIN EN 12056, EN 14366, DIN 4109, B per EN 1451-1, DIN 1986-100"
+          },
+          specificationImage: poloplastPoloKal3sSpecImage
+        }
       ]
     },
     description: {
@@ -388,17 +505,98 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        { name: "PPR Fittings" },
-        { name: "PP Compression Fittings" },
-        { name: "UPVC" },
-        { name: "HDPE" }
+        {
+          name: "Compression Fittings",
+          specifications: {
+            "Diameter": "20 mm - 110 mm (thread ½″ up to 4″)",
+            "Color": "Blue, green",
+            "Application": "drinking water, Pressurised wastewater, Above‐ground and underground installations",
+            "PN": "10, 16",
+            "Standards": "DIN EN 12201, ISO 11922-1, DIN 8074, EN 12201-1/2, DIN EN 10226 (ISO 7-1), BS 21, AS 1722.1, DIN EN 1092-1, DIN 2501.1, TS ISO 17885"
+          },
+          specificationImage: pimtasCompressionFittingsSpecImage
+        },
+        {
+          name: "PE100 Pipe & Fittings",
+          specifications: {
+            "Diameter": "20 mm - 63 mm",
+            "Length": "6mt -12mt, 100 mt",
+            "Pipe": "With Socket, without Socket",
+            "PN": "PN6, PN10, PN16, and PN20",
+            "Standards": "ISO 4427-2, N 12201-2, DIN 8074 / DIN 8075, TS 418-2 EN 12201"
+          },
+          specificationImage: pimtasPe100SpecImage
+        },
+        {
+          name: "U-PVC Press Pipes",
+          specifications: {
+            "Diameter": "d 20 mm to d 400 mm",
+            "Length": "6 meters customizable",
+            "Color": "Light Grey",
+            "PN": "PN6, PN10, PN16",
+            "Pipe": "With Socket, Plain end, with O ring",
+            "Standards": "EN ISO 1452-2, DIN 8061 / 8062, TS 274-2 EN 1452-2, ISO 4422"
+          },
+          specificationImage: pimtasUpvcPressSpecImage
+        },
+        {
+          name: "PP Fittings",
+          specifications: {
+            "Diameter": "d 20 mm to d 110 mm",
+            "Length": "6, 12.5, meters",
+            "PN": "PN10, PN16, and PN20",
+            "Type": "Socket Fusion Fittings, Transition Fittings, Ball valves, stop valves, manifolds, flange adapters",
+            "Standards": "DIN 8077 / DIN 8078, ISO 15874, EN ISO 15494, TS 9937 EN ISO 15874"
+          },
+          specificationImage: pimtasPpFittingsSpecImage
+        }
       ],
       ar: [
-        { name: "أنابيب وملحقات PPR" },
-        { name: "ملحقات ضغط PP" },
-        { name: "أنابيب وملحقات PVC وUPVC" },
-        { name: "أنابيب HDPE" },
-        { name: "معدات المسابح" }
+        {
+          name: "ملحقات الضغط",
+          specifications: {
+            "القطر": "20 مم - 110 مم (خيط ½″ حتى 4″)",
+            "اللون": "أزرق، أخضر",
+            "التطبيق": "مياه الشرب، مياه الصرف المضغوطة، التركيبات فوق الأرض وتحت الأرض",
+            "PN": "10، 16",
+            "المعايير": "DIN EN 12201, ISO 11922-1, DIN 8074, EN 12201-1/2, DIN EN 10226 (ISO 7-1), BS 21, AS 1722.1, DIN EN 1092-1, DIN 2501.1, TS ISO 17885"
+          },
+          specificationImage: pimtasCompressionFittingsSpecImage
+        },
+        {
+          name: "أنابيب وملحقات PE100",
+          specifications: {
+            "القطر": "20 مم - 63 مم",
+            "الطول": "6 متر -12 متر، 100 متر",
+            "الأنبوب": "مع مقبس، بدون مقبس",
+            "PN": "PN6، PN10، PN16، وPN20",
+            "المعايير": "ISO 4427-2, N 12201-2, DIN 8074 / DIN 8075, TS 418-2 EN 12201"
+          },
+          specificationImage: pimtasPe100SpecImage
+        },
+        {
+          name: "أنابيب U-PVC المضغوطة",
+          specifications: {
+            "القطر": "20 مم إلى 400 مم",
+            "الطول": "6 أمتار قابل للتخصيص",
+            "اللون": "رمادي فاتح",
+            "PN": "PN6، PN10، PN16",
+            "الأنبوب": "مع مقبس، نهاية عادية، مع حلقة O",
+            "المعايير": "EN ISO 1452-2, DIN 8061 / 8062, TS 274-2 EN 1452-2, ISO 4422"
+          },
+          specificationImage: pimtasUpvcPressSpecImage
+        },
+        {
+          name: "ملحقات PP",
+          specifications: {
+            "القطر": "20 مم إلى 110 مم",
+            "الطول": "6، 12.5، أمتار",
+            "PN": "PN10، PN16، وPN20",
+            "النوع": "ملحقات الانصهار بالمقبس، ملحقات الانتقال، صمامات الكرة، صمامات الإيقاف، المجمعات، محولات الفلانش",
+            "المعايير": "DIN 8077 / DIN 8078, ISO 15874, EN ISO 15494, TS 9937 EN ISO 15874"
+          },
+          specificationImage: pimtasPpFittingsSpecImage
+        }
       ]
     },
     description: {
@@ -483,12 +681,34 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        { name: "Welding Machines" },
+        {
+          name: "Welding Machines",
+          specifications: {
+            "Welding Diameter Range": "Ø20 mm up to Ø110 mm",
+            "Temperature Range": "Adjustable up to 300 °C",
+            "Operating Voltage": "220–240 V, 50–60 Hz",
+            "Max Working Pressure": "PN20",
+            "Power Options": "700 W, 1,500 W, 2,000 W, 2,400 W (depending on model)",
+            "Compliance": "Meets DIN standards"
+          },
+          specificationImage: candanMakinaProduct
+        },
         { name: "Pipe Cutters & Sharpeners" },
         { name: "Test Pressure Pumps" }
       ],
       ar: [
-        { name: "آلات وأكسسوارات لحام الأنابيب البلاستيكية" },
+        {
+          name: "آلات وأكسسوارات لحام الأنابيب البلاستيكية",
+          specifications: {
+            "نطاق قطر اللحام": "Ø20 مم حتى Ø110 مم",
+            "نطاق درجة الحرارة": "قابل للتعديل حتى 300 °C",
+            "جهد التشغيل": "220–240 فولت، 50–60 هرتز",
+            "أقصى ضغط عمل": "PN20",
+            "خيارات الطاقة": "700 واط، 1,500 واط، 2,000 واط، 2,400 واط (حسب الموديل)",
+            "الامتثال": "يلبي معايير DIN"
+          },
+          specificationImage: candanMakinaProduct
+        },
         { name: "مقصات وأنصال تنعيم الأنابيب البلاستيكية" },
         { name: "مضخات اختبار الضغط" },
         { name: "صمامات نحاسية ووصلات" }
@@ -530,10 +750,26 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        { name: "Pipe Clamps & Fixings" }
+        {
+          name: "Pipe Clamps & Fixings",
+          specifications: {
+            "Product types": "Pipe clamps; Profiles & consoles; Other fittings",
+            "Materials": "Malleable iron; ductile iron; steel (e.g. carbon steel); possibly stainless steel and rubber elements (gaskets)",
+            "Coatings": "plain; others are black oxide; zinc plated; hot dipped galvanized.",
+            "Applicability": "Plumbing, HVAC, industrial piping supports; possibly fire protection and mechanical installations"
+          }
+        }
       ],
       ar: [
-        { name: "قلابات تثبيت الأنابيب" },
+        {
+          name: "قلابات تثبيت الأنابيب",
+          specifications: {
+            "أنواع المنتجات": "قلابات الأنابيب؛ الملفات والكونسولات؛ ملحقات أخرى",
+            "المواد": "الحديد المطاوع؛ الحديد الدكتايل؛ الفولاذ (مثل الفولاذ الكربوني)؛ ربما الفولاذ المقاوم للصدأ والعناصر المطاطية (الوصلات)",
+            "الطلاءات": "عادي؛ أخرى هي أكسيد أسود؛ مطلي بالزنك؛ مغلف بالزنك الساخن",
+            "القابلية للتطبيق": "السباكة، التدفئة والتهوية وتكييف الهواء، دعامات الأنابيب الصناعية؛ ربما الحماية من الحرائق والتركيبات الميكانيكية"
+          }
+        },
         { name: "تثبيتات الأنابيب" }
       ]
     },
@@ -573,12 +809,50 @@ export const brandsData: BrandData[] = [
     },
     products: { 
       en: [
-        { name: "PPR" },
-        { name: "Faucets / Sanitary Ware" }
+        {
+          name: "PPR",
+          specifications: {
+            "Diameter": "20 mm - 110 mm",
+            "Length": "4mt -6mt",
+            "Pipe": "With Socket, without Socket",
+            "PN": "PN10, PN16, PN20, PN 25",
+            "Standards": "ISO 9001 , CE, EN, TSE, TS, TSEK, GOST"
+          },
+          specificationImage: kasPprSpecImage
+        },
+        {
+          name: "Faucets",
+          specifications: {
+            "Types": "Washbasin Mixers,Lux Kitchen Mixers,WallType Kitchen Mixers,Shower Mixers,Bidet Mixers,Side Lever Mixers,Kitchen Faucets, Industrial Kitchen Mixers",
+            "Sensor Faucet Series": "Yes",
+            "spare parts available": "Yes",
+            "Application": "bathroom, kitchen, shower, etc."
+          },
+          specificationImage: kasFaucetsSpecImage
+        }
       ],
       ar: [
-        { name: "أنابيب وملحقات PPR" },
-        { name: "حنفيات / أدوات صحية" }
+        {
+          name: "أنابيب وملحقات PPR",
+          specifications: {
+            "القطر": "20 مم - 110 مم",
+            "الطول": "4 متر -6 متر",
+            "الأنبوب": "مع مقبس، بدون مقبس",
+            "PN": "PN10، PN16، PN20، PN 25",
+            "المعايير": "ISO 9001 ، CE، EN، TSE، TS، TSEK، GOST"
+          },
+          specificationImage: kasPprSpecImage
+        },
+        {
+          name: "حنفيات",
+          specifications: {
+            "الأنواع": "خلاطات الأحواض، خلاطات المطبخ الفاخرة، خلاطات المطبخ الجدارية، خلاطات الدش، خلاطات البيديه، خلاطات الرافعة الجانبية، حنفيات المطبخ، خلاطات المطبخ الصناعية",
+            "سلسلة الحنفيات الحساسة": "نعم",
+            "قطع الغيار متوفرة": "نعم",
+            "التطبيق": "الحمام، المطبخ، الدش، إلخ"
+          },
+          specificationImage: kasFaucetsSpecImage
+        }
       ]
     },
     description: {
@@ -617,12 +891,56 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        { name: "Sanitary Ware" },
-        { name: "Bathroom Furniture" }
+        {
+          name: "Sanitary Ware",
+          specifications: {
+            "Material": "Vitreous, fully glazed surface",
+            "Product Type": "Water Closets,Wash Basins, Urinals, Bidets, Matching Accessories",
+            "Flushing System": "Dual flush (3–6 L) / Rimless design",
+            "Features": "Soft-close / Anti-bacterial / Water-saving",
+            "Standards & Certifications": "SASO, ISO 9001, CE, WRAS"
+          },
+          specificationImage: quarterBathSanitaryWareSpecImage
+        },
+        {
+          name: "Bathroom Furniture",
+          specifications: {
+            "Material": "moisture-resistant MDF",
+            "finishes": "lacquered, laminated, or veneer",
+            "Fully sealed edges": "for durability and water resistance",
+            "Colors": "Wide range of colors, textures, and finishes",
+            "Functionality": "Smart storage solutions, Soft-close",
+            "Features": "Anti-fungal and anti-bacterial coating",
+            "Standards": "ISO 9001, CE"
+          },
+          specificationImage: quarterBathFurnitureSpecImage
+        }
       ],
       ar: [
-        { name: "أدوات صحية / سيراميك (أحواض غسيل، مراحيض، بيديه، كراسي الزوار)" },
-        { name: "أثاث الحمام والخزائن" }
+        {
+          name: "أدوات صحية / سيراميك",
+          specifications: {
+            "المادة": "سيراميك، سطح ملمع بالكامل",
+            "نوع المنتج": "مراحيض، أحواض غسيل، كراسي زوار، بيديه، ملحقات متطابقة",
+            "نظام التدفق": "تدفق مزدوج (3–6 لتر) / تصميم بدون حافة",
+            "المميزات": "إغلاق ناعم / مضاد للبكتيريا / توفير المياه",
+            "المعايير والشهادات": "SASO، ISO 9001، CE، WRAS"
+          },
+          specificationImage: quarterBathSanitaryWareSpecImage
+        },
+        {
+          name: "أثاث الحمام والخزائن",
+          specifications: {
+            "المادة": "MDF مقاوم للرطوبة",
+            "الطلاءات": "مطلي، مغلف، أو منضد",
+            "الحواف المغلقة بالكامل": "للمتانة ومقاومة المياه",
+            "الألوان": "مجموعة واسعة من الألوان والأنسجة والطلاءات",
+            "الوظائف": "حلول تخزين ذكية، إغلاق ناعم",
+            "المميزات": "طلاء مضاد للفطريات والبكتيريا",
+            "المعايير": "ISO 9001، CE"
+          },
+          specificationImage: quarterBathFurnitureSpecImage
+        }
       ]
     },
     description: {
@@ -662,11 +980,31 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        { name: "Polymutan PPR" },
-        { name: "Ecosan PPR" },
-        { name: "UV PPR" }
+        {
+          name: "Polymutan PPR/PP-RTC",
+          specifications: {
+            "Diameter": "d 20 mm to d 110 mm",
+            "Length": "4 meters",
+            "Color": "Yellow",
+            "PN": "PN 10, PN 16, PN 20, PN 25",
+            "Standards": "DIN 8077 / DIN 8078, EN ISO 15874, EN ISO 21003 (for multilayer pipes)"
+          },
+          specificationImage: polymeltPprSpecImage
+        },
+        { name: "Silenta 3A" }
       ],
       ar: [
+        {
+          name: "Polymutan PPR/PP-RTC",
+          specifications: {
+            "القطر": "20 مم إلى 110 مم",
+            "الطول": "4 أمتار",
+            "اللون": "أصفر",
+            "PN": "PN 10، PN 16، PN 20، PN 25",
+            "المعايير": "DIN 8077 / DIN 8078, EN ISO 15874, EN ISO 21003 (للأنابيب متعددة الطبقات)"
+          },
+          specificationImage: polymeltPprSpecImage
+        },
         { name: "أنابيب ومُوصلات PP-R و PP-RCT للمياه الصالحة للشرب، التدفئة، التبريد، والتطبيقات الصناعية" }
       ]
     },
@@ -756,10 +1094,28 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        { name: "Power Pumps" }
+        {
+          name: "Power Pumps",
+          specifications: {
+            "Pump Types": "Circulators, in-line and centrifugal pumps, multistage & self-priming units, submersibles, sewage & drainage pumps, lifting stations, pool/pond/saltwater pumps, pressure units, and control systems.",
+            "Head": "Max 400m",
+            "Liquid Temperature": "0 to +110 C",
+            "MAX Pressure": "10 bar"
+          },
+          specificationImage: dabPumpsSpecImage
+        }
       ],
       ar: [
-        { name: "مضخات الطاقة (EsyBox، EsyBox Mini 3، EsyBox Max)" }
+        {
+          name: "مضخات الطاقة",
+          specifications: {
+            "أنواع المضخات": "المضخات الدوارة، المضخات الخطية والطرد المركزي، وحدات متعددة المراحل والشفط الذاتي، المضخات الغاطسة، مضخات الصرف الصحي والصرف، محطات الرفع، مضخات البرك/البرك/المياه المالحة، وحدات الضغط، وأنظمة التحكم.",
+            "الرأس": "أقصى 400 متر",
+            "درجة حرارة السائل": "0 إلى +110 درجة مئوية",
+            "أقصى ضغط": "10 بار"
+          },
+          specificationImage: dabPumpsSpecImage
+        }
       ]
     },
     description: {
@@ -800,21 +1156,100 @@ export const brandsData: BrandData[] = [
     },
     products: {
       en: [
-        { name: "Ceramic Tiles" },
-        { name: "Porcelain Tiles" },
-        { name: "Sanitary Ware" },
-        { name: "Electric Water Heaters" }
+        {
+          name: "Aquahot Water Heaters",
+          specifications: {
+            "Capacities": "10 L, 15 L, 30 L, 50 L, 80 L, 100 L, 120 L, 150 L, 200L, 300L",
+            "Orientation": "vertical and horizontal",
+            "Glazed (Enamelled)": "Yes",
+            "Safety & Pressure": "Two valve 8.5 bar",
+            "Electrical Components": "Italian made",
+            "Standards": "SASO / FDS / IEC 60335-2-21:2020"
+          },
+          specificationImage: saudiCeramicsAquahotSpecImage
+        },
+        {
+          name: "Oryx Sanitary Ware",
+          specifications: {
+            "Material": "Vitreous china, fully glazed surface",
+            "Product Type": "Water Closet / Wash Basin / Urinal / Bidet / Accessories",
+            "Flushing System": "Dual flush (3–6 L) / Rimless design",
+            "Features": "Soft-close / Anti-bacterial / Water-saving",
+            "Standards & Certifications": "SASO, ISO 9001, CE, WRAS"
+          },
+          specificationImage: saudiCeramicsOryxSpecImage
+        },
+        {
+          name: "Porcelain Tiles",
+          specifications: {
+            "Dimensions": "30x30 cm, 60x60 cm, 30x60 cm, 120x60 cm",
+            "Thickness": "e.g. 10mm",
+            "Surface Finish": "Glossy, Matt, Polished, Semi-Polished",
+            "Edge Type": "Rectified / Non-Rectified",
+            "Water Absorption": "≤ 0.5%",
+            "Slip Resistance (R Rating)": "R9, R10, R11 (for anti-slip models)"
+          },
+          specificationImage: saudiCeramicsPorcelainSpecImage
+        },
+        {
+          name: "Ceramic Tiles",
+          specifications: {
+            "Dimensions": "30x30 cm, 60x60 cm, 30x60 cm",
+            "Thickness": "e.g. 8 mm, 9 mm, 10 mm, 12 mm",
+            "Surface Finish": "Glossy, Matt, Polished, Rustic, Anti-slip",
+            "Water Absorption": "≤ 3%",
+            "Applications": "Wall, floor, indoor, outdoor, wet areas, commercial spaces"
+          },
+          specificationImage: saudiCeramicsCeramicSpecImage
+        }
       ],
       ar: [
-        { name: "بلاط السيراميك" },
-        { name: "بلاط البورسلين" },
-        { name: "الأدوات الصحية" },
-        { name: "سخانات المياه الكهربائية" },
-        { name: "منتجات بلاستيكية وأكريليك" },
-        { name: "الخلاطات والدش" },
-        { name: "حاويات الحمام الجاهزة" },
-        { name: "الطوب الأحمر" },
-        { name: "المعادن الصناعية" }
+        {
+          name: "سخانات المياه Aquahot",
+          specifications: {
+            "السعات": "10 لتر، 15 لتر، 30 لتر، 50 لتر، 80 لتر، 100 لتر، 120 لتر، 150 لتر، 200 لتر، 300 لتر",
+            "الاتجاه": "عمودي وأفقي",
+            "مطلي (مزجج)": "نعم",
+            "السلامة والضغط": "صمامان 8.5 بار",
+            "المكونات الكهربائية": "صنع إيطالي",
+            "المعايير": "SASO / FDS / IEC 60335-2-21:2020"
+          },
+          specificationImage: saudiCeramicsAquahotSpecImage
+        },
+        {
+          name: "الأدوات الصحية Oryx",
+          specifications: {
+            "المادة": "خزف زجاجي، سطح ملمع بالكامل",
+            "نوع المنتج": "مرحاض / حوض غسيل / كرسي زوار / بيديه / ملحقات",
+            "نظام التدفق": "تدفق مزدوج (3–6 لتر) / تصميم بدون حافة",
+            "المميزات": "إغلاق ناعم / مضاد للبكتيريا / توفير المياه",
+            "المعايير والشهادات": "SASO، ISO 9001، CE، WRAS"
+          },
+          specificationImage: saudiCeramicsOryxSpecImage
+        },
+        {
+          name: "بلاط البورسلين",
+          specifications: {
+            "الأبعاد": "30x30 سم، 60x60 سم، 30x60 سم، 120x60 سم",
+            "السماكة": "مثل 10 مم",
+            "اللمسة النهائية للسطح": "لامع، غير لامع، مصقول، شبه مصقول",
+            "نوع الحافة": "مستقيم / غير مستقيم",
+            "امتصاص الماء": "≤ 0.5%",
+            "مقاومة الانزلاق (تصنيف R)": "R9، R10، R11 (للنماذج المضادة للانزلاق)"
+          },
+          specificationImage: saudiCeramicsPorcelainSpecImage
+        },
+        {
+          name: "بلاط السيراميك",
+          specifications: {
+            "الأبعاد": "30x30 سم، 60x60 سم، 30x60 سم",
+            "السماكة": "مثل 8 مم، 9 مم، 10 مم، 12 مم",
+            "اللمسة النهائية للسطح": "لامع، غير لامع، مصقول، ريفي، مضاد للانزلاق",
+            "امتصاص الماء": "≤ 3%",
+            "التطبيقات": "الجدار، الأرضية، الداخل، الخارج، المناطق الرطبة، المساحات التجارية"
+          },
+          specificationImage: saudiCeramicsCeramicSpecImage
+        }
       ]
     },
     description: {

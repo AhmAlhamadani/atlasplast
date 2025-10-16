@@ -10,7 +10,7 @@ const TermsAndConditionsInfo = () => {
 
           <div className="space-y-6 text-base leading-7">
             <p>
-              Welcome to <strong>Putech Business & IT Solutions</strong>. These Terms & Conditions
+              Welcome to <strong>Atlas Plast</strong>. These Terms & Conditions
               govern your use of our website and services. By using our website,
               you agree to comply with and be bound by the following terms.
             </p>
@@ -30,7 +30,7 @@ const TermsAndConditionsInfo = () => {
 
             <h2 className="text-2xl font-semibold text-primary mt-8">3. Intellectual Property</h2>
             <p>
-              All content, branding, logos, and assets on this site are owned by Putech or licensed
+              All content, branding, logos, and assets on this site are owned by Atlas Plast or licensed
               to us. Unauthorized use or duplication is strictly prohibited.
             </p>
 
@@ -50,10 +50,10 @@ const TermsAndConditionsInfo = () => {
             <p>
               If you have any questions about these Terms, please contact us at{" "}
               <a
-                href="mailto:hasibulhasan40420@gmail.com"
+                
                 className="text-primary underline hover:text-secondary transition"
               >
-               hasibulhasan40420@gmail.com
+               info@atlasplast.com
               </a>.
             </p>
           </div>
@@ -63,3 +63,6 @@ const TermsAndConditionsInfo = () => {
 }
 
 export default TermsAndConditionsInfo
+
+
+

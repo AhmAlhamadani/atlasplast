@@ -11,6 +11,7 @@ import { FaLinkedinIn, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import Container from "../../common/Container";
 import SectionTitle from "../../common/SectionTitle";
 import TeamCard from "../../ui/cards/TeamCard";
+import Button from "../../common/Button";
 
 const topTeamMembers = [
   {
@@ -140,6 +141,19 @@ const TeamStyle2 = () => {
           ))}
         </div>
       </Container>
+
+      <div className={`flex justify-center mt-12 ${isRTL ? "text-right" : ""}`}>
+            <Button
+              hoverBgColorClass="bg-primaryBlue"
+              className={`bg-transparent border border-primaryBlue text-primaryBlue hover:border-primaryBlue hover:text-white duration-300 ease-in-out ${isArabic ? 'font-arabic' : ''}`}
+              onClick={() => {
+                window.location.href = "/team";
+              }}
+            >
+              {t("team.viewAll")}
+            </Button>
+          </div>
+
     </div>
   );
 };

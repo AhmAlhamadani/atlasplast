@@ -59,18 +59,34 @@
     "team": {
       "label": "Our team",
       "title": "Our Leading Team Members",
+      "description": "Meet our dedicated team of professionals who drive innovation and excellence across all our operations.",
+      "viewAll": "View All Team Members",
+      "leadership": {
+        "label": "Leadership Team",
+        "title": "Our Executive Leadership"
+      },
+      "branch": {
+        "label": "Branch Management",
+        "title": "Regional Leadership & Operations"
+      },
+      "stats": {
+        "title": "Our Team at a Glance",
+        "total_members": "Total Team Members",
+        "executive_team": "Executive Leadership",
+        "branch_managers": "Branch Managers"
+      },
       "members": {
         "ameer": {
-          "name": "Ameer Almusawi",
+          "name": "Eng. Ameer Almusawi",
           "title": "Founder - Chairman of the Board"
         },
         "jaafar": {
-          "name": "Jaafar AlMusawi",
-          "title": "C.E.O"
+          "name": "Eng. Jaafar AlMusawi",
+          "title": "CEO"
         },
         "mohammed": {
-          "name": "Mohammed Bajalan",
-          "title": "Technology Officer"
+          "name": "Dr. Mohammed Bajalan",
+          "title": "CBDO"
         },
         "hussein": {
           "name": "Hussein Raad",
@@ -80,13 +96,61 @@
           "name": "Omar Ibrahim",
           "title": "Chief Financial Officer"
         },
-        "deniz": {
-          "name": "Deniz Yilmaz",
-          "title": "Imports Manager"
+        "saif": {
+          "name": "Saif Nabil",
+          "title": "Sales Manager"
         },
         "yasmine": {
           "name": "Yasmine",
           "title": "HR Manager"
+        },
+        "ahmed_hassan": {
+          "name": "Ahmed Hassan",
+          "title": "Regional Director - Baghdad"
+        },
+        "fatima_zahra": {
+          "name": "Fatima Al-Zahra",
+          "title": "Regional Director - Basra"
+        },
+        "mohammed_rashid": {
+          "name": "Mohammed Al-Rashid",
+          "title": "Regional Director - Erbil"
+        },
+        "layla_mahmoud": {
+          "name": "Layla Mahmoud",
+          "title": "Regional Director - Sulaymaniyah"
+        },
+        "ali_maliki": {
+          "name": "Ali Al-Maliki",
+          "title": "Operations Manager - Central Region"
+        },
+        "nour_din": {
+          "name": "Nour Al-Din",
+          "title": "Operations Manager - Southern Region"
+        },
+        "karim_hashimi": {
+          "name": "Karim Al-Hashimi",
+          "title": "Operations Manager - Northern Region"
+        },
+        "zainab_kurdi": {
+          "name": "Zainab Al-Kurdi",
+          "title": "Quality Assurance Manager"
+        },
+        "tariq_mansouri": {
+          "name": "Tariq Al-Mansouri",
+          "title": "Supply Chain Manager"
+        },
+        "rana_baghdadi": {
+          "name": "Rana Al-Baghdadi",
+          "title": "Customer Relations Manager"
+        },
+        "hassan_mosawi": {
+          "name": "Hassan Al-Mosawi",
+          "title": "Technical Support Manager"
+        },
+        "maya_sabah": {
+          "name": "Maya Al-Sabah",
+          "title": "Marketing & Communications Manager"
         }
       }
     },

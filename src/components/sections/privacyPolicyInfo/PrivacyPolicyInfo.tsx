@@ -8,9 +8,9 @@ const PrivacyPolicyInfo = () => {
           Privacy Policy
         </h2>
 
-        <div className="space-y-6 text-base leading-7">
+        {/* <div className="space-y-6 text-base leading-7">
           <p>
-            At <strong>Putech Business & IT Solutions</strong>, your privacy is of utmost importance to us.
+            At <strong>Atlas Plast</strong>, your privacy is of utmost importance to us.
             This Privacy Policy explains how we collect, use, disclose, and safeguard your information
             when you visit our website or use our services.
           </p>
@@ -66,13 +66,17 @@ const PrivacyPolicyInfo = () => {
           <p>
             If you have any questions or concerns about this Privacy Policy, please contact us at{" "}
             <a
-              href="mailto:hasibulhasan40420@gmail.com"
+              href="mailto:info@atlasplast.com"
               className="text-primary underline hover:text-secondary transition"
             >
-              hasibulhasan40420@gmail.com
+              info@atlasplast.com
             </a>.
+          </p> */}
+        {/* </div> */}
+        <h3 className="text-2xl font-semibold text-primary mt-8">Your Rights</h3>
+          <p>
+          This website does not collect, store, or share any personal information. We do not use cookies or tracking technologies. If you contact us directly by email or other means, we will use your information only to respond to your inquiry.
           </p>
-        </div>
       </Container>
     </div>
   )
