@@ -1,5 +1,5 @@
 import Container from "../../common/Container"
-import { companyLogos } from "../../../data/companyData"
+import { companyLogos, type CompanyLogo } from "../../../data/companyData.ts"
 import Marquee from "react-fast-marquee"
 
 const Brand = () => {
@@ -12,7 +12,7 @@ const Brand = () => {
           speed={50}
           pauseOnHover={true}
         >
-          {companyLogos.map((company) => (
+          {companyLogos.map((company: CompanyLogo) => (
             <div key={company.id} className="mx-[55px] min-w-[120px]">
               <img
                 src={company.image}
