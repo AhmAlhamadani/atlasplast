@@ -82,38 +82,38 @@ export const services: Service[] = [
   },
   {
     id: 4,
-    slug: 'water-heaters',
-    image:service4,
-    icon: '/icons/services/icon-5.svg',
-    title: 'Water Heaters',
-    description: 'Atlas provides efficient water heating solutions including electric and gas water heaters designed for reliable hot water supply. Our systems ensure energy efficiency and consistent performance for residential and commercial applications.',
+    slug: 'water-pumps-heaters',
+    image:service5,
+    icon: '/icons/services/icon-6.svg',
+    title: 'Water Pumps & Heaters',
+    description: 'Atlas provides integrated water pumping and heating solutions: DAB water pumps for reliable pressure and flow, and Saudi Ceramics water heaters for efficient hot water supply.',
     paragraphs: [
-      "Atlas Plast delivers comprehensive water heating solutions, including electric and gas water heaters designed for reliable hot water supply. We distribute high-quality heating systems from trusted international brands that ensure energy efficiency and consistent performance.",
-      "Our comprehensive water heater range covers everything from residential tank heaters to commercial instant water heaters. With over 50 years of experience, we provide reliable solutions that ensure efficient hot water delivery and long-lasting performance in Iraq's diverse climate conditions."
+      "Our DAB pumping solutions include submersible, centrifugal, and booster pumps for dependable water movement and pressure management in residential and commercial settings.",
+      "Our Saudi Ceramics water heaters deliver efficient, consistent hot water with a range of electric and gas options to suit different capacities and installation needs."
     ],
     points: [
-      "Complete range of electric and gas water heaters",
-      "High-quality tank and instant water heating systems",
-      "Suitable for residential and commercial applications",
-      "Expert technical support and heating system installation"
+      "DAB submersible, centrifugal, and booster pumps",
+      "Saudi Ceramics electric and gas water heaters",
+      "Reliable pressure management and hot water supply",
+      "Expert selection guidance and installation support"
     ]
   },
   {
     id: 5,
-    slug: 'water-pumps',
-    image:service5,
-    icon: '/icons/services/icon-6.svg',
-    title: 'Water Pumps',
-    description: 'Atlas offers reliable water pumping solutions including submersible pumps, centrifugal pumps, and booster pumps designed for efficient water movement. Our systems ensure reliable water supply and pressure management.',
+    slug: 'ceramics',
+    image:service4,
+    icon: '/icons/services/icon-2.svg',
+    title: 'Ceramics',
+    description: 'Atlas supplies high-quality ceramic and porcelain tiles for residential and commercial projects, offering diverse sizes, finishes, and designs for floors and walls.',
     paragraphs: [
-      "Atlas Plast delivers comprehensive water pumping solutions, including submersible pumps, centrifugal pumps, and booster pumps designed for efficient water movement and pressure management. We distribute high-quality pumping systems from trusted international manufacturers.",
-      "Our comprehensive water pump range covers everything from residential water supply to large-scale irrigation and industrial applications. With over 50 years of experience, we provide reliable solutions that ensure efficient water movement and long-lasting performance in Iraq's diverse applications."
+      "We offer a wide selection of floor and wall tiles, mosaics, and accessories suitable for kitchens, bathrooms, living spaces, and high-traffic areas.",
+      "Our ceramics portfolio focuses on durability, water resistance, and design flexibility to meet both aesthetic and performance requirements."
     ],
     points: [
-      "Complete range of submersible, centrifugal, and booster pumps",
-      "High-quality pumping systems for various applications",
-      "Suitable for residential, agricultural, and industrial use",
-      "Expert technical support and pump system installation"
+      "Wide range of ceramic and porcelain tiles",
+      "Multiple sizes, finishes, and patterns",
+      "Suitable for residential and commercial applications",
+      "Technical guidance on selection and installation"
     ]
   },
   {

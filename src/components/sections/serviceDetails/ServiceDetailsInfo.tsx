@@ -17,10 +17,10 @@ const ServiceDetailsInfo = ({currentService}:ServiceInfoProps) => {
     // Map service types to relevant brands
     const serviceBrandMap: { [key: string]: string[] } = {
       'drainage-systems': ['georg-fischer', 'poloplast', 'aquapa', 'pimtas', 'nassar-plastic', 'ostendorf-kunststoffe' ], 
-      'water-pipe-systems': ['georg-fischer', 'polymelt', 'pimtas', 'kas', 'nassar-plastic', 'banninger', 'aquapa'], // maybe add banninger
+      'water-pipe-systems': ['georg-fischer', 'polymelt', 'pimtas', 'kas', 'nassar-plastic', 'banninger', 'aquapa'],
       'sanitary-ware': ['wisa-sanitair', 'quarter-bath','saudi-ceramics', 'kas', 'alvit', 'shield', 'guarri'],
-      'water-heaters': ['saudi-ceramics'],
-      'water-pumps': ['dab-pumps'],
+      'water-pumps-heaters': ['dab-pumps', 'saudi-ceramics'],
+      'ceramics': ['saudi-ceramics'],
       'infrastructure-pipe': ['turan-borfit', 'georg-fischer', 'pimtas']
     };
     
