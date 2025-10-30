@@ -1,7 +1,7 @@
-import { FiChevronsRight } from "react-icons/fi"
 import Container from "../../common/Container"
-import ConnectingService from "./ConnectingService"
-import ServiceSidebar from "./ServiceSidebar"
+import { brandsData, type BrandData } from "../../../data/brandsData"
+import { useTranslation } from "react-i18next"
+import { Link } from "react-router-dom"
 import type { Service } from "../../../data/servicesData";
 
 interface ServiceInfoProps {
@@ -9,64 +9,82 @@ interface ServiceInfoProps {
   }
 
 const ServiceDetailsInfo = ({currentService}:ServiceInfoProps) => {
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === "ar" || i18n.language === "ku";
+
+  // Get brands that sell this type of service
+  const getBrandsForService = (serviceSlug: string) => {
+    // Map service types to relevant brands
+    const serviceBrandMap: { [key: string]: string[] } = {
+      'drainage-systems': ['georg-fischer', 'poloplast', 'aquapa', 'pimtas', 'nassar-plastic', 'ostendorf-kunststoffe' ], 
+      'water-pipe-systems': ['georg-fischer', 'polymelt', 'pimtas', 'kas', 'nassar-plastic', 'banninger', 'aquapa'], // maybe add banninger
+      'sanitary-ware': ['wisa-sanitair', 'quarter-bath','saudi-ceramics', 'kas', 'alvit', 'shield', 'guarri'],
+      'water-heaters': ['saudi-ceramics'],
+      'water-pumps': ['dab-pumps'],
+      'infrastructure-pipe': ['turan-borfit', 'georg-fischer', 'pimtas']
+    };
+    
+    const brandSlugs = serviceBrandMap[serviceSlug] || [];
+    return brandsData.filter((brand: BrandData) => brandSlugs.includes(brand.slug));
+  };
+
+  const relevantBrands = getBrandsForService(currentService.slug);
+
   return (
     <section className="section-gap">
-    <Container className="flex flex-col lg:flex-row gap-[30px]">
-      {/* left part */}
-      <div className="lg:w-[70%] w-full">
-        <img className="w-full h-auto rounded-[10px]" src={currentService?.image} alt="Service image" />
-         <div className="flex flex-col gap-y-[30px] mt-[30px]">
-         <div>
-           <h2>{currentService?.title}</h2>
+      <Container>
+        {/* Service Image */}
+        {/* <div className="mb-8">
+          <img className="w-full h-auto rounded-[10px]" src={currentService?.image} alt="Service image" />
+        </div> */}
 
-             <div className="flex flex-col gap-5 mt-5">
-             {
-               currentService?.paragraphs?.map((p,index)=>
-               
-               <div key={index}>
-              <p>{p}</p>
-         
-               </div>)
-             }
-
-             </div>
-          
-         </div>
-
-           <div>
-              <h3>Empowering Your Digital Future</h3>
-              <div className="flex flex-col gap-5 mt-[30px]">
-
-              {currentService?.points?.map((point,index)=>
-                  <div key={index} className="flex items-start gap-2">
-                  <FiChevronsRight className="text-[#E5E8F2] w-5 h-5 mt-1 flex-shrink-0" />
-                  <span className="text-textColor text-[16px] font-normal leading-7 font-secondary tracking-[-0.36px]">{point}</span>
-                </div>
-             )}
-
+        {/* Service Description */}
+        <div className="mb-12">
+          <h2 className={`text-3xl font-bold mb-6 ${isArabic ? 'font-arabic' : ''}`}>
+            {currentService?.title}
+          </h2>
+          <div className={`text-lg leading-relaxed ${isArabic ? 'font-arabic' : ''}`}>
+            {currentService?.paragraphs?.map((paragraph, index) => (
+              <p key={index} className="mb-4">
+                {paragraph}
+              </p>
+            ))}
           </div>
+        </div>
 
-             <p className="mt-[30px]">Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way </p>
-           </div>
-
-           {/* Connecting You to Tomorrow */}
-           <div>
-             <ConnectingService/>
-           </div>
-
-
-
-         </div>
-      </div>
-
-      {/* right part */}
-      <div className="lg:w-[30%] w-full">
-         <ServiceSidebar/>
-      </div>
-    </Container>
-
-    
-  </section>
+        {/* Brands Section */}
+        <div className="mb-8">
+          <h3 className={`text-2xl font-semibold mb-6 ${isArabic ? 'font-arabic' : ''}`}>
+            {t("brands.label")} {t("services.items." + currentService.slug.replace(/-/g, '_') + ".title", currentService.title)}
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {relevantBrands.map((brand: BrandData) => (
+              <Link 
+                key={brand.id} 
+                to={`/brand/${brand.slug}`}
+                className="bg-white border border-primaryBorder rounded-[15px] p-6 hover:border-primaryBlue duration-300 ease-in-out group"
+              >
+                <div className="flex flex-col items-center text-center">
+                  {brand.logo && (
+                    <img 
+                      src={brand.logo} 
+                      alt={brand.name} 
+                      className="w-16 h-16 object-contain mb-4"
+                    />
+                  )}
+                  <h4 className={`font-semibold text-lg mb-2 ${isArabic ? 'font-arabic' : ''}`}>
+                    {brand.name}
+                  </h4>
+                  <p className={`text-sm text-gray-600 ${isArabic ? 'font-arabic' : ''}`}>
+                    {brand.origin[i18n.language as keyof typeof brand.origin] || brand.origin.en}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </section>
   )
 }
 

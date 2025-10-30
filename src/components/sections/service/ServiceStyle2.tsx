@@ -21,7 +21,7 @@ const ServiceStyle2 = () => {
         />
         <Container className={`grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:gap-7 gap-6 mt-12 ${isRTL ? "text-right" : ""}`}>
            {/* service card */}
-           {services.slice(0, 3).map((service, index) => (
+           {services.slice(0, 6).map((service, index) => (
           <ServiceCard key={index} service={service} />
         ))}
        </Container>

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-// import { Link } from "react-router-dom"
-// import Button from "../../common/Button"
+import { Link } from "react-router-dom"
+import Button from "../../common/Button"
 import type { Service } from "../../../data/servicesData";
 
 interface ServiceCardProps {
@@ -26,7 +26,8 @@ const ServiceCard = ({ service }: ServiceCardProps) => {
   const translatedContent = getTranslatedContent(service.slug);
 
   return (
-    <div className={`bg-white border border-primaryBorder rounded-[20px] 2xl:p-7 md:p-6 p-5 hover:border-primaryBlue duration-300 ease-in-out group ${isRTL ? "text-right" : ""}`}>
+    <Link to={`/service/${service.slug}`}>
+    <div className={`bg-white border border-primaryBorder rounded-[20px] 2xl:p-7 md:p-6 p-5 hover:border-primaryBlue duration-300 ease-in-out group h-full flex flex-col ${isRTL ? "text-right" : ""}`}>
       <div className={`flex items-center 2xl:gap-7 gap-5 ${isRTL ? "flex-row-reverse" : ""}`}>
         <div>
           <div className="bg-primaryBlue w-20 h-20 rounded-full flex justify-center items-center">
@@ -38,7 +39,7 @@ const ServiceCard = ({ service }: ServiceCardProps) => {
 
       <hr className="text-primaryBorder group-hover:text-primaryBlue my-5" />
       <p 
-        className={isArabic ? 'font-arabic' : ''}
+        className={`flex-grow ${isArabic ? 'font-arabic' : ''}`}
         style={{ 
           direction: isArabic ? 'rtl' : 'ltr',
           unicodeBidi: 'isolate'
@@ -50,13 +51,14 @@ const ServiceCard = ({ service }: ServiceCardProps) => {
       />
 
       <div className={`mt-[30px] ${isRTL ? "flex justify-end" : ""}`}>
-        {/* <Link to={`/service/${service.slug}`}>
+        
           <Button hoverBgColorClass="bg-primaryBlue" className={`bg-sectionBg text-secondaryColor ${isArabic ? 'font-arabic' : ''}`}>
             {t("services.read_more")}
           </Button>
-        </Link> */}
+        
       </div>
     </div>
+    </Link>
   );
 };
 

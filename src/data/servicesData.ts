@@ -28,166 +28,112 @@ export interface ServiceItem {
 export const services: Service[] = [
   {
     id: 1,
-    slug: 'piping-systems',
+    slug: 'drainage-systems',
     image:service1,
-    icon: '/icons/services/icon-3.svg',
-    title: 'Piping Systems',
-    description: 'Atlas offers complete piping solutions with pipes, valves, and fittings designed for every need. From agriculture and construction to sanitary applications, our systems cover PVC, PPR, and more',
+    icon: '/icons/services/icon-4.svg',
+    title: 'Drainage Systems',
+    description: 'Atlas provides comprehensive drainage solutions including sewer pipes, fittings, and accessories designed for efficient wastewater management. Our systems ensure proper water flow and prevent blockages in residential, commercial, and industrial applications.',
     paragraphs: [
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way we live, work, and the communicate. From smartphones to artificial intelligence, our world is becoming ",
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way "
+      "Atlas Plast delivers complete drainage infrastructure solutions, including sewer pipes, manholes, and drainage fittings designed for efficient wastewater management. We distribute high-quality PVC drainage systems that meet the diverse needs of urban development and infrastructure projects.",
+      "Our comprehensive drainage systems cover everything from residential sewage to large-scale municipal drainage networks. With over 50 years of experience, we provide reliable solutions that ensure proper water flow, prevent blockages, and maintain long-lasting performance in Iraq's challenging environmental conditions."
     ],
     points: [
-      "Tech Forward. Future Ready Your Tomorrow, Enhanced Today",
-      "Revolutionizing Reality Through Technology. Tech it to the Next Level",
-      "Tech-savvy Lives, Brighter Tomorrows. Connect. Create. Transform",
-      "The future is tech. Advancing with innovation. Tech excellence at work."
+      "Complete range of PVC drainage pipes",
+      "High-quality fittings, manholes, and accessories for seamless installation",
+      "Suitable for residential, commercial, and municipal applications",
+      "Expert technical support and project consultation services"
     ]
   },
   {
     id: 2,
-    slug: 'sanitary-ware',
+    slug: 'water-pipe-systems',
     image:service2,
-    icon: '/icons/services/icon-1.svg',
-    title: 'Sanitary Ware',
-    description: 'Atlas supplies a full range of sanitary equipment including toilets, showers, sinks, and accessories. Designed for comfort, durability, and modern style, our sanitary solutions bring quality and reliability into every home and project.',
+    icon: '/icons/services/icon-3.svg',
+    title: 'Water Pipe Systems',
+    description: 'Atlas offers complete clean drinking water distribution solutions with PPR pipes designed for safe water supply to taps, showers, and household fixtures. Our systems ensure safe, reliable water delivery for residential and commercial applications.',
     paragraphs: [
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way we live, work, and the communicate. From smartphones to artificial intelligence, our world is becoming ",
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way "
+      "Atlas Plast delivers complete clean drinking water distribution solutions, including PPR pipes, fittings, and accessories designed for safe water supply to taps, showers, and household fixtures. We distribute high-quality PPR pipes that meet international standards for drinking water systems.",
+      "Our comprehensive water pipe systems focus on residential and commercial clean water distribution, ensuring safe water delivery to all household fixtures. With over 50 years of experience, we provide reliable PPR solutions that ensure clean water delivery, proper pressure management, and long-lasting performance in Iraq's diverse climate conditions."
     ],
     points: [
-      "Tech Forward. Future Ready Your Tomorrow, Enhanced Today",
-      "Revolutionizing Reality Through Technology. Tech it to the Next Level",
-      "Tech-savvy Lives, Brighter Tomorrows. Connect. Create. Transform",
-      "The future is tech. Advancing with innovation. Tech excellence at work."
+      "Complete range of PPR pipes for clean drinking water",
+      "High-quality fittings, valves, and accessories for household water distribution",
+      "Suitable for taps, showers, and all household fixtures",
+      "Expert technical support and clean water system design services"
     ]
   },
   {
     id: 3,
-    slug: 'ceramics',
+    slug: 'sanitary-ware',
     image:service3,
-    icon: '/icons/services/icon-2.svg',
-    title: 'Ceramics',
-    description: 'Atlas is expanding into ceramics with a wide selection of tiles and finishes. Combining durability with modern design, our ceramic solutions are made to enhance both residential and commercial spaces across Iraq.',
+    icon: '/icons/services/icon-1.svg',
+    title: 'Sanitary Ware',
+    description: 'Atlas supplies reliable sanitary ware built for durability, functionality, and modern appeal. Our range includes toilets, basins, and bathroom accessories providing practical solutions that meet residential and commercial requirements.',
     paragraphs: [
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way we live, work, and the communicate. From smartphones to artificial intelligence, our world is becoming ",
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way "
+      "Atlas Plast delivers comprehensive sanitary ware solutions, including toilets, basins, bathroom accessories, and bathroom furniture designed for modern living. We distribute high-quality sanitary products from trusted international brands that combine durability, functionality, and contemporary design.",
+      "Our comprehensive sanitary ware range covers everything from residential bathrooms to commercial facilities. With over 50 years of experience, we provide reliable solutions that ensure comfort, hygiene, and long-lasting performance in Iraq's diverse residential and commercial environments."
     ],
     points: [
-      "Tech Forward. Future Ready Your Tomorrow, Enhanced Today",
-      "Revolutionizing Reality Through Technology. Tech it to the Next Level",
-      "Tech-savvy Lives, Brighter Tomorrows. Connect. Create. Transform",
-      "The future is tech. Advancing with innovation. Tech excellence at work."
+      "Complete range of toilets, basins, and bathroom accessories",
+      "High-quality bathroom furniture and sanitary fittings",
+      "Suitable for residential and commercial applications",
+      "Expert technical support and bathroom design consultation"
     ]
   },
   {
     id: 4,
-    slug: 'stream-technologies',
+    slug: 'water-heaters',
     image:service4,
-    icon: '/icons/services/icon-10.svg',
-    title: 'Stream Technologies',
-    description: 'Streamline your business operations using powerful tools and expert guidance.',
+    icon: '/icons/services/icon-5.svg',
+    title: 'Water Heaters',
+    description: 'Atlas provides efficient water heating solutions including electric and gas water heaters designed for reliable hot water supply. Our systems ensure energy efficiency and consistent performance for residential and commercial applications.',
     paragraphs: [
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way we live, work, and the communicate. From smartphones to artificial intelligence, our world is becoming ",
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way "
+      "Atlas Plast delivers comprehensive water heating solutions, including electric and gas water heaters designed for reliable hot water supply. We distribute high-quality heating systems from trusted international brands that ensure energy efficiency and consistent performance.",
+      "Our comprehensive water heater range covers everything from residential tank heaters to commercial instant water heaters. With over 50 years of experience, we provide reliable solutions that ensure efficient hot water delivery and long-lasting performance in Iraq's diverse climate conditions."
     ],
     points: [
-      "Tech Forward. Future Ready Your Tomorrow, Enhanced Today",
-      "Revolutionizing Reality Through Technology. Tech it to the Next Level",
-      "Tech-savvy Lives, Brighter Tomorrows. Connect. Create. Transform",
-      "The future is tech. Advancing with innovation. Tech excellence at work."
+      "Complete range of electric and gas water heaters",
+      "High-quality tank and instant water heating systems",
+      "Suitable for residential and commercial applications",
+      "Expert technical support and heating system installation"
     ]
   },
   {
     id: 5,
-    slug: 'code-craft-creations',
+    slug: 'water-pumps',
     image:service5,
-    icon: '/icons/services/icon-11.svg',
-    title: 'Code Craft Creations',
-    description: 'Custom software development built for efficiency, scalability, and long-term success.',
+    icon: '/icons/services/icon-6.svg',
+    title: 'Water Pumps',
+    description: 'Atlas offers reliable water pumping solutions including submersible pumps, centrifugal pumps, and booster pumps designed for efficient water movement. Our systems ensure reliable water supply and pressure management.',
     paragraphs: [
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way we live, work, and the communicate. From smartphones to artificial intelligence, our world is becoming ",
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way "
+      "Atlas Plast delivers comprehensive water pumping solutions, including submersible pumps, centrifugal pumps, and booster pumps designed for efficient water movement and pressure management. We distribute high-quality pumping systems from trusted international manufacturers.",
+      "Our comprehensive water pump range covers everything from residential water supply to large-scale irrigation and industrial applications. With over 50 years of experience, we provide reliable solutions that ensure efficient water movement and long-lasting performance in Iraq's diverse applications."
     ],
     points: [
-      "Tech Forward. Future Ready Your Tomorrow, Enhanced Today",
-      "Revolutionizing Reality Through Technology. Tech it to the Next Level",
-      "Tech-savvy Lives, Brighter Tomorrows. Connect. Create. Transform",
-      "The future is tech. Advancing with innovation. Tech excellence at work."
+      "Complete range of submersible, centrifugal, and booster pumps",
+      "High-quality pumping systems for various applications",
+      "Suitable for residential, agricultural, and industrial use",
+      "Expert technical support and pump system installation"
     ]
   },
   {
     id: 6,
-    slug: 'weave-solutions-1',
+    slug: 'infrastructure-pipe',
     image:service6,
-    icon: '/icons/services/icon-12.svg',
-    title: 'Weave Solutions',
-    description: 'Connecting businesses through technology, integration, security, and continuous support.',
+    icon: '/icons/services/icon-3.svg',
+    title: 'Infrastructure Pipe',
+    description: 'Atlas provides large-diameter infrastructure pipes including HDPE pipes designed for municipal and industrial applications. Our systems ensure reliable infrastructure development and long-term performance.',
     paragraphs: [
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way we live, work, and the communicate. From smartphones to artificial intelligence, our world is becoming ",
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way "
+      "Atlas Plast delivers comprehensive infrastructure piping solutions, including large-diameter HDPE pipes designed for municipal water supply, sewage systems, and industrial applications. We distribute high-quality HDPE infrastructure pipes that meet international standards for large-scale projects.",
+      "Our comprehensive infrastructure pipe range focuses on HDPE solutions for municipal water networks and industrial process piping. With over 50 years of experience, we provide reliable HDPE solutions that ensure efficient infrastructure development and long-lasting performance in Iraq's growing urban and industrial sectors."
     ],
     points: [
-      "Tech Forward. Future Ready Your Tomorrow, Enhanced Today",
-      "Revolutionizing Reality Through Technology. Tech it to the Next Level",
-      "Tech-savvy Lives, Brighter Tomorrows. Connect. Create. Transform",
-      "The future is tech. Advancing with innovation. Tech excellence at work."
+      "Complete range of large-diameter HDPE pipes",
+      "High-quality HDPE infrastructure fittings and accessories",
+      "Suitable for municipal and industrial applications",
+      "Expert technical support and HDPE infrastructure project consultation"
     ]
-  },
-  {
-    id: 7,
-    slug: 'tech-solutions',
-    image:service3,
-    icon: '/icons/services/icon-13.svg',
-    title: 'Tech Solutions',
-    description: 'Trusted technology partner providing implementation, and technical support.',
-    paragraphs: [
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way we live, work, and the communicate. From smartphones to artificial intelligence, our world is becoming ",
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way "
-    ],
-    points: [
-      "Tech Forward. Future Ready Your Tomorrow, Enhanced Today",
-      "Revolutionizing Reality Through Technology. Tech it to the Next Level",
-      "Tech-savvy Lives, Brighter Tomorrows. Connect. Create. Transform",
-      "The future is tech. Advancing with innovation. Tech excellence at work."
-    ]
-  },
-  {
-    id: 8,
-    slug: 'weave-solutions-2',
-    image:service2,
-    icon: '/icons/services/icon-14.svg',
-    title: 'Weave Solutions',
-    description: 'Innovative solutions built with precision, experience, speed, and client care.',
-    paragraphs: [
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way we live, work, and the communicate. From smartphones to artificial intelligence, our world is becoming ",
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way "
-    ],
-    points: [
-      "Tech Forward. Future Ready Your Tomorrow, Enhanced Today",
-      "Revolutionizing Reality Through Technology. Tech it to the Next Level",
-      "Tech-savvy Lives, Brighter Tomorrows. Connect. Create. Transform",
-      "The future is tech. Advancing with innovation. Tech excellence at work."
-    ]
-  },
-  {
-    id: 9,
-    slug: 'networks-plus',
-    image:service5,
-    icon: '/icons/services/icon-15.svg',
-    title: 'NetWorks Plus',
-    description: 'Modern networking services ensuring speed, security, reliability, and technical support.',
-    paragraphs: [
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way we live, work, and the communicate. From smartphones to artificial intelligence, our world is becoming ",
-      "Technology has revolutionized the way we live, work, and communicate. From smartphones to artificial intelligence, our world is becoming more connected every day Technology has revolutionized the way "
-    ],
-    points: [
-      "Tech Forward. Future Ready Your Tomorrow, Enhanced Today",
-      "Revolutionizing Reality Through Technology. Tech it to the Next Level",
-      "Tech-savvy Lives, Brighter Tomorrows. Connect. Create. Transform",
-      "The future is tech. Advancing with innovation. Tech excellence at work."
-    ]
-  },
+  }
 ];
 
 

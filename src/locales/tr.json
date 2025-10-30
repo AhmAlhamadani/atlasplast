@@ -7,6 +7,9 @@
       "trusted_number": "2000+",
       "trusted_text": "Güvenilen Ortaklar Atlas Kalitesini Ülke Genelinde Dağıtıyor"
     },
+    "services": {
+      "read_more": "Daha Fazla Oku"
+    },
     "contact_form": {
       "name_placeholder": "Adınız",
       "phone_placeholder": "Telefon Numaranız",

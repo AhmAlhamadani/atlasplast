@@ -85,6 +85,18 @@ import wisaLogo from '../assets/brands/brand-8.png';
 import wisaMain from '../assets/brands/wisa/main.png';
 import wisaProduct from '../assets/brands/wisa/product.png';
 
+import alvitLogo from '../assets/brands/brand-19.png';
+import alvitMain from '../assets/brands/alvit/main.png';
+import alvitProduct from '../assets/brands/alvit/product.png';
+
+import guarriLogo from '../assets/brands/brand-13.png';
+import guarriMain from '../assets/brands/guarri/main.png';
+import guarriProduct from '../assets/brands/guarri/product.png';
+
+import shieldLogo from '../assets/brands/brand-20.png';
+import shieldMain from '../assets/brands/shield/main.png';
+import shieldProduct from '../assets/brands/shield/product.png';
+
 export interface BrandData {
   id: string;
   slug: string;
@@ -1374,11 +1386,139 @@ export const brandsData: BrandData[] = [
       wisaProduct,
     ]
   },
+  {
+    id: "alvit",
+    slug: "alvit",
+    name: "Alvit",
+    origin: {
+      en: "Turkey",
+      ar: "تركيا"
+    },
+    products: {
+      en: [
+        { name: "Sanitary Ware" }
+      ],
+      ar: [
+        { name: "أدوات صحية" }
+      ]
+    },
+    description: {
+      en: "Alvit is a Turkish manufacturer specializing in affordable and reliable sanitary ware solutions. The company focuses on providing quality bathroom products including toilets, basins, and bathroom accessories at competitive prices. Alvit serves both residential and commercial markets with a commitment to delivering functional and durable sanitary solutions that meet modern bathroom requirements.",
+      ar: "تعد Alvit شركة تركية متخصصة في حلول الأدوات الصحية الميسورة والموثوقة. تركز الشركة على توفير منتجات حمام عالية الجودة بما في ذلك المراحيض والأحواض والملحقات الحمّامية بأسعار تنافسية. تخدم Alvit الأسواق السكنية والتجارية مع التزام بتقديم حلول صحية وظيفية ومتينة تلبي متطلبات الحمامات الحديثة."
+    },
+    brandAdvantages: {
+      en: [
+        "Affordable pricing without compromising quality",
+        "Wide range of sanitary ware products",
+        "Reliable and durable bathroom solutions",
+        "Competitive market positioning",
+        "Suitable for both residential and commercial applications"
+      ],
+      ar: [
+        "أسعار ميسورة دون المساس بالجودة",
+        "مجموعة واسعة من منتجات الأدوات الصحية",
+        "حلول حمام موثوقة ومتينة",
+        "موقع تنافسي في السوق",
+        "مناسبة للتطبيقات السكنية والتجارية"
+      ]
+    },
+    established: "1994",
+    website: "https://www.alvit.com.tr/en",
+    logo: alvitLogo,
+    mainImage: alvitMain,
+    galleryImages: [
+      alvitProduct
+    ]
+  },
+  {
+    id: "shield",
+    slug: "shield",
+    name: "Shield",
+    origin: {
+      en: "Egypt",
+      ar: "مصر"
+    },
+    products: {
+      en: [
+        { name: "Sanitary Ware" },
+        { name: "PPR" },
+        { name: "PVC" }
+      ],
+      ar: [
+        { name: "أدوات صحية" },
+        { name: "PPR" },
+        { name: "PVC" }
+      ]
+    },
+    description: {
+      en: "Shield is an Egyptian brand specializing in the production of PPR and PVC pipes and fittings. The company is committed to providing high-quality products that meet the needs of the market.",
+      ar: "Shield هي علامة مصرية تعمل في مجال إنتاج أنابيب PVC وPPR وملحقاتها. تلتزم الشركة بتقديم منتجات عالية الجودة التي تلبي احتياجات السوق."
+    },
+    brandAdvantages: {
+      en: [
+        "Affordable pricing",
+        "Suitable for both residential and commercial applications"
+      ],
+      ar: [
+        "أسعار مناسبة",
+        "مناسبة للتطبيقات السكنية والتجارية"
+      ]
+    },
+    established: "2003",
+    website: "https://www.facebook.com/Shield.EngG",
+    logo: shieldLogo,
+    mainImage: shieldMain,
+    galleryImages: [
+      shieldProduct
+    ]
+  },
+  {
+    id: "guarri",
+    slug: "guarri",
+    name: "Guarri",
+    origin: {
+      en: "Turkey",
+      ar: "تركيا"
+    },
+    products: {
+      en: [
+        { name: "Sanitary Ware" }
+      ],
+      ar: [
+        { name: "أدوات صحية" }
+      ]
+    },
+    description: {
+      en: "Guarri is an up and coming Turksih brand with a wide range of top of the range sanitray products.",
+      ar: "Guarri هي علامة تركية تعمل في مجال الأدوات الصحية المتطورة والمتنوعة."
+    },
+    brandAdvantages: {
+      en: [
+        "Wide range of top of the range sanitray products",
+        "High quality products",
+        "Affordable pricing",
+        "Suitable for both residential and commercial applications"
+      ],
+      ar: [
+        "مجموعة واسعة من الأدوات الصحية المتطورة والمتنوعة",
+        "منتجات عالية الجودة",
+        "أسعار مناسبة",
+        "مناسبة للتطبيقات السكنية والتجارية"
+      ]
+    },
+    established: "2020",
+    website: "https://www.facebook.com/guarriarmature/",
+    logo: guarriLogo,
+    mainImage: guarriMain,
+    galleryImages: [
+      guarriProduct
+    ]
+  }
 
-  // 16 out of 23, Remaining:
-  // Guarri
+  // Remaining:
   // Pestan - check with MB
   // FV - check with MB
+  // ask about almunif pipes
 ];
 
 
