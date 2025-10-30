@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { pricingPlans } from "../../../data/pricingData";
+import { pricingPlans, type PricingPlan } from "../../../data/pricingData.ts";
 import Container from "../../common/Container";
 import SectionTitle from "../../common/SectionTitle";
 import PricingCard from "../../ui/cards/PricingCard";
@@ -47,7 +47,7 @@ const Pricing = () => {
 
        {/* Pricing Cards */}
        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] md:mt-[60px] mt-12">
-       {pricingPlans.map((plan) => (
+      {pricingPlans.map((plan: PricingPlan) => (
         <PricingCard key={plan.id} plan={plan} activeTab={activeTab} getPrice={getPrice} />
       ))}
       </div>
